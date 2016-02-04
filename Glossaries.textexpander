@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Glossaries</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>nnglo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-10-22T15:24:18Z</date>
+			<key>label</key>
+			<string>new glossary entry</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T08:47:49Z</date>
+			<key>plainText</key>
+			<string>\newglossaryentry{%|}{
+    name = {}
+    description = {}
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E5EA9D1C-C892-44D5-AF0B-EE9D9FB7A769</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>wwac</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-03T15:04:51Z</date>
+			<key>label</key>
+			<string>wrap an reg acronym</string>
+			<key>modificationDate</key>
+			<date>2015-12-09T04:39:43Z</date>
+			<key>plainText</key>
+			<string>\acrshort{%clipboard}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>318F4980-D34B-4762-9949-06926889672F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nnaco</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-03T15:06:28Z</date>
+			<key>label</key>
+			<string>New Acronym Entry</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T08:54:23Z</date>
+			<key>plainText</key>
+			<string>\newacronymentry{%|}{}{
+    name={}
+    description={}
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>09E0326A-C34C-47C6-9A54-445878707C78</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:17:35Z</date>
+			<key>label</key>
+			<string>preamble for glossary</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T08:33:49Z</date>
+			<key>plainText</key>
+			<string>\usepackage{glossaries}
+% for standard glossary
+\usepackage[acronym]{glossaries}
+% for both regular and an acronym glossary
+\usepackage[toc,acronym]{glossaries}
+% This adds the glossary to the table of contents and allows for a separate acronym glossary
+
+
+\makeglossaries
+% goes in the preamble to let doc know whats up
+
+\input{glossaries.tex}
+% Call the glossary file to be included in the document
+
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>ECF86B8B-C96C-4B9C-91F9-81E2CFF8E1C2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:25:28Z</date>
+			<key>label</key>
+			<string>Change the title of the the gloss</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T08:33:16Z</date>
+			<key>plainText</key>
+			<string>% Change the Title of the Glossary
+
+\usepackage{glossaries}
+\makeglossaries
+% Put these in the preamble
+
+\newglossaryentry{terms}{
+    name={term},
+    description={definition of term},
+}
+% The definitions of new glossary items go in the glossary.tex file
+
+% When you want to print the glossary add the following where you want the gloss to be printed:
+\printglossary[title={Terminology}, toctitle={List of Terms}]
+
+\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>95B10719-0168-407A-BEE8-59EA48ACF2BD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:33:53Z</date>
+			<key>label</key>
+			<string>using the gloss in the text</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T08:37:06Z</date>
+			<key>plainText</key>
+			<string>% Using the glossary in the text
+
+% To print a gloss item lower case
+\gls{term}
+
+% Print upper case
+\Gls{term}
+
+% Lower case but plural
+\glspl{term}
+% will print 'terms'
+
+% Upper case and plural
+\Glspl{Term}
+% will print 'Terms'</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0950C0CF-2A30-4D40-9288-A12A5C1B1B90</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:37:10Z</date>
+			<key>label</key>
+			<string>Defining acronyms</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T08:40:51Z</date>
+			<key>plainText</key>
+			<string>% to define a new acronym
+\newacronym{gcd}{GCD}
+{Greatest Common Divisor}
+
+% Here is the syntax explicitly
+\newacronym{the acronym im going to write because im lazy (gcd)}{the acronym I want the compiler to print (GCD)}
+{the description I want associated with my acronym (Greatest Common Divisor)}
+
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9777F3E1-EE75-449B-8FFE-9AAC7F7EB1EC</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:40:55Z</date>
+			<key>label</key>
+			<string>Using acronyms in the text</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T08:43:01Z</date>
+			<key>plainText</key>
+			<string>% Using acronyms in the text
+
+\acrlong{gcd}
+% This prints 'Greatest Common Divisor'
+
+\acrshort{gcd}
+% This prints 'GCD'
+
+\acrfull{gcd}
+% This prints 'Greatest Common Divisor (GCD)' </string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D7A5C2A6-F45B-45F9-A4CE-D3CE1B5140E9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:43:37Z</date>
+			<key>label</key>
+			<string>Full example</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T08:47:15Z</date>
+			<key>plainText</key>
+			<string>% full example
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[acronym,toc]{glossaries}
+
+\makeglossaries
+
+\input{glossary.tex}
+
+\begin{document}
+
+\tableofcontents
+
+
+% near the end of the document
+\clearpage
+
+\printglossary
+
+\clearpage
+
+\printglossary[type=\acronymtype]
+
+\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C4E9D48D-B71C-4FD7-BDDC-14AE35741A83</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lglo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:48:47Z</date>
+			<key>label</key>
+			<string>Wrap a lowercase gloss entry</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T23:24:44Z</date>
+			<key>plainText</key>
+			<string>\gls{%|}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>12CAC5EE-900F-48A6-8336-3EAD27CCF62F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>uglo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:49:50Z</date>
+			<key>label</key>
+			<string>wrap an uppercase gloss entry</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T23:24:40Z</date>
+			<key>plainText</key>
+			<string>\Gls{%|}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E97F8605-0C3C-4C01-84DC-7FD918F1E166</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>plglo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:50:21Z</date>
+			<key>label</key>
+			<string>Wrap a plural lowercase gloss</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T23:24:22Z</date>
+			<key>plainText</key>
+			<string>\glspl{%|}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3D86C25C-1201-4145-AD49-8967EA207A73</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>puglo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:51:00Z</date>
+			<key>label</key>
+			<string>Wrap a plural uppercase gloss entry</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T23:24:30Z</date>
+			<key>plainText</key>
+			<string>\Glspl{%|}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4FB6CB48-A5AC-4F40-A125-3E54B98A64E3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lacro</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:52:19Z</date>
+			<key>label</key>
+			<string>wrap an all caps acro</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T23:25:01Z</date>
+			<key>plainText</key>
+			<string>\acrlong{%|}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>986C8ECE-92B0-48AD-BCB0-F71D1C7A1E16</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>facro</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:52:51Z</date>
+			<key>label</key>
+			<string>wrap a full acronym</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T23:25:06Z</date>
+			<key>plainText</key>
+			<string>\acrfull{%|}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>80C0D6CE-222F-43D2-AD58-49204D68AD68</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T08:54:51Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-11-25T08:56:36Z</date>
+			<key>plainText</key>
+			<string>%fillpopup:name=entrys for acro and gloss:default=new glossary entry:new acronym entry%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>AD4595FF-47A6-471B-9B8C-DD0D2588E4FE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T09:00:56Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-11-25T09:01:24Z</date>
+			<key>plainText</key>
+			<string>// Use the TextExpander object to appendOutput() or adjust date and time,
+// or just use the final statement as the snippet's expansion value, e.g.
+"Java" + "Script" + " result";</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>08C9144D-DE17-4C5C-9025-6D66B92A1F19</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>popnglo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T10:06:29Z</date>
+			<key>label</key>
+			<string>fill in new glossary entry</string>
+			<key>modificationDate</key>
+			<date>2015-12-07T13:30:59Z</date>
+			<key>plainText</key>
+			<string>\newglossaryentry{%filltext:name=named%}{
+    name={%filltext:name=name%},
+    description={%fillarea:name=desc%}
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A551CF00-BE40-4156-9642-9780AB6E51EE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T10:20:14Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-11-25T10:24:41Z</date>
+			<key>plainText</key>
+			<string>#! /bin/bash
+cd ~/m491Draft/draftMath491
+cat &gt;&gt;</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>3BDFC141-89BF-42F8-9F40-79A4887468B2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>acropop</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-28T23:11:10Z</date>
+			<key>label</key>
+			<string>new acronym popup</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T23:21:52Z</date>
+			<key>plainText</key>
+			<string>\newacronym{%filltext:name=abrev%}{%filltext:name=acronym%}{%filltext:name=full%}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>508A35CA-D8E9-450B-91E4-31EEF71D6496</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-28T23:22:36Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-12-09T07:45:12Z</date>
+			<key>plainText</key>
+			<string>\usepackage{graphicx}
+\usepackage{float}
+\usepackage[font={small,sf},labelfont=bf,format=hang]{caption}
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BD6EE281-0812-4456-B7DD-25E30E1F1717</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-09T07:45:29Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-12-09T07:45:52Z</date>
+			<key>plainText</key>
+			<string>\begin{figure}[H]
+\centering
+\input{TikZ-Code/Code_Squares.tex}
+\caption{Example TikZ picture that has nothing special to offer.}
+\label{fig_Squares}
+\end{figure}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>043B87DF-C013-4B86-A395-3CA24A7C7E5E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>Mobius</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-01-16T17:54:21Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2016-01-16T17:54:21Z</date>
+			<key>plainText</key>
+			<string>Möbius</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E9A3DD74-CC7B-474B-89F7-D58C7D0B1026</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-01-16T22:59:16Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2016-01-16T23:01:05Z</date>
+			<key>plainText</key>
+			<string></string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>237EFD9B-E000-46DC-B868-8E183D0F11C3</string>
+		</dict>
+	</array>
+</dict>
+</plist>

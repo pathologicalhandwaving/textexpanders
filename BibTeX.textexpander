@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>BibTeX</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-13T05:32:12Z</date>
+			<key>label</key>
+			<string>standard entry types</string>
+			<key>modificationDate</key>
+			<date>2015-12-13T05:36:59Z</date>
+			<key>plainText</key>
+			<string>article
+book
+booklet
+conference
+inbook
+incollection
+inproceedings
+manual
+mastersthesis
+misc
+phdthesis
+proceedings
+techreport
+unpublished
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8418624E-3522-4C48-A908-24723B6F0996</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-13T05:32:32Z</date>
+			<key>label</key>
+			<string>key fields</string>
+			<key>modificationDate</key>
+			<date>2015-12-13T05:32:39Z</date>
+			<key>plainText</key>
+			<string>address
+annote
+booktitle
+chapter
+crossref (citekey of the item being referenced)
+edition
+editor
+howpublished
+institution 
+journal
+key (used for alphebetixing, crossrefing, labeling)
+month
+note
+number
+organization
+pages
+publisher
+school
+series
+title
+type
+volume
+year</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>70EC41B2-56A1-4FEA-A672-0EC662ED50F8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-13T05:33:55Z</date>
+			<key>label</key>
+			<string>end of document-amble</string>
+			<key>modificationDate</key>
+			<date>2016-01-21T05:02:33Z</date>
+			<key>plainText</key>
+			<string>\bibliography{bibliography}\bibliographystyle{plain}\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>869C9661-1D01-41D6-8C4B-0B0FA3DE3A3F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-13T05:34:44Z</date>
+			<key>label</key>
+			<string>syntax</string>
+			<key>modificationDate</key>
+			<date>2015-12-13T05:36:30Z</date>
+			<key>plainText</key>
+			<string>@[document-type]{label,
+field={field data},
+field={field data},
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>184D1E68-50F3-443E-9332-17ED1233DF79</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-13T05:36:03Z</date>
+			<key>label</key>
+			<string>optional fields</string>
+			<key>modificationDate</key>
+			<date>2015-12-13T05:36:16Z</date>
+			<key>plainText</key>
+			<string>abstract
+mynotes</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>054A8F73-6722-4E5D-8D45-CB6AD88B9912</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-13T05:37:13Z</date>
+			<key>label</key>
+			<string>examples</string>
+			<key>modificationDate</key>
+			<date>2015-12-13T05:39:48Z</date>
+			<key>plainText</key>
+			<string>@{citekey,
+author={author name},
+title={title},
+journal={journalname},
+volume={vol number},
+year={year},
+number={number},
+pages={page—page},
+issn={},
+coden={},
+mrclass={},
+mrnumber={},
+mrreviewer={},
+abstract={},
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>DC87F31C-FA17-45C0-AA3B-483B9E9E64B5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-13T05:39:59Z</date>
+			<key>label</key>
+			<string>example 2</string>
+			<key>modificationDate</key>
+			<date>2015-12-13T05:41:03Z</date>
+			<key>plainText</key>
+			<string>@misc{M2,
+author={},
+title={},
+year={},
+howpublished={},
+mynotes={},
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>78221DAD-B187-4190-9E7E-AC7BD95F3E7E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-13T05:40:54Z</date>
+			<key>label</key>
+			<string>Uses</string>
+			<key>modificationDate</key>
+			<date>2015-12-13T05:41:30Z</date>
+			<key>plainText</key>
+			<string>thesis
+articles
+annual reports
+grant applications
+CV
+etc</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>EBEE3708-6F47-402D-8396-77732771BD32</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-13T05:42:36Z</date>
+			<key>label</key>
+			<string>key uses</string>
+			<key>modificationDate</key>
+			<date>2015-12-13T05:43:12Z</date>
+			<key>plainText</key>
+			<string>organization={The Association for Computing Machinery},
+key={ACM}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>89CB57C7-790F-49A8-BE95-6F7923622C7C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-13T05:45:38Z</date>
+			<key>label</key>
+			<string>list all bibliography entries even if not cited</string>
+			<key>modificationDate</key>
+			<date>2015-12-13T05:46:00Z</date>
+			<key>plainText</key>
+			<string>\nocite{*}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CE261ECD-4EC7-4717-8E38-10AEACDE5111</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>cite key types</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-14T08:13:03Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-12-14T08:13:03Z</date>
+			<key>plainText</key>
+			<string>
+\citet{key}	Jones et al. (1990)
+\citet*{key}	Jones, Baker, and Smith (1990)
+\citep{key}	(Jones et al. 1990)
+\citep*{key}	(Jones, Baker, and Smith 1990)
+\citep[p.~99]{key}	(Jones et al., 1990, p. 99)
+\citep[e.g.][]{key}	(e.g. Jones et al., 1990)
+\citep[e.g.][p.~99]{key}	(e.g. Jones et al., 1990, p. 99)
+\citeauthor{key}	Jones et al.
+\citeauthor*{key}	Jones, Baker, and Smith
+\citeyear{key}	1990
+\citeapos{key}*	Jones et al.'s (1990)
+*Assumes \citeapos is defined in your style or document like this:
+
+\def\citeapos#1{\citeauthor{#1}'s (\citeyear{#1})}
+(Thanks to Christopher M. Duncombe Rae for pointing out this sim</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CA230527-5726-4BAC-A8E0-ED684BD72330</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>example bibliography</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-14T08:57:40Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-12-14T08:57:40Z</date>
+			<key>plainText</key>
+			<string>\documentclass[11pt]{article}
+
+\begin{document}
+
+\pagestyle{empty}
+\bibliographystyle{amsplain}
+
+\nocite{*}
+
+\hfill \today 
+
+\bibliography{database}
+
+\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>42363EF4-BF24-4412-B3FC-C72C197D74DA</string>
+		</dict>
+	</array>
+</dict>
+</plist>

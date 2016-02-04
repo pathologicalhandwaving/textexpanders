@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>amsthm package</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>theoremsyntax</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-06T04:24:52Z</date>
+			<key>label</key>
+			<string>Named Theorem Def</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T08:16:41Z</date>
+			<key>plainText</key>
+			<string>\newtheorem*{theoremAbbreviation}{Full Theorem name}
+
+\begin{theoremAbbreviation}
+
+\end{theoremAbbreviation}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F747EA4D-2E95-4656-B7E1-53515C61A88B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lemmasyntax</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-06T04:26:46Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-11-06T04:27:52Z</date>
+			<key>plainText</key>
+			<string>\newtheorem{lem}{Lemma}
+
+\begin{lem}
+
+\end{lem}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>26381790-BA0E-4375-8CE6-D5BD49B15BD9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,starthms</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-28T08:17:00Z</date>
+			<key>label</key>
+			<string>standard thm envs latexit</string>
+			<key>modificationDate</key>
+			<date>2015-12-29T22:20:20Z</date>
+			<key>plainText</key>
+			<string>\documentclass[10pt]{article}
+\usepackage{amssymb}
+\usepackage{amsmath} 
+\usepackage{amsthm}
+\usepackage[parfill]{parskip}
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}{Proposition}
+\newtheorem{con}{Conjecture}
+\newtheorem{crit}{Criterion}
+\newtheorem{ass}{Assertion}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\newtheorem{exmp}{Example}
+\newtheorem{xca}[exmp]{Exercise}
+\newtheorem{cond}{Condition}
+\newtheorem*{scon}{Sufficient Condition}
+\newtheorem{ncon}{Necessary Condition}
+\newtheorem{nscon}{Necessary and Sufficient Condition}
+\newtheorem*{prob}{Problem}
+\newtheorem*{sol}{Solution}
+\newtheorem*{asl}{Alternate Solution}
+\newtheorem{algo}{Algorithm}
+\newtheorem{que}{Question}
+\newtheorem{ans}[que]{Answer}
+\newtheorem{axi}{Axiom}
+\newtheorem{prot}{Property}
+\newtheorem{asu}{Assumption}
+\newtheorem{hyp}{Hypothesis}
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newtheorem{nt}{Note}
+\newtheorem*{nota}{Notation}
+\newtheorem{cla}{Claim}
+\newtheorem{summ}{Summary}
+\newtheorem{ack}{Acknowledgement}
+\newtheorem{case}{Case}
+\newtheorem{cln}{Conclusion}
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6A6C997F-32C7-42B1-ACF4-AEC009D82174</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-28T08:18:00Z</date>
+			<key>label</key>
+			<string>Example named thm, lem, main thm, cor, remark</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T08:18:34Z</date>
+			<key>plainText</key>
+			<string>Ahlfors' Lemma gives the principal criterion for obtaining lower bounds
+on the Kobayashi metric.
+
+\begin{Ahlfors}
+Let $ds^2 = h(z)\lvert dz\rvert^2$ be a Hermitian pseudo-metric on
+$\mathbf{D}_r$, $h\in C^2(\mathbf{D}_r)$, with $\omega$ the associated
+$(1,1)$-form. If $\Ric\omega\geq\omega$ on $\mathbf{D}_r$,
+then $\omega\leq\omega_r$ on all of $\mathbf{D}_r$ (or equivalently,
+$ds^2\leq ds_r^2$).
+\end{Ahlfors}
+
+\begin{lem}[negatively curved families]
+Let $\{ds_1^2,\dots,ds_k^2\}$ be a negatively curved family of metrics
+on $\mathbf{D}_r$, with associated forms $\omega^1$, \dots, $\omega^k$.
+Then $\omega^i \leq\omega_r$ for all $i$.
+\end{lem}
+
+Then our main theorem:
+\begin{thm}\label{pigspan}
+Let $d_{\max}$ and $d_{\min}$ be the maximum, resp.\ minimum distance
+between any two adjacent vertices of a quadrilateral $Q$. Let $\sigma$
+be the diagonal pigspan of a pig $P$ with four legs.
+Then $P$ is capable of standing on the corners of $Q$ iff
+\begin{equation}\label{sdq}
+\sigma\geq \sqrt{d_{\max}^2+d_{\min}^2}.
+\end{equation}
+\end{thm}
+
+\begin{cor}
+Admitting reflection and rotation, a three-legged pig $P$ is capable of
+standing on the corners of a triangle $T$ iff (\ref{sdq}) holds.
+\end{cor}
+
+\begin{rmk}
+As two-legged pigs generally fall over, the case of a polygon of order
+$2$ is uninteresting.
+\end{rmk}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1EDBDA55-D9A7-4CCB-A905-7C91C4AE8CBD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-28T08:18:58Z</date>
+			<key>label</key>
+			<string>Custom thm envs</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T08:19:07Z</date>
+			<key>plainText</key>
+			<string>\section{Custom theorem styles}
+
+\begin{exer}
+Generalize Theorem~\ref{pigspan} to three and four dimensions.
+\end{exer}
+
+\begin{note}
+This is a test of the custom theorem style `note'. It is supposed to have
+variant fonts and other differences.
+\end{note}
+
+\begin{bthm}
+Test of the `linebreak' style of theorem heading.
+\end{bthm}
+
+This is a test of a citing theorem to cite a theorem from some other source.
+
+\begin{varthm}[Theorem 3.6 in \cite{thatone}]
+No hyperlinking available here yet \dots\ but that's not a
+bad idea for the future.
+\end{varthm}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>DFFBCCF0-EE21-4EFB-8239-9543C992C298</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-28T08:19:26Z</date>
+			<key>label</key>
+			<string>Proof Env</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T08:19:46Z</date>
+			<key>plainText</key>
+			<string>\section{The proof environment}
+
+\begin{proof}
+Here is a test of the proof environment.
+\end{proof}
+
+\begin{proof}[Proof of Theorem \ref{pigspan}]
+And another test.
+\end{proof}
+
+\begin{proof}[Proof \textup(necessity\textup)]
+And another.
+\end{proof}
+
+\begin{proof}[Proof \textup(sufficiency\textup)]
+And another, ending with a display:
+\[
+1+1=2\,. \qedhere
+\]
+\end{proof}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E01A0C9E-EE5C-496F-83A4-AAD33054D46C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-28T08:19:50Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-11-28T08:19:50Z</date>
+			<key>plainText</key>
+			<string></string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9D7AEA79-39C9-4FCE-875A-B8665D3A2FB3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nspf</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-28T23:27:56Z</date>
+			<key>label</key>
+			<string>Nec &amp; Suff Thm and Proof</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T23:33:59Z</date>
+			<key>plainText</key>
+			<string>\begin{thm}\label{%|}
+
+\begin{equation}\label{%key:tab%}
+    %key:tab%
+\end{equation}
+
+\end{thm}
+
+\begin{proof}[Proof of Theorem \ref{%key:tab%}]
+    %key:tab%
+\end{proof}
+
+\begin{proof}[Proof \textup(necessity\textup)]
+    %key:tab%
+\end{proof}
+
+\begin{proof}[Proof \textup(sufficiency\textup)]
+    %key:tab% 
+$\qedhere$
+\end{proof}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>AB4AF500-932D-42C9-A151-AE0BAD6884CD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>thmpf</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-28T23:34:04Z</date>
+			<key>label</key>
+			<string>Theorem and Proof basic</string>
+			<key>modificationDate</key>
+			<date>2015-11-28T23:34:16Z</date>
+			<key>plainText</key>
+			<string>\begin{thm}\label{%|}
+
+\begin{equation}\label{%key:tab%}
+    %key:tab%
+\end{equation}
+
+\end{thm}
+
+\begin{proof}[Proof of Theorem \ref{%key:tab%}]
+    %key:tab%
+\end{proof}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2E347B63-16D4-44B5-BEB8-D414D2F2E836</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ndefn</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-28T23:34:49Z</date>
+			<key>label</key>
+			<string>new definition</string>
+			<key>modificationDate</key>
+			<date>2015-11-29T00:01:42Z</date>
+			<key>plainText</key>
+			<string>\begin{defn}{%|}
+    %key:tab%
+\end{defn}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>26F093DB-C186-4A67-81EA-79CDA27CA79C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,thmenvs</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-26T20:27:48Z</date>
+			<key>label</key>
+			<string>thm envs standard editor</string>
+			<key>modificationDate</key>
+			<date>2015-12-26T20:28:38Z</date>
+			<key>plainText</key>
+			<string>\documentclass[10pt]{article}
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage{amsthm}
+\usepackage[parfill]{parskip}
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}{Proposition}
+\newtheorem{con}{Conjecture}
+\newtheorem{crit}{Criterion}
+\newtheorem{ass}{Assertion}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{exmp}{Example}
+\newtheorem{xca}[exmp]{Exercise}
+\newtheorem{cond}{Condition}
+\newtheorem{scon}{Sufficient Condition}
+\newtheorem{ncon}{Necessary Condition}
+\newtheorem{nscon}{Necessary and Sufficient Condition}
+\newtheorem{prob}{Problem}
+\newtheorem{sol}{Solution}
+\newtheorem{asl}{Alternate Solution}
+\newtheorem{algo}{Algorithm}
+\newtheorem{que}{Question}
+\newtheorem{ans}{Answer}
+\newtheorem{axi}{Axiom}
+\newtheorem{prot}{Property}
+\newtheorem{asu}{Assumption}
+\newtheorem{hyp}{Hypothesis}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newtheorem{nt}{Note}
+\newtheorem{nota}{Notation}
+\newtheorem{cla}{Claim}
+\newtheorem{summ}{Summary}
+\newtheorem{ack}{Acknowledgement}
+\newtheorem{case}{Case}
+\newtheorem{cln}{Conclusion}
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>38F36647-C89E-4619-B64A-88CC0C7C3626</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>2</integer>
+		<key>groupName</key>
+		<string>Tools</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,fp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2013-02-09T09:14:11Z</date>
+			<key>label</key>
+			<string>Front Finder Window Path</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:35:02Z</date>
+			<key>plainText</key>
+			<string>tell application "Finder" to get quoted form of POSIX path of (target of front Finder window as text)</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>C90FDF1E-1BE0-4E99-88AB-4883708C66FC</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,curl</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-11-04T18:06:35Z</date>
+			<key>label</key>
+			<string>Current Chrome url</string>
+			<key>modificationDate</key>
+			<date>2013-04-28T14:46:50Z</date>
+			<key>plainText</key>
+			<string>tell application "Google Chrome" to return URL of active tab of window 1</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>807A4444-065B-46DD-BBB4-206D514C41B7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>..bbls</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-12-07T11:21:52Z</date>
+			<key>label</key>
+			<string>Convert Clipboard to Bulleted List</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T22:22:56Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby
+
+# ruby script to make an unordered list from indented data.
+
+data = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+result = "&lt;ul&gt;\n"
+last_marker = []
+last_marker[0] = ""
+
+last_leading_space = ""
+g_tab_width = 4
+g_list_level = 0
+last_list_level = 0
+
+marker = item = leading_space = ''
+
+data.split("\n").each {|line|
+  next if line =~ /^[\s\t]*$/
+  parts = line.match(/^([\t ]*)(\d+\. |[\*\+\-] )?\s*(.*)/)
+  leading_space = parts[1]
+  marker = parts[2]
+  item = parts[3]
+  leading_space.gsub!(/\t/,'    ')
+
+  if leading_space.length &gt; last_leading_space.length + 3
+    last_list_level = g_list_level
+    g_list_level += 1
+    last_leading_space = leading_space
+    last_list_level = g_list_level
+    result += "&lt;ul&gt;\n"
+  elsif leading_space.length + 3 &lt; last_leading_space.length
+    g_list_level = leading_space.length / 4
+    last_leading_space = leading_space
+    g_list_level-last_list_level.times do
+      result += "&lt;/ul&gt;\n"
+    end
+    last_list_level = g_list_level
+  end
+  indent = ""
+
+  result += "&lt;li&gt;#{item}&lt;/li&gt;\n"
+}
+
+puts result + "&lt;/ul&gt;"
+</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>C5B5A868-D3B3-442B-84D3-644CAA87D09C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,oldmad</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-10-15T05:44:20Z</date>
+			<key>label</key>
+			<string>Make a date</string>
+			<key>modificationDate</key>
+			<date>2013-06-01T07:11:40Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env php
+&lt;?php
+$input = "%fill:Date string%";
+// mon, tue, next fri, tomorrow 3pm...
+// 1, 3, -2 (days), 30 minutes...
+// avoid "on" and "at", keep it simple.
+
+
+
+
+
+date_default_timezone_set("America/Chicago");
+$dateformat = "l, M jS, Y";
+$timeformat = " \a\\t g:ia";
+$debug = 2;
+
+if ( preg_match( "/^([+-])?(\d+)$/", trim($input), $matches ) )
+{
+  $input = $matches[2] . " days";
+  if ($matches[1] == "-") $input .= " ago";
+}
+else if ( preg_match("/([ap]m|noon|midnight|hours|minutes)/i",trim($input),$matches) )
+{
+  $dateformat .= $timeformat;
+}
+
+if (($timestamp = strtotime("$input")) === false)
+{
+  if($debug &gt; 1)
+    `/usr/local/bin/growlnotify -a TextExpander -t "Natural language FAIL" -m "I can't understand you when you mumble"`;
+  if ($debug &gt; 0)
+	die('Derp');
+}
+else
+{
+  echo date($dateformat,$timestamp);
+}</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>33BAEE68-5059-4F73-B303-6813A3D38739</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,avg</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-02T03:14:39Z</date>
+			<key>label</key>
+			<string>Average numbers in clipboard</string>
+			<key>modificationDate</key>
+			<date>2013-04-28T14:47:14Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby
+
+def ts( number )
+  number.to_s.reverse.scan(/(?:\d*\.)?\d{1,3}-?/).join(',').reverse
+end
+
+def do_average(text)
+  arr = text.scan(/\.?\d[\d,]+(?:\.\d+)?/).map{|line|
+    line.gsub(/[^\d\.]/,'').to_f
+  }.sort
+
+  return ts(arr.inject(0.0) { |sum,el| sum + el } / arr.size ) unless arr.empty?
+end
+
+
+print do_average %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>52C5D9DE-3638-4913-A308-F8116A250A25</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,hcb</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-30T03:59:07Z</date>
+			<key>label</key>
+			<string>Hyphenate clipboard</string>
+			<key>modificationDate</key>
+			<date>2015-06-30T01:39:10Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+require 'open-uri'
+
+# get the clipboard using pbpaste
+clip = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}
+
+URI.parse(clip).open do |f|
+  f.each {|l|
+    if md = (/&lt;title&gt;\s*(.*)\s*&lt;\/title&gt;/iu).match(l) then
+      print '[' + md[1].gsub(/ - Wikipedia, the free encyclopedia/, '') + '](' + clip + ')'
+    end
+  }
+end
+</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>32B0FEAC-E370-47D3-8087-8904204F8C3C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,dummy</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-08-03T18:45:58Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fnil\fcharset0 AmericanTypewriter;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs24 \cf2 &lt;img src=\\"http://placehold.it/%fill:width%x%fill:height%/333333/dddddd&amp;text=%fill:title%\\" alt=\\"%fill:title%\\" width=\\"%fill:width%\\" height=\\"%fill:height%\\" /&gt;}</string>
+			</dict>
+			<key>label</key>
+			<string>Dummy Image</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T18:46:34Z</date>
+			<key>plainText</key>
+			<string>&lt;img src=\"http://placehold.it/%fill:width%x%fill:height%/333333/dddddd&amp;text=%fill:title%\" alt=\"%fill:title%\" width=\"%fill:width%\" height=\"%fill:height%\" /&gt;</string>
+			<key>richText</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhBJOU0F0dHJpYnV0ZWRTdHJp
+			bmcAhIQITlNPYmplY3QAhZKEhIQITlNTdHJpbmcBlIQBK4GjADxp
+			bWcgc3JjPVwiaHR0cDovL3BsYWNlaG9sZC5pdC8lZmlsbDp3aWR0
+			aCV4JWZpbGw6aGVpZ2h0JS8zMzMzMzMvZGRkZGRkJnRleHQ9JWZp
+			bGw6dGl0bGUlXCIgYWx0PVwiJWZpbGw6dGl0bGUlXCIgd2lkdGg9
+			XCIlZmlsbDp3aWR0aCVcIiBoZWlnaHQ9XCIlZmlsbDpoZWlnaHQl
+			XCIgLz6GhAJpSQGBowCShISEDE5TRGljdGlvbmFyeQCUhAFpApKE
+			lpYGTlNGb250hpKEhIQGTlNGb250HpSZMIQFWzQ4Y10GAAAAJgAA
+			AP/+QQBtAGUAcgBpAGMAYQBuAFQAeQBwAGUAdwByAGkAdABlAHIA
+			AACEAWYMhAFjAJ0BnQCdAIaShJaWB05TQ29sb3KGkoSEhAdOU0Nv
+			bG9yAJSdBoQDQEBAhJaWBlN5c3RlbYaElpYQY29udHJvbFRleHRD
+			b2xvcoaEnp0DhAJmZgABhoaGhg==
+			</data>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>4CD2A665-F576-4CDA-B619-CACBC02C057E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,kittyg</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-08-03T18:45:58Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Medium;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs24 \cf2 &lt;img src="http://placekitten.com/g/%fill:width%/%fill:height%" alt="KITTEH %fill:width%x%fill:height%" width="%fill:width%" height="%fill:height%" /&gt;}</string>
+			</dict>
+			<key>label</key>
+			<string>Kitty Placeholder - Grey</string>
+			<key>modificationDate</key>
+			<date>2015-07-23T05:58:24Z</date>
+			<key>plainText</key>
+			<string>&lt;img src="http://placekitten.com/g/%fill:width%/%fill:height%" alt="KITTEH %fill:width%x%fill:height%" width="%fill:width%" height="%fill:height%" /&gt;</string>
+			<key>richText</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhBlOU011dGFibGVBdHRyaWJ1
+			dGVkU3RyaW5nAISEEk5TQXR0cmlidXRlZFN0cmluZwCEhAhOU09i
+			amVjdACFkoSEhA9OU011dGFibGVTdHJpbmcBhIQITlNTdHJpbmcB
+			lYQBK4GVADxpbWcgc3JjPSJodHRwOi8vcGxhY2VraXR0ZW4uY29t
+			L2cvJWZpbGw6d2lkdGglLyVmaWxsOmhlaWdodCUiIGFsdD0iS0lU
+			VEVIICVmaWxsOndpZHRoJXglZmlsbDpoZWlnaHQlIiB3aWR0aD0i
+			JWZpbGw6d2lkdGglIiBoZWlnaHQ9IiVmaWxsOmhlaWdodCUiIC8+
+			hoQCaUkBgZUAkoSEhAxOU0RpY3Rpb25hcnkAlYQBaQKShJiYBk5T
+			Rm9udIaShISEBk5TRm9udB6VmzSEBVs1MmNdBgAAACoAAAD//kgA
+			ZQBsAHYAZQB0AGkAYwBhAE4AZQB1AGUALQBNAGUAZABpAHUAbQAA
+			AIQBZgyEAWMAnwGfAJ8AhpKEmJgHTlNDb2xvcoaShISEB05TQ29s
+			b3IAlZ8GhANAQECEmJgGU3lzdGVthoSYmBBjb250cm9sVGV4dENv
+			bG9yhoSgnwOEAmZmAAGGhoaG
+			</data>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>73B6A726-7FBC-4EE5-9BDC-A3C4C4F54A96</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,kittyc</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-08-03T18:45:58Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf130
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs34 \cf0 &lt;img src="http://placekitten.com/%fill:width%/%fill:height%" alt="KITTEH %fill:width%x%fill:height%" width="%fill:width%" height="%fill:height%" /&gt;}</string>
+			</dict>
+			<key>label</key>
+			<string>Kitty Placeholder - Color</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:36:01Z</date>
+			<key>plainText</key>
+			<string>&lt;img src="http://placekitten.com/%fill:width%/%fill:height%" alt="KITTEH %fill:width%x%fill:height%" width="%fill:width%" height="%fill:height%" /&gt;</string>
+			<key>richText</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhBlOU011dGFibGVBdHRyaWJ1
+			dGVkU3RyaW5nAISEEk5TQXR0cmlidXRlZFN0cmluZwCEhAhOU09i
+			amVjdACFkoSEhA9OU011dGFibGVTdHJpbmcBhIQITlNTdHJpbmcB
+			lYQBK4GTADxpbWcgc3JjPSJodHRwOi8vcGxhY2VraXR0ZW4uY29t
+			LyVmaWxsOndpZHRoJS8lZmlsbDpoZWlnaHQlIiBhbHQ9IktJVFRF
+			SCAlZmlsbDp3aWR0aCV4JWZpbGw6aGVpZ2h0JSIgd2lkdGg9IiVm
+			aWxsOndpZHRoJSIgaGVpZ2h0PSIlZmlsbDpoZWlnaHQlIiAvPoaE
+			AmlJAYGTAJKEhIQMTlNEaWN0aW9uYXJ5AJWEAWkBkoSYmAZOU0Zv
+			bnSGkoSEhAZOU0ZvbnQelZschAVbMjhjXQYAAAAUAAAA//5IAGUA
+			bAB2AGUAdABpAGMAYQCEAWYRhAFjAJ8BnwCfAIaGhg==
+			</data>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>170018ED-B592-493E-B525-31A7BD879990</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,href</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2009-10-28T10:50:26Z</date>
+			<key>label</key>
+			<string>Clipboard HTML Link</string>
+			<key>modificationDate</key>
+			<date>2013-10-23T12:22:30Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\A(mailto:)?(.*?@.*\..*)\z}
+    "mailto:#{$2.gsub(/./) {sprintf("&amp;#x%02X;", $&amp;.unpack("U")[0])}}"
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>D507454C-78D3-4A3D-A09C-1BEB13B3FC23</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,jq</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-11-10T09:03:04Z</date>
+			<key>label</key>
+			<string>jQuery Wrapper</string>
+			<key>modificationDate</key>
+			<date>2015-07-23T05:58:14Z</date>
+			<key>plainText</key>
+			<string>(function($){%|})(jQuery);</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>199D2548-9721-4BFA-879C-EA354D7CF076</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,sub</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-29T18:35:28Z</date>
+			<key>label</key>
+			<string>Shorten clipboard (bit.ly)</string>
+			<key>modificationDate</key>
+			<date>2013-10-23T12:18:32Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby
+# Bit.ly shortener TextExpander Snippet by Brett Terpstra
+# Working as of June, 2012 but APIs are a'changin
+# Create snippets for username (shortcut: #btlyu) and API key (shortcut: #btlya)
+# Find your API key at http://bit.ly/a/your_api_key
+
+require 'open-uri'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+USER_NAME = '%snippet:#btlyu%'
+API_KEY = '%snippet:#btlya%'
+
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+bitly_url = "https://api-ssl.bit.ly/v3/shorten?login=#{USER_NAME}&amp;apiKey=#{API_KEY}&amp;longUrl=#{CGI.escape(url)}&amp;format=txt"
+
+res = open(bitly_url).read unless url.nil?
+
+begin
+  print res.strip unless res.nil?
+rescue
+  exit
+end
+</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>C0710842-8E2F-4D8C-AA15-559BD063C0EF</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,sui</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-29T18:35:28Z</date>
+			<key>label</key>
+			<string>Shorten clipboard (is.gd)</string>
+			<key>modificationDate</key>
+			<date>2013-10-23T12:27:54Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby
+# is.gd shortener TextExpander Snippet by Brett Terpstra
+# Working as of June, 2012 but APIs are a'changin
+
+require 'open-uri'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+print open("http://is.gd/api.php?longurl=#{CGI.escape(url)}").read.strip unless url.nil?</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>E6904BCC-2628-4EF3-9D07-482F3E035BFD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,sut</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-29T18:35:28Z</date>
+			<key>label</key>
+			<string>Shorten clipboard (tinyurl)</string>
+			<key>modificationDate</key>
+			<date>2013-10-23T12:28:16Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby
+# tinyurl shortener TextExpander Snippet by Brett Terpstra
+# Working as of June, 2012 but APIs are a'changin
+
+require 'open-uri'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+print open("http://tinyurl.com/api-create.php?url=#{CGI.escape(url)}").read.strip unless url.nil?</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>481B874B-FF6B-4F98-A3F0-36D678964485</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,url</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2009-10-28T10:54:02Z</date>
+			<key>label</key>
+			<string>Make URL</string>
+			<key>modificationDate</key>
+			<date>2013-10-23T12:28:30Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\A(mailto:)?(.*?@.*\..*)\z}
+    "mailto:#{$2}"
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+print url unless url.nil?</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CFBAB8B1-FA26-416A-A9CD-7CA60A26E6F2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>#!b</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-26T12:40:27Z</date>
+			<key>label</key>
+			<string>Hashbang, Bash</string>
+			<key>modificationDate</key>
+			<date>2015-07-23T05:59:25Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>9F7E045C-E073-4329-BEB4-347EBBD9CA5B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>#!o</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-26T12:41:23Z</date>
+			<key>extraInfo</key>
+			<dict/>
+			<key>label</key>
+			<string>Hashbang, osascript</string>
+			<key>modificationDate</key>
+			<date>2015-07-23T06:00:03Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env osascript</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3A1F90B1-89B7-4B8A-AD15-F79155B74401</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>#!r</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-03-13T14:10:51Z</date>
+			<key>extraInfo</key>
+			<dict/>
+			<key>label</key>
+			<string>Hashbang, Ruby</string>
+			<key>modificationDate</key>
+			<date>2015-07-23T06:00:14Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>67910190-EAA7-4B6C-8BD3-BDE638928B27</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>#!p</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2014-09-19T17:02:20Z</date>
+			<key>extraInfo</key>
+			<dict/>
+			<key>label</key>
+			<string>Hashbang, Python</string>
+			<key>modificationDate</key>
+			<date>2015-07-23T06:00:23Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env python</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3BEC380A-6C55-4ACE-A5BF-8008691A745C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>#!l</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-04-14T19:48:57Z</date>
+			<key>label</key>
+			<string>Hashbang, Lua</string>
+			<key>modificationDate</key>
+			<date>2015-07-23T05:59:58Z</date>
+			<key>plainText</key>
+			<string>#!/user/bin/lua</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>C797AE2D-2349-45DA-BEE0-8DE154646759</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>killProcess</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-31T06:13:10Z</date>
+			<key>label</key>
+			<string>kill a process from the id on clipboard</string>
+			<key>modificationDate</key>
+			<date>2015-09-09T03:18:00Z</date>
+			<key>plainText</key>
+			<string>kill -9 %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2FEF3694-7E5F-42AD-8E4E-7178D6055B3A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>killapp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-31T06:13:26Z</date>
+			<key>label</key>
+			<string>kill an app [name of program you want to close]</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:34:05Z</date>
+			<key>plainText</key>
+			<string>ps -A | grep %|</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CAC23B56-2BD4-4F87-A057-D522D746460B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>emptyDamnIt</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-14T18:46:03Z</date>
+			<key>label</key>
+			<string>Make OS X Empty the Damn Trash</string>
+			<key>modificationDate</key>
+			<date>2015-08-28T04:32:36Z</date>
+			<key>plainText</key>
+			<string>sudo rm -rf ~/.Trash</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9DEEA42B-8F81-4191-8237-00A4C31943CB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ssnoop</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:50:29Z</date>
+			<key>label</key>
+			<string>open snoop</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:33:12Z</date>
+			<key>plainText</key>
+			<string>sudo opensnoop</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4828230D-ABBC-4B46-B868-5109CD88CDD7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>serv</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:51:11Z</date>
+			<key>label</key>
+			<string>simple http server</string>
+			<key>modificationDate</key>
+			<date>2016-01-19T02:06:37Z</date>
+			<key>plainText</key>
+			<string>python -m SimpleHTTPServer 1000</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D43B3AC0-35F4-4422-B68E-20F48961D787</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>sayClip</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:51:33Z</date>
+			<key>label</key>
+			<string>make mac say the clipboard out loud</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:32:53Z</date>
+			<key>plainText</key>
+			<string>say %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B9C005C4-0FF4-4CC4-9B2B-D9FBCE3E1DB0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lsudo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:51:45Z</date>
+			<key>label</key>
+			<string>run last command with sudo</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:32:40Z</date>
+			<key>plainText</key>
+			<string>!!</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0343F4CA-28C2-45A1-B18E-41CA8E1FDCAB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>quitApp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:52:43Z</date>
+			<key>label</key>
+			<string>quit an app</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:32:24Z</date>
+			<key>plainText</key>
+			<string>quit () {
+    for app in $*; do
+        osascript -e 'quit app "'$app'"'
+    done
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>696C0ADC-0E1D-4FB3-8CDB-3547A1E80D7F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>openApp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:52:56Z</date>
+			<key>label</key>
+			<string>relaunch an app</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:32:15Z</date>
+			<key>plainText</key>
+			<string>relaunch () {
+    for app in $*; do
+        osascript -e 'quit app "'$app'"';
+        sleep 2;
+        open -a $app
+    done
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1E01C093-3C6B-42E4-9DDD-6790F792B727</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lastDir</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:53:21Z</date>
+			<key>label</key>
+			<string>go to last directory</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:31:58Z</date>
+			<key>plainText</key>
+			<string>cd -</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>79B20804-FC32-4A51-B2D2-8CE70D92C2EE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>qqlk</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:54:04Z</date>
+			<key>label</key>
+			<string>quick look via command line</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T22:21:49Z</date>
+			<key>plainText</key>
+			<string>type -a ql</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0D3B5C01-E4D5-4F06-96E8-95F5D13DB783</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>whereMem</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:54:26Z</date>
+			<key>label</key>
+			<string>check memory usage</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:31:39Z</date>
+			<key>plainText</key>
+			<string>top -o vsize</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E6DE0519-CD63-42EA-BB3E-8F5F261B66FA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>whereCPU</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:54:39Z</date>
+			<key>label</key>
+			<string>check cpu usage</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:31:27Z</date>
+			<key>plainText</key>
+			<string>top -o cpu</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F50F91CB-289A-4847-B397-43FBCD05FACF</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>tutil</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:55:46Z</date>
+			<key>label</key>
+			<string>convert things</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:31:13Z</date>
+			<key>plainText</key>
+			<string>textutil</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>EED7F41D-8ECB-4177-BCB5-E39AF55BCE1F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>makeInvs</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:56:01Z</date>
+			<key>label</key>
+			<string>make file invisible</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:31:04Z</date>
+			<key>plainText</key>
+			<string>SetFile file -a V</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1824CCB6-CA91-443F-84DD-FD3997ECD1B1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>showHideFile</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:56:29Z</date>
+			<key>label</key>
+			<string>Show or Hide a File</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:30:46Z</date>
+			<key>plainText</key>
+			<string>sudo chflags hidden|nohidden %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>79138276-85B1-463A-B59A-7663B5DA099B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>showMeta</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:56:59Z</date>
+			<key>label</key>
+			<string>Show meta data</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:30:56Z</date>
+			<key>plainText</key>
+			<string>mdls</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0C31BE92-CDC8-46DF-8039-61268E806B61</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>aaut</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:57:24Z</date>
+			<key>label</key>
+			<string>run a automator action</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T22:24:20Z</date>
+			<key>plainText</key>
+			<string>automator %|</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F09A04B0-81C8-46CB-A728-FD2B8FC7D43B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>watchSW</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T01:59:04Z</date>
+			<key>label</key>
+			<string>Watch starwars in command line</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:28:52Z</date>
+			<key>plainText</key>
+			<string>telnet towel.blinkenlights.nl
+defaults write com.apple.dashboard devmode YES</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>89544890-C7B6-46CE-9381-AC3C6F01A361</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mkdirGo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T02:00:46Z</date>
+			<key>label</key>
+			<string>make a directory and go there</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:30:24Z</date>
+			<key>plainText</key>
+			<string>md() { mkdir -p "$@" &amp;&amp; cd "$@"; }</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>33471068-DE1F-4355-9514-A72ECA7A8CFA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>cloneclip</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T02:01:09Z</date>
+			<key>label</key>
+			<string>clone clipboard</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:29:52Z</date>
+			<key>plainText</key>
+			<string>git clone %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>FBE332F8-944A-433D-B117-15D50FF40CF6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>memFree</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T02:02:30Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-09-06T02:02:30Z</date>
+			<key>plainText</key>
+			<string>purge</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>99D8B8EA-D55F-4A58-8603-52BF5583ED4A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>googleWord</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T02:04:02Z</date>
+			<key>label</key>
+			<string>Google a word via command line</string>
+			<key>modificationDate</key>
+			<date>2015-10-24T13:29:21Z</date>
+			<key>plainText</key>
+			<string>define() { local y="$@"; curl -sA "Safari" "http://www.google.com/search?q=define:${y// /+}" | grep -Po '(?&lt;=&lt;li&gt;)[^&lt;]+'|nl|perl -MHTML::Entities -pe 'decode_entities($_)' 2&gt;/dev/null; }
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C1468878-CF86-4D7C-B038-EBA7452F04E1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>download2thisdir</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T02:05:25Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-09-06T02:05:25Z</date>
+			<key>plainText</key>
+			<string>curl -O %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A8F89215-5CFA-4BD9-8E1A-7D93C713F308</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>allLinksTabs</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T02:06:16Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-09-06T02:06:16Z</date>
+			<key>plainText</key>
+			<string>defaults write com.apple.Safari TargetedClicksCreateTabs -bool TRUE</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A18F3921-F1FC-4F23-81EB-8968D5599421</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>copyPATH2Clipboard</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T02:07:45Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-09-06T02:07:45Z</date>
+			<key>plainText</key>
+			<string>echo | pwd | pbcopy</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A1B1C81E-DCF2-496F-A144-6F6E1672D532</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>killAllApps</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T02:08:11Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-09-06T02:08:11Z</date>
+			<key>plainText</key>
+			<string>alias ka="killall"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>15A06335-F826-4F8B-98E1-DB567E5E88E8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>shrink all jpgs in a dir</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-22T02:42:05Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-11-22T02:42:05Z</date>
+			<key>plainText</key>
+			<string>sips -Z 640 *.jpg</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>665B67A3-0F12-439F-9ABA-3C8BADCF96CD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T22:20:24Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-11-25T22:20:24Z</date>
+			<key>plainText</key>
+			<string></string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>33D8335D-23E1-434E-85E6-4837C5151398</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>LaTeX Package Favs</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkarev</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:39:06Z</date>
+			<key>label</key>
+			<string>Call Arev Font Package</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:31:29Z</date>
+			<key>plainText</key>
+			<string>% Call arev font package
+\usepackage{arev}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>EDA47A68-0A3F-4ADB-A6F6-E43B86EAC245</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkamsm</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:41:16Z</date>
+			<key>label</key>
+			<string>Call amsmath</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:50:19Z</date>
+			<key>plainText</key>
+			<string>% Call amsmath package
+\usepackage{amsmath}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0513AF3F-8288-4F7D-9D87-09224A9266C9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkamssy</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:41:40Z</date>
+			<key>label</key>
+			<string>Call amssymb package</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:31:27Z</date>
+			<key>plainText</key>
+			<string>% Call amssymb package
+\usepackage{amssymb}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D45846E9-2AC3-46A5-A393-4D3AE853BFB4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkgeo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:42:27Z</date>
+			<key>label</key>
+			<string>call geometry package</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:44:31Z</date>
+			<key>plainText</key>
+			<string>% Call geometry package: for A4 paper size
+\usepackage[a4paper]{geometry}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2D554F9F-8EA7-4A3D-AD6B-1C4080E437FE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkgrx</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:43:12Z</date>
+			<key>label</key>
+			<string>Call graphicx package: for diagrams</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:32:53Z</date>
+			<key>plainText</key>
+			<string>% Call graphicx package: For diagrams
+\usepackage{graphicx}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>7CD8327F-F4C8-4A53-BA4A-CACD32A4F91F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkdep</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:44:38Z</date>
+			<key>label</key>
+			<string>Warning for Deprecated LaTeX Constructions</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:42:24Z</date>
+			<key>plainText</key>
+			<string>% Insert BEFORE document class!!!
+% Warnings for deprecated packages
+\RequirePackage[12tabu, orthodox]{nag}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>60F8CAA9-414F-431D-8094-9662803D5522</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkmicro</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:45:07Z</date>
+			<key>label</key>
+			<string>Call microtype package: for microtypography in pdflatex</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:34:35Z</date>
+			<key>plainText</key>
+			<string>% Call microtype package: for microtypography in pdflatex
+\usepackage{microtype}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>FA27D244-A7D6-4DC7-BDC8-F0E6B9553E24</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkclvr</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:45:46Z</date>
+			<key>label</key>
+			<string>Call cleveref (better crossreferences)</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:30:48Z</date>
+			<key>plainText</key>
+			<string>% Call cleverer package: for better cross references
+\usepackage{cleveref}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6E33C850-4B10-481D-B730-36A113DFDCD1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkbktb</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:46:13Z</date>
+			<key>label</key>
+			<string>For tables with no vertical lines</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:40:53Z</date>
+			<key>plainText</key>
+			<string>% Call booktabs package: for tables with no vertical lines
+\usepackage{booktabs}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A65C4A24-8140-4C98-AEB7-D6FD947AC5C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pktodo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:50:22Z</date>
+			<key>label</key>
+			<string>Call todonotes package</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:35:56Z</date>
+			<key>plainText</key>
+			<string>% Call todonotes package
+% To generate list of notes: \listoftodos
+% anywhere in document
+\usepackage{todonotes}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9E535C88-FC60-40F4-8B6D-A17F403D716D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pk for metadata</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:52:37Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-26T16:52:37Z</date>
+			<key>plainText</key>
+			<string>\usepackage{hyperref}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>36313AB9-83B8-4E86-A55D-21D31A2B31C0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pktkz</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:53:25Z</date>
+			<key>label</key>
+			<string>Call tikz</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:01:08Z</date>
+			<key>plainText</key>
+			<string>% Call tikz
+\usepackage{tikz}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>66A65CD2-EF5D-4FF6-922B-FD9477DCAB2E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkarry</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:54:13Z</date>
+			<key>label</key>
+			<string>Call array package: for custom columns in tables</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:47:11Z</date>
+			<key>plainText</key>
+			<string>% Call array package: for custom columns in tables
+\usepackage{array}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CB5512CF-19CA-4751-86C7-BA4CD04CEFA8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkmclp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:55:29Z</date>
+			<key>label</key>
+			<string>Call mathclap package</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:53:01Z</date>
+			<key>plainText</key>
+			<string>% Call mathclap package: for inserting long ass proofs and equations from other people's examples etc. 
+% use w/ mathtools
+\usepackage{mathclap}
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B1ED1FCD-81FC-4CF7-BC4B-01F96EA03076</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkmltc</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:56:39Z</date>
+			<key>label</key>
+			<string>Call multicol package</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:01:34Z</date>
+			<key>plainText</key>
+			<string>% Call multicol package
+\usepackage{multicol}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>08334E6A-7379-40D3-852A-BCA505A287DD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkindx</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:58:19Z</date>
+			<key>label</key>
+			<string>Call index package: for creating an index</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:02:01Z</date>
+			<key>plainText</key>
+			<string>% Call index package: for creating an index
+\usepackage{index}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4E9DEE77-F6E6-42BA-8DCC-5E85846FD157</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pknfrc</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:58:52Z</date>
+			<key>label</key>
+			<string>Call nicefrac package: for prettier fractions</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:02:34Z</date>
+			<key>plainText</key>
+			<string>% Call nicefrac package: for prettier fractions
+\usepackage{nicefrac}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>58CDAFAE-55A6-4E4C-85DC-9DE275A28A4F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkiftn</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T16:59:19Z</date>
+			<key>label</key>
+			<string>Call ifthen package</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:03:01Z</date>
+			<key>plainText</key>
+			<string>% Call ifthen package
+\usepackage{ifthen}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>12636338-CAF4-429A-A19C-6E69AD2D3C7E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkfhd</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T19:52:58Z</date>
+			<key>label</key>
+			<string>Call fancyhdr package: for fancy headers (gasp)</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:03:33Z</date>
+			<key>plainText</key>
+			<string>% Call fancyhdr package: for fancy headers (gasp)
+\usepackage{fancyhdr}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BA53AAA0-A3F6-4E7A-8759-884A6228DACF</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pktisec</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T19:54:53Z</date>
+			<key>label</key>
+			<string>Call titlesec package: for section display changes</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:00:46Z</date>
+			<key>plainText</key>
+			<string>% Call titlesec package: for section display changes
+\usepackage{titlesec}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9DDF4B8B-C2A6-4F84-A155-16F783C0F606</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkxprs</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T19:55:59Z</date>
+			<key>label</key>
+			<string>Call xparse package: for defining commands and envi with multiple optional args</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:00:03Z</date>
+			<key>plainText</key>
+			<string>% Call xparse package: for defining commands and envi with multiple optional args
+\usepackage{xparse}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>26CA089A-C58A-4E9B-8176-FB32F5C48153</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkieee</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T19:57:37Z</date>
+			<key>extraInfo</key>
+			<dict/>
+			<key>label</key>
+			<string>Call IEEE Equation Arrays (for more complicated arrays)</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:44:45Z</date>
+			<key>plainText</key>
+			<string>% Call IEEE equation arrays: For more complicated arrays
+\usepackage[retainorgcmds]{IEEEtrantools} </string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>59D739D3-13EA-41EF-ADAE-585F9C49A70A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkidx</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T19:58:46Z</date>
+			<key>label</key>
+			<string>Call idxlayout package: for when you just want two damn columns</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:06:36Z</date>
+			<key>plainText</key>
+			<string>% Call idxlayout package: for when you just want two damn columns
+\usepackage[columns=2]{idxlayout}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8CB2674D-825C-4D98-ABF4-52101EF0C081</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkmint</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T20:19:05Z</date>
+			<key>label</key>
+			<string>Call minted package</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:54:54Z</date>
+			<key>plainText</key>
+			<string>% Call minted package: for syntax highlighting in pigments supported languages
+\usepackage{minted}
+
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4C2625C1-70B5-4987-B12D-8B4814B67D5B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkxy</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T20:59:44Z</date>
+			<key>label</key>
+			<string>Call xy package: for diagrams</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:32:37Z</date>
+			<key>plainText</key>
+			<string>% Call xy package: for diagrams
+\usepackage{xy}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>80D2FE3C-68F5-4FE3-92BB-D5B1D5480477</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pktcd</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T21:00:44Z</date>
+			<key>label</key>
+			<string>Call tikz-cd: for commutative diagrams</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:56:09Z</date>
+			<key>plainText</key>
+			<string>% Call tikz-cd: for commutative diagrams
+\usepackage{tikz-cd}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C8C0EB32-0DEA-4F93-A30C-761F8AA99E6B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkmtls</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T21:06:26Z</date>
+			<key>label</key>
+			<string>Call mathtools package</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:54:08Z</date>
+			<key>plainText</key>
+			<string>% Call mathtools package
+\usepackage{mathtools}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3F6C2D5D-44ED-4DE2-ACDD-57339DF128FA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkppt</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T21:07:27Z</date>
+			<key>label</key>
+			<string>Call listings package: for pretttyprinting code</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:53:34Z</date>
+			<key>plainText</key>
+			<string>% Call listings package: for pretttyprinting code
+\usepackage{listings}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8E830933-9517-4095-8523-C109A6752DAF</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pktbx</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T21:08:46Z</date>
+			<key>label</key>
+			<string>Call tabularx package: For more control when creating tables</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:51:02Z</date>
+			<key>plainText</key>
+			<string>% Call tabularx package: For more control when creating tables
+\usepackage{tabularx}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0B8FD460-65BF-4718-BB62-9195DEC26151</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkiso</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T21:09:43Z</date>
+			<key>label</key>
+			<string>Call ISO Date Package</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:44:02Z</date>
+			<key>plainText</key>
+			<string>% Call isolate package: for iso date format
+\usepackage[english]{isodate}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BA40A0DB-0918-4E40-AACB-9D65DA1E92B0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pksvn</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T21:11:13Z</date>
+			<key>label</key>
+			<string>Call SVN: for versioning</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:58:29Z</date>
+			<key>plainText</key>
+			<string>% Call SVN: for versioning
+\usepackage{svn}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>ABE3EF29-D0A9-4AA0-A369-8FACD10BBB2A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ttrnum</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T21:12:01Z</date>
+			<key>extraInfo</key>
+			<dict/>
+			<key>label</key>
+			<string>Roman Numeral List</string>
+			<key>modificationDate</key>
+			<date>2016-02-04T03:10:45Z</date>
+			<key>plainText</key>
+			<string>\begin{enumerate}[label=(\roman*)]
+    \item The first item
+    \item The second item
+\end{enumerate}
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>76DC1DFA-60CC-4F94-B786-36B1F3F4A308</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pksbfg</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-26T21:15:48Z</date>
+			<key>extraInfo</key>
+			<dict/>
+			<key>label</key>
+			<string>Call subfigure package</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:49:57Z</date>
+			<key>plainText</key>
+			<string>% Call subfigure package: self-explanatory 
+\usepackage{subfigure}
+
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E93EE5E2-92EF-480D-A0D7-8EEAEDA16FF6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pksstk</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-27T00:20:57Z</date>
+			<key>label</key>
+			<string>Call substack package: for multiline Super or Sub-script (use with mathtools package)</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:44:19Z</date>
+			<key>plainText</key>
+			<string>% Call substack package: for multiline sub &amp; super scripts
+\usepackage{substack}
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F25C6BC5-0BAF-4CBB-94B6-42AD4ED016A7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ttodo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-27T00:36:00Z</date>
+			<key>label</key>
+			<string>todo command</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:37:52Z</date>
+			<key>plainText</key>
+			<string>\todo{%|}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>41E51B4C-DA1C-495C-AB9A-51EECE46407F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ttsub</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-27T00:43:09Z</date>
+			<key>label</key>
+			<string>substack command</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:43:23Z</date>
+			<key>plainText</key>
+			<string>\substack{%|}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>7DDF6464-CE0D-49F2-B7C3-FB18CF12D66A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ttmint</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-27T00:54:57Z</date>
+			<key>label</key>
+			<string>Insert minted section</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T00:55:24Z</date>
+			<key>plainText</key>
+			<string>\begin{minted}{language}
+%|
+\end{minted}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D5E56C6D-49EE-4390-98E3-4C5C2276B040</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkdmut</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-27T01:04:09Z</date>
+			<key>label</key>
+			<string>Call docmute package: for making subordinate documents standalone</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:04:54Z</date>
+			<key>plainText</key>
+			<string>% Call docmute package: for making subordinate documents standalone
+\usepackage{docmute}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4F236535-84E6-4A51-AB52-4E9206AAC1E6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pketx</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-27T01:05:11Z</date>
+			<key>label</key>
+			<string>Call etex package: for tiki without weird errors</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:05:48Z</date>
+			<key>plainText</key>
+			<string>% Call etex package: for tiki without weird errors
+\usepackage{etex}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>14F9711C-9BB0-4A21-8C81-7D1658CF7E79</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pkshky</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-27T01:09:48Z</date>
+			<key>label</key>
+			<string>Call notcite, notref options in showkeys package</string>
+			<key>modificationDate</key>
+			<date>2015-08-27T01:11:11Z</date>
+			<key>plainText</key>
+			<string>% Call notcite, notref options in showkeys package: for references
+\usepackage[notref, nocite]{showkeys}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6599BE77-C8B5-4DCD-96F3-98E83A8995AC</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-03T05:30:59Z</date>
+			<key>label</key>
+			<string>concrete font support</string>
+			<key>modificationDate</key>
+			<date>2015-09-03T05:32:54Z</date>
+			<key>plainText</key>
+			<string>\usepackage{concmath}
+\usepackage[T1]{fontenc}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>228503AF-3E09-499D-9C9E-4C83084FB0F2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-03T05:31:08Z</date>
+			<key>label</key>
+			<string>theorem style</string>
+			<key>modificationDate</key>
+			<date>2015-09-03T05:32:45Z</date>
+			<key>plainText</key>
+			<string>\documentclass{article}
+
+\usepackage{amsthm}
+\usepackage{thmtools}
+\declaretheoremstyle[headfont=\scshape,postheadspace=\newline]{mystyle}
+\declaretheorem[style=mystyle]{theorem}
+
+\begin{document}
+
+\begin{theorem}
+Some text.
+\end{theorem}
+
+\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>722EFC24-1FD6-402B-8F6E-3902CB61FB7D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-03T05:39:28Z</date>
+			<key>label</key>
+			<string>declare theorem style from thrmtools</string>
+			<key>modificationDate</key>
+			<date>2015-09-03T05:53:01Z</date>
+			<key>plainText</key>
+			<string>\declaretheoremstyle[  spaceabove=6pt, spacebelow=6pt,  headfont=\normalfont\bfseries,  notefont=\mdseries, notebraces={(}{)},bodyfont=\normalfont,  postheadspace=1em,  qed=\qedsymbol]{mystyle}\declaretheorem[style=mystyle]{styledtheorem}￼￼\begin{styledtheorem}[Euclid]  For every prime $p$\dots</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9337DF61-8C46-4796-82E4-26C09F86C7A0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-03T06:18:58Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-09-03T06:30:19Z</date>
+			<key>plainText</key>
+			<string>\newtheoremstyle{note}% ⟨name⟩ {3pt}% ⟨Space above⟩ {3pt}% ⟨Space below⟩{}% ⟨Body font⟩{}% ⟨Indent amount⟩1{\itshape}% ⟨Theorem head font⟩{:}% ⟨Punctuation after theorem head⟩{.5em}% ⟨Space after theorem head⟩2{}% ⟨Theorem head spec (can be left empty, meaning ‘normal’)⟩</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>57C2DD45-FC26-4F19-AD52-C1999C4C1775</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>MMD Docs</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD metadata</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:41:27Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:41:27Z</date>
+			<key>plainText</key>
+			<string>Metadata
+It is possible to include special metadata at the top of a MultiMarkdown document, such as title, author, etc. This information can then be used to control how MultiMarkdown processes the document, or can be used in certain output formats in special ways. For example:
+Title:    A Sample MultiMarkdown Document  
+Author:   Fletcher T. Penney  
+Date:     February 9, 2011  
+Comment:  This is a comment intended to demonstrate  
+          metadata that spans multiple lines, yet  
+          is treated as a single value.  
+CSS:      http://example.com/standard.css</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>AE4D872C-0987-4679-B8FC-B302332F1F24</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD metadata vars</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:41:51Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:41:51Z</date>
+			<key>plainText</key>
+			<string>Metadata “Variables”
+You can substitute the value for a metadata key in the body of a document using the following format, where foo and bar are the keys of the desired metadata.
+# A Variable in a Heading [%foo] #
+
+A variable in the body [%bar].</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>44927100-982D-4F18-B413-66F4F3598072</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD standard metadata keys</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:42:25Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:42:25Z</date>
+			<key>plainText</key>
+			<string>“Standard” Metadata keys
+There are a few metadata keys that are standardized in MultiMarkdown. You can use any other keys that you desire, but you have to make use of them yourself.
+My goal is to keep the list of “standard” metadata keys as short as possible.
+Author
+This value represents the author of the document and is used in LaTeX, ODF, and RTF documents to generate the title information.
+Affiliation
+This is used to enter further information about the author — a link to a website, the name of an employer, academic affiliation, etc.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4E6B2490-9D73-4CF0-90C3-19F0CADE0D9D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD base header level</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:42:46Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:42:46Z</date>
+			<key>plainText</key>
+			<string>Base Header Level
+This is used to change the top level of organization of the document. For example:
+Base Header Level: 2
+
+# Introduction #</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>04ED9075-0162-4047-9558-22109D5A7424</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD bib info</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:43:10Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:43:10Z</date>
+			<key>plainText</key>
+			<string>Biblio Style
+This metadata specifies the name of the BibTeX style to be used, if you are not using natbib.
+BibTeX
+This metadata specifies the name of the BibTeX file used to store citation information. Do not include the trailing ‘.bib’.
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CC521FFE-F2CB-4759-9DB1-AAD9D2F34D8E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD quotes language</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:43:43Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:43:43Z</date>
+			<key>plainText</key>
+			<string>Quotes Language
+This is used to specify which style of “smart” quotes to use in the output document. The available options are:
+	•	dutch (or nl)
+	•	english
+	•	french (fr)
+	•	german (de)
+	•	germanguillemets
+	•	swedish (sv)
+The default is english if not specified. This affects HTML output. To change the language of a document in LaTeX is up to the individual.
+Quotes Language does not trigger a complete document.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>09391663-AE26-41E9-BF6C-E11A304929F3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD author</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:43:59Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:43:59Z</date>
+			<key>plainText</key>
+			<string>LaTeX Author
+Since MultiMarkdown syntax is not processed inside of metadata, you can use the latex author metadata to override the regular author metadata when exporting to LaTeX.
+This metadata must come after the regular author metadata if it is also being used.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1DB33F29-5CEB-4131-9BF6-8D1EFED2534A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD footer</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:44:12Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:44:12Z</date>
+			<key>plainText</key>
+			<string>LaTeX Footer
+A special case of the LaTeX Input metadata below. This file will be linked to at the very end of the document.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C333B37C-09CA-4D90-9161-96B652BFA613</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD latex input</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:44:32Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:44:32Z</date>
+			<key>plainText</key>
+			<string>LaTeX Input
+When outputting a LaTeX document it is necessary to include various directions that specify how the document should be formatted. These are not included in the MultiMarkdown document itself — instead they should be stored separately and linked to with \input{file} commands.
+These links can be included in the metadata section. The metadata is processed in order, so I generally break my directives into a group that need to go before my metadata, a group that goes after the metadata but before the document itself, and a separate group that goes at the end of the document, for example:
+latex input:        mmd-memoir-header
+Title:              MultiMarkdown Example
+Base Header Level:  2
+latex mode:         memoir
+latex input:        mmd-memoir-begin-doc
+latex footer:       mmd-memoir-footer
+You can download the LaTeX Support Files if you want to output documents using the default MultiMarkdown styles. You can then use these as examples to create your own customized LaTeX output.
+This function should allow you to do almost anything you could do using the XSLT features from MultiMarkdown 2.0. More importantly, it means that advanced LaTeX users do not have to learn XSLT to customize their code as desired.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BB27EE89-E4EE-4336-A03F-EAB15FF5FF91</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD latex mode</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:44:48Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:44:48Z</date>
+			<key>plainText</key>
+			<string>LaTeX Mode
+When outputting a document to LaTeX, there are two special options that change the output slightly — memoir and beamer. These options are designed to be compatible with the LaTeX classes of the same names.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>045D4CF0-5BAE-465F-9BA0-3228EF9E3956</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD latex title</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:45:01Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:45:01Z</date>
+			<key>plainText</key>
+			<string>LaTeX Title
+Since MultiMarkdown syntax is not processed inside of metadata, you can use the latex title metadata to override the regular title metadata when exporting to LaTeX.
+This metadata must come after the regular title metadata if it is also being used.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>05CBE345-AF9D-47ED-B53D-AAAB4C9867C5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD footers</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:45:17Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:45:17Z</date>
+			<key>plainText</key>
+			<string>MMD Footer
+The MMD Footer metadata is used to specify the name of a file that should be appended to the end of the document using the File Transclusion feature. This is useful for keeping a list of references, abbreviations, footnotes, links, etc. all in a single file that can be reused across multiple documents. If you’re building a big document out of smaller documents, this allows you to use one list in all files, without multiple copies being inserted in the master file.
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B049564C-EB12-419E-9D69-BBB0E84C1F64</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD ODF header</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:45:37Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:45:37Z</date>
+			<key>plainText</key>
+			<string>ODF Header
+You can include raw XML to be included in the header of a file output in OpenDocument format. It’s up to you to properly format your XML and get it working — MultiMarkdown just copies it verbatim to the output.
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>62EA393B-6B6C-4BFB-B489-A43D5ECD7E9B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD link to documents inside documents</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:46:10Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:46:10Z</date>
+			<key>plainText</key>
+			<string>Transclude Base
+When using the File Transclusion feature to “link” to other documents inside a MultiMarkdown document, this metadata specifies a folder that contains the files being linked to. If omitted, the default is the folder containing the file in question. This can be a relative path or a complete path.
+This metadata can be particularly useful when using MultiMarkdown to parse a text string that does not exist as a file on the computer, and therefore does not have a parent folder (when using stdin or another application that offers MultiMarkdown support). In this case, the path must be a complete path.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>125A1EA5-DB0B-4C4E-AE86-412F9234161F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD smartypants</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:46:37Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:46:37Z</date>
+			<key>plainText</key>
+			<string>Smart Typography
+MultiMarkdown incorporates John Gruber’s SmartyPants tool in addition to the core Markdown functionality. This program converts “plain” punctuation into “smarter” typographic punctuation.
+Just like the original, MultiMarkdown converts:
+	•	Straight quotes (" and ') into “curly” quotes
+	•	Backticks-style quotes (``this'') into “curly” quotes
+	•	Dashes (-- and ---) into en- and em- dashes
+	•	Three dots (...) become an ellipsis</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6D77FB46-7ADF-4C6B-B70B-1D1CD680677C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD crossrefs</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:46:55Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:46:55Z</date>
+			<key>plainText</key>
+			<string>Cross-References
+An oft-requested feature was the ability to have Markdown automatically handle within-document links as easily as it handled external links. To this aim, I added the ability to interpret [Some Text][] as a cross-link, if a header named “Some Text” exists.
+As an example, [Metadata][] will take you to the section describing metadata.
+Alternatively, you can include an optional label of your choosing to help disambiguate cases where multiple headers have the same title:
+### Overview [MultiMarkdownOverview] ##
+This allows you to use [MultiMarkdownOverview] to refer to this section specifically, and not another section named Overview. This works with atx- or settext-style headers.
+If you have already defined an anchor using the same id that is used by a header, then the defined anchor takes precedence.
+In addition to headers within the document, you can provide labels for images and tables which can then be used for cross-references as well.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>EAD8A3F8-0162-410D-95C4-8FC7AEEAA112</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD image link attributes</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:47:19Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:47:19Z</date>
+			<key>plainText</key>
+			<string>Link and Image Attributes
+Adding attributes to links and images has been requested for a long time on the Markdown discussion list. I was fairly opposed to this, as most of the proposals really disrupted the readability of the syntax. I consider myself a “Markdown purist”, meaning that I took John’s introduction to heart:
+The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. While Markdown’s syntax has been influenced by several existing text-to-HTML filters, the single biggest source of inspiration for Markdown’s syntax is the format of plain text email.
+Because there was not a syntax proposal that I felt fit this goal, I was generally opposed to the idea.
+Then, Choan C. Gálvez proposed a brilliantly simple syntax that stayed out of the way. By simply appending the attributes to the link reference information, which is already removed from the text itself, it doesn’t disturb the readability.
+For example:
+This is a formatted ![image][] and a [link][] with attributes.
+
+[image]: http://path.to/image "Image title" width=40px height=400px
+[link]:  http://path.to/link.html "Some Link" class=external
+         style="border: solid black 1px;"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D8E313BA-925B-4882-A6C7-0C9E2D012BE5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD images</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:47:34Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:47:34Z</date>
+			<key>plainText</key>
+			<string>Images
+The basic syntax for images in Markdown is:
+![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg "Optional title")
+
+
+![Alt text][id]
+
+[id]: url/to/image  "Optional title attribute"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D4731675-6D68-489C-A9AC-58BC77AFD489</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD tables</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:51:31Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:51:31Z</date>
+			<key>plainText</key>
+			<string>Table Basics
+MultiMarkdown has a special syntax for creating tables. It is generally compatible with the syntax used by Michael Fortin for PHP Markdown Extra
+Basically, it allows you to turn:
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+
+New section   |     More      |         Data |
+And more      | With an escaped '\|'         ||  
+[Prototype table]</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8271563C-D247-40C1-B0D7-9727117C2ADA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD footnotes</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:51:59Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:51:59Z</date>
+			<key>plainText</key>
+			<string>Footnotes
+I have added support for footnotes to MultiMarkdown, using the syntax proposed by John Gruber. Note that there is no official support for footnotes yet, so the output format may change, but the input format sounds fairly stable.
+To create a footnote, enter something like the following:
+Here is some text containing a footnote.[^somesamplefootnote]
+
+[^somesamplefootnote]: Here is the text of the footnote itself.
+
+[somelink]:http://somelink.com</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>561516E8-134D-49C2-B52E-778F7B38C458</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD inline footnotes</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:52:17Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:52:17Z</date>
+			<key>plainText</key>
+			<string>You can also use “inline footnotes”:
+Here is another footnote.[^This is the footnote itself]</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B7936BD1-3B1F-4F12-88C4-B04E7F4891B2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD refs</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:52:37Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:52:37Z</date>
+			<key>plainText</key>
+			<string>Citations
+I have included support for basic bibliography features in this version of MultiMarkdown. Please give me feedback on ways to improve this but keep the following in mind:
+	1	Bibliography support in MultiMarkdown is rudimentary. The goal is to offer a basic standalone feature, that can be changed using the tool of your choice to a more robust format (e.g. BibTeX, CiteProc). My XSLT files demonstrate how to make this format compatible with BibTeX, but I am not planning on personally providing compatibility with other tools. Feel free to post your ideas and tools to the wiki.
+	2	Those needing more detailed function sets for their bibliographies may need customized tools to provide those services. This is a basic tool that should work for most people. Reference librarians will probably not be satisfied however.
+To use citations in MultiMarkdown, you use a syntax much like that for anchors:
+This is a statement that should be attributed to
+its source[p. 23][#Doe:2006].
+
+And following is the description of the reference to be
+used in the bibliography.
+
+[#Doe:2006]: John Doe. *Some Big Fancy Book*.  Vanity Press, 2006.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>5C6FE9B8-9AEB-4141-AFFF-17DB8C9076D1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD empty cite</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:52:59Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:52:59Z</date>
+			<key>plainText</key>
+			<string>This is a statement that should be attributed to its 
+source[][#Doe:2006].</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>991AEF9D-2F3E-4F7D-8B48-00C51093A950</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD include but not cited</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:53:19Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:53:19Z</date>
+			<key>plainText</key>
+			<string>If you want to include a source in your bibliography that was not cited, you may use the following:
+[Not cited][#citekey]</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6053B239-EEFA-4275-ABDF-B01C648888F2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD enable bibtex</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:53:39Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:53:39Z</date>
+			<key>plainText</key>
+			<string>Since natbib is enabled by default, you have a choice between using the \citep and \citet commands. The following shows how this relates to the MultiMarkdown syntax used.
+[#citekey]    =&gt; ~\citep{citekey}
+[#citekey][]  =&gt; ~\citep{citekey}
+
+[foo][#citekey] =&gt; ~\citep[foo]{citekey}
+
+[foo\]\[bar][#citekey] =&gt; ~\citep[foo][bar]{citekey}
+
+
+[#citekey;]    =&gt; \citet{citekey}
+[#citekey;][]  =&gt; \citet{citekey}
+
+[foo][#citekey;] =&gt; \citet[foo]{citekey}
+
+[foo\]\[bar][#citekey;] =&gt; \citet[foo][bar]{citekey}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>AA6A65FA-C7CD-419D-80D9-F8B8795CEBFB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD definition lists</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:53:54Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:53:54Z</date>
+			<key>plainText</key>
+			<string>Definition Lists
+MultiMarkdown has support for definition lists using the same syntax used in PHP Markdown Extra. Specifically:
+Apple
+:   Pomaceous fruit of plants of the genus Malus in 
+    the family Rosaceae.
+:   An american computer company.
+
+Orange
+:   The fruit of an evergreen tree of the genus Citrus.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>09F08348-FD97-4C79-8B85-45BFE3D9B7C7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD abbreviations</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:54:09Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:54:09Z</date>
+			<key>plainText</key>
+			<string>Abbreviations
+MultiMarkdown includes support for abbreviations, as implemented in Michel Fortin’s PHP Markdown Extra. Basically, you define an abbreviation using the following syntax:
+*[HTML]: HyperText Markup Language
+*[W3C]:  World Wide Web Consortium
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>363498CA-3446-471E-AA06-A9EA7FCD5B67</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD fenced codeblocks</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:54:31Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:54:31Z</date>
+			<key>plainText</key>
+			<string>Fenced Code Blocks
+In addition to the regular indented code block that Markdown uses, you can use “fenced” code blocks in MultiMarkdown. These code blocks do not have to be indented, and can also be configured to be compatible with a third party syntax highlighter. These code blocks should begin with 3 to 5 backticks, an optional language specifier (if using a syntax highlighter), and should end with the same number of backticks you started with:
+# Demonstrate Syntax Highlighting if you link to highlight.js #
+# http://softwaremaniacs.org/soft/highlight/en/
+print "Hello, world!\n";
+$a = 0;
+while ($a &lt; 10) {
+print "$a...\n";
+$a++;
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A3F87BD9-89D9-4B75-BCB1-8C79135B17D8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD metadata math setup</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:54:59Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:54:59Z</date>
+			<key>plainText</key>
+			<string>Here’s an example of the metadata setup, and some math:
+latex input:    mmd-article-header  
+Title:          MultiMarkdown Math Example  
+latex input:    mmd-article-begin-doc  
+latex footer:   mmd-memoir-footer  
+HTML header:    &lt;script type="text/javascript"
+                src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt;
+                &lt;/script&gt;
+
+
+An example of math within a paragraph --- \\({e}^{i\pi }+1=0\\)
+--- easy enough.
+
+And an equation on it's own:
+
+\\[ {x}_{1,2}=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\]
+
+That's it.
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>397CE715-CB14-491B-86F3-16A2BB26C532</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD super and subscripts</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:55:24Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:55:24Z</date>
+			<key>plainText</key>
+			<string>Superscripts and Subscripts
+You can easily include superscripts and subscripts in MultiMarkdown as well:
+This apartment has an area of 100m^2
+One must consider the value of x~z</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>582F7056-6E31-42F0-A32B-16BF24BF5C36</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD complicated super and subscripts</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:55:48Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:55:48Z</date>
+			<key>plainText</key>
+			<string>More complicated exponents and subscripts can be delimited like this:
+y^(a+b)^
+x~y,z~
+y(a+b)
+xy,z</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0C6CC082-0F23-4080-8431-DB6BDDD77588</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD glossary</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:56:01Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:56:01Z</date>
+			<key>plainText</key>
+			<string>Glossaries
+MultiMarkdown has a feature that allows footnotes to be specified as glossary terms. It doesn’t do much for XHTML documents, but the XSLT file that converts the document into LaTeX is designed to convert these special footnotes into glossary entries.
+The glossary format for the footnotes is:
+[^glossaryfootnote]: glossary: term (optional sort key)
+    The actual definition belongs on a new line, and can continue on
+    just as other footnotes.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C424BDA5-38B2-4E9E-811E-9943F4C411C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD more about gloss</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:56:19Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:56:19Z</date>
+			<key>plainText</key>
+			<string>Unfortunately, it takes an extra step to generate the glossary when creating a pdf from a latex file:
+	1	You need to have the basic.gst file installed, which comes with the memoir class.
+	2	You need to run a special makeindex command to generate the .glo file: makeindex -s `kpsewhich basic.gst` -o "filename.gls" "filename.glo"
+	3	Then you run the usual pdflatex command again a few times.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>950556E7-DB90-4664-9148-E6500204C5A4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD about critic markup</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:56:53Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:56:53Z</date>
+			<key>plainText</key>
+			<string>What Is CriticMarkup?
+CriticMarkup is a way for authors and editors to track changes to documents in plain text. As with Markdown, small groups of distinctive characters allow you to highlight insertions, deletions, substitutions and comments, all without the overhead of heavy, proprietary office suites. http://criticmarkup.com/
+CriticMarkup is integrated with MultiMarkdown itself, as well as MultiMarkdown Composer. I encourage you to check out the web site to learn more as it can be a very useful tool. There is also a great video showing CriticMarkup in use while editing a document in MultiMarkdown Composer.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1E2B4F59-A90F-4BF0-B674-F222A01A2857</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>MMD criticmarkup</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T17:57:30Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T17:57:30Z</date>
+			<key>plainText</key>
+			<string>riticMarkup comments and highlighting are ignored when processing.
+Deletions from the original text:
+This is {--is --}a test.
+Additions:
+This {++is ++}a test.
+Substitutions:
+This {~~isn't~&gt;is~~} a test.
+Highlighting:
+This is a {==test==}.
+Comments:
+This is a test{&gt;&gt;What is it a test of?&lt;&lt;}.
+My philosophy on CriticMarkup
+I view CriticMarkup as two things:
+	1	A syntax for documenting editing notes and changes, and for collaborating amongst coauthors.
+	2	A means to display those notes/changes in the HTML output.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CAF105C4-15EC-43EE-8342-3483FEA38F27</string>
+		</dict>
+	</array>
+</dict>
+</plist>

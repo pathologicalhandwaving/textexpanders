@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>AppleScript Editor</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>tell-</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:54:22Z</date>
+			<key>label</key>
+			<string>tell block</string>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:56:00Z</date>
+			<key>plainText</key>
+			<string>tell application "%|" to
+      
+end tell</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6179178A-35B2-4347-A65B-DE28061EEE89</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,tid</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-06-06T13:52:20Z</date>
+			<key>label</key>
+			<string>AS Text Item Delimiter</string>
+			<key>modificationDate</key>
+			<date>2011-09-02T04:06:29Z</date>
+			<key>plainText</key>
+			<string>set {astid, AppleScript's text item delimiters} to {AppleScript's text item delimiters, "%|"}
+
+set AppleScript's text item delimiters to astid</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>80E80D9D-F5DF-45DC-8BE8-C76588E89A37</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>s=</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:50:45Z</date>
+			<key>label</key>
+			<string>set variable</string>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:53:41Z</date>
+			<key>plainText</key>
+			<string>set %fill:Variable% to %fill:Value%
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8B5FCB76-B5F5-428A-9928-40AB294FF3A0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>p=</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:49:58Z</date>
+			<key>label</key>
+			<string>property</string>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:56:43Z</date>
+			<key>plainText</key>
+			<string>property %fill:Variable%: %fill:Value%
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BAC890C6-55CE-4B2B-80F1-CBC5C7F2F56F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>repeat </string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:49:03Z</date>
+			<key>label</key>
+			<string>repeat</string>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:53:31Z</date>
+			<key>plainText</key>
+			<string>repeat %|
+
+end repeat</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6D314D08-DBAE-4822-8841-D33EAAA797DE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>if-</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:46:10Z</date>
+			<key>label</key>
+			<string>if block</string>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:56:05Z</date>
+			<key>plainText</key>
+			<string>if %| then
+      
+end if</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D2346671-61B2-4D43-9CCC-6BD073E882BA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>if </string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:45:36Z</date>
+			<key>label</key>
+			<string>if then</string>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:45:36Z</date>
+			<key>plainText</key>
+			<string>if %| then</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>90CA3F6B-62F2-4374-AA4F-73D546AF677E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>tell </string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:43:18Z</date>
+			<key>label</key>
+			<string>tell app</string>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:43:38Z</date>
+			<key>plainText</key>
+			<string>tell application "%|"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>69D54003-799C-415F-88B3-802601358B7C</string>
+		</dict>
+	</array>
+</dict>
+</plist>

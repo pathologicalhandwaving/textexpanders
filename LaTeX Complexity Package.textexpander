@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>LaTeX Complexity Package</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:22:30Z</date>
+			<key>label</key>
+			<string>Typeset classes 1pt smaller for better flow</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:22:48Z</date>
+			<key>plainText</key>
+			<string>\usepackage[small]{complexity}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BFD91628-1595-4C9C-BC02-E8FEC9EB1A26</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:23:27Z</date>
+			<key>label</key>
+			<string>Set fonts for classes, languages, and functions</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:24:07Z</date>
+			<key>plainText</key>
+			<string>\usepackage[classfont=bold, langfont=roman, funcfont=italic]{complexity}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A268A1F0-FA41-4D97-AF29-C101E3681E01</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:24:11Z</date>
+			<key>label</key>
+			<string>class font options</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:25:00Z</date>
+			<key>plainText</key>
+			<string>sanserif (Default) This typesets the classes in a \mathsf (sans serif) font. 
+
+roman This option typesets the classes in a \mathrm (roman) font.bold This option typesets the classes in a \mathbf (roman, bold) font. 
+
+typewriter This option typesets the classes in a \mathtt (typewriter) font. 
+
+italic This option typesets the classes in a \mathit (math italic) font. 
+
+caps This option typesets the classes in a \textsc (small caps font) font. 
+
+slant This option typesets the classes in a \textsl (slanted font) font.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A891D510-5646-4A78-83FE-D7FD6218FC2F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:25:19Z</date>
+			<key>label</key>
+			<string>Mode Options</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:25:30Z</date>
+			<key>plainText</key>
+			<string>full (Default) This option will load every complexity class that the package has defined. See Section 4.5 for a complete list.basic This option will only load the “standard” complexity classes so as to mini- mize the number of commands the package defines (i.e. standard classes like P and NP but not less well known classes like AWPP (Almost wide PP).</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>EFCD6FFE-997C-4437-84AC-3CEECD463B3B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:26:25Z</date>
+			<key>label</key>
+			<string>Package Call</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:26:44Z</date>
+			<key>plainText</key>
+			<string>\usepackage[bold,full]{complexity}specifies that classes (and languages) should be typeset in bold and that the full list of classes should be defined.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CD33347D-A05B-4AE8-AA8E-60BC2C2D9B09</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:27:30Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Medium;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs24 \cf2 \\L (which typesets the symbol \uc0\u321 )}</string>
+			</dict>
+			<key>label</key>
+			<string>Replaces L</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:30:14Z</date>
+			<key>plainText</key>
+			<string>\L (which typesets the symbol Ł)</string>
+			<key>richText</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhBJOU0F0dHJpYnV0ZWRTdHJp
+			bmcAhIQITlNPYmplY3QAhZKEhIQITlNTdHJpbmcBlIQBKyFcTCAo
+			d2hpY2ggdHlwZXNldHMgdGhlIHN5bWJvbCDFgSmGhAJpSQEgkoSE
+			hAxOU0RpY3Rpb25hcnkAlIQBaQKShJaWBk5TRm9udIaShISEBk5T
+			Rm9udB6UmTSEBVs1MmNdBgAAACoAAAD//kgAZQBsAHYAZQB0AGkA
+			YwBhAE4AZQB1AGUALQBNAGUAZABpAHUAbQAAAIQBZgyEAWMAnQGd
+			AJ0AhpKElpYHTlNDb2xvcoaShISEB05TQ29sb3IAlJ0GhANAQECE
+			lpYGU3lzdGVthoSWlhBjb250cm9sVGV4dENvbG9yhoSenQOEAmZm
+			AAGGhoaG
+			</data>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>99445530-99C0-4261-B9F5-72FE2AA6613D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:30:28Z</date>
+			<key>label</key>
+			<string>Replaces P</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:30:43Z</date>
+			<key>plainText</key>
+			<string>\P (typesetting ¶)</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E9C9EB68-9FD6-45C9-93F2-DA0375239CC1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:30:57Z</date>
+			<key>label</key>
+			<string>Replace S</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:31:08Z</date>
+			<key>plainText</key>
+			<string>\S (which typesets the symbol §)</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>497FA422-E1A4-450D-9D5A-702D85CCA1A4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:31:39Z</date>
+			<key>label</key>
+			<string>Complement</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:31:47Z</date>
+			<key>plainText</key>
+			<string>\co</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8C337A2F-6489-4298-A6E6-F7E00EDF8866</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:31:59Z</date>
+			<key>label</key>
+			<string>Oplus</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:32:19Z</date>
+			<key>plainText</key>
+			<string>\parity (an alias for \oplus, typesetting ⊕)</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F1A9657D-8B46-40D2-8B83-A953F593382B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:32:40Z</date>
+			<key>label</key>
+			<string>log</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:37:26Z</date>
+			<key>plainText</key>
+			<string>\llog 
+
+llog Denotes logarithmic functions. 
+
+Note that the command is invoked with two l’s so as to not interfere with the LATEX \log command.</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>FCC1EFC3-3CBE-4AD0-A6BB-B97D52707BD3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:33:00Z</date>
+			<key>label</key>
+			<string>poly</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:35:27Z</date>
+			<key>plainText</key>
+			<string>\poly 
+
+poly Denotes polynomial functions</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9E4D2B8F-D59A-4CF0-B2BB-4954E8158F18</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:33:24Z</date>
+			<key>label</key>
+			<string>polylog</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:35:19Z</date>
+			<key>plainText</key>
+			<string>\polylog 
+
+polylog Denotes polylogarithmic functions</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A0DB2212-C317-4B65-BCA4-3812DE19BBB3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:33:29Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:33:29Z</date>
+			<key>plainText</key>
+			<string></string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>7E1D97E1-7333-431F-8623-DFAC609CB2F2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:33:44Z</date>
+			<key>label</key>
+			<string>quantum poly</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:36:04Z</date>
+			<key>plainText</key>
+			<string>\qpoly 
+
+qpoly Denotes polynomial functions for quantum advice</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1F0F1FCC-4102-4F87-8E11-582690476D85</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:33:58Z</date>
+			<key>label</key>
+			<string>quantum log</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:36:36Z</date>
+			<key>plainText</key>
+			<string>\qlog 
+
+qlog Denotes logarithmic functions for quantum advice</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8E718796-A444-4B16-88CE-153B9D4FBC5B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:34:11Z</date>
+			<key>label</key>
+			<string>MOD</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:37:29Z</date>
+			<key>plainText</key>
+			<string>\MOD 
+
+MOD Used for Modular classes/functions</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>35FDE0E2-4F35-4A98-9BA0-1B511F20A747</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:37:48Z</date>
+			<key>label</key>
+			<string>Circuit Value Problem</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:39:50Z</date>
+			<key>plainText</key>
+			<string>\CVP 
+
+CVP
+Used for the Circuit Value Problem (a P-complete set) </string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>643BA849-A3C3-4F39-B36A-03FC661306BB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:39:28Z</date>
+			<key>label</key>
+			<string>Satisfiability</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:39:36Z</date>
+			<key>plainText</key>
+			<string>\SAT 
+
+SAT 
+Used for Satisfiability (an NP-complete set)</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>48EE811F-AD8B-450C-88A3-E878D35507AE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:39:50Z</date>
+			<key>label</key>
+			<string>maximum satisfiability optimization problem</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:40:02Z</date>
+			<key>plainText</key>
+			<string>\MaxSAT 
+
+MaxSATUsed for the Lexicographically maximum satisfiability optimization problem (complete for OptP)</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>399EF2CA-0720-4FFD-ABFE-62E8A39BBC64</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:40:52Z</date>
+			<key>label</key>
+			<string>defining new complexity classes</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:41:23Z</date>
+			<key>plainText</key>
+			<string>To define a new complexity class
+
+“VCCC” (“very complex complexity class”). 
+
+We would use\newclass{\VCCC}{VCCC}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>AEBC095C-F138-40B6-9DB5-352DCA733CBA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:42:12Z</date>
+			<key>label</key>
+			<string>define a new language</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:42:21Z</date>
+			<key>plainText</key>
+			<string>\newlang{\GNI}{GNI}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>57F12CEE-E2E7-47F1-9FDE-44E09F7D6439</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:42:34Z</date>
+			<key>label</key>
+			<string>define a new function</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:42:42Z</date>
+			<key>plainText</key>
+			<string>\newfunc{\subexp}{subexp}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>65E42654-FE0E-4621-844F-6583059AA080</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:43:13Z</date>
+			<key>label</key>
+			<string>example</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:43:52Z</date>
+			<key>plainText</key>
+			<string>\documentclass{article}\usepackage{complexity}\begin{document}It follows immediately from the definitions of $\P$ and $\NP$ that$$\P \subseteq \NP$$but the million dollar question is whether or not $\P\stackrel{?}{=} \NP$.  As a generalization to these classes,Stockmeyer (1976) defined a \emph{polynomial} hierarchy usingoracles.\textbf{Definition}[Stockmeyer 1976] \\Let $\Delta_0\P = \Sigma_0\P = \Pi_0\P = \P$. Then for $i &gt; 0$, let \begin{itemize}   \item $\Delta_i\P = \P$ with a $\Sigma_{i-1}\P$ oracle.   \item $\Sigma_i\P = \NP$ with $\Sigma_{i-1}\P$ oracle.   \item $\Pi_i\P = \coNP$ with $\Sigma_{i-1}\P$ oracle. \end{itemize}Then $\PH$ is the union of these classes for all nonnegativeconstant $i$.It has been shown that $\PH \subseteq \PSPACE$. Moreover, Toda(1989) showed the following\textbf{Theorem}$$\PH \subseteq \P^\PP$$and since since $\P^\PP = \P^{\#\P}$ it follows that$$\PH \subseteq \P^{\#\P}$$\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E5A1418C-A475-42B4-8C51-22607E114396</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-07T08:45:29Z</date>
+			<key>label</key>
+			<string>classes A - BQ</string>
+			<key>modificationDate</key>
+			<date>2015-08-07T08:47:43Z</date>
+			<key>plainText</key>
+			<string>\AC AC basic 
+\A A full 
+\ACC ACC basic 
+\AH AH basic 
+\AL AL basic 
+\AlgP AlgP full 
+\AM AM basic 
+\AMEXP AM-EXP basic 
+\Amp Amp full 
+\AmpMP AmpMP full 
+\AmpPBQP AmpPBQP full 
+\AP AP basic 
+\APP APP full 
+\APX APX full 
+\AUCSPACE AUC-SPACE full 
+\AuxPDA AuxPDA full 
+\AVBPP AVBPP full 
+\AvE AvE full 
+\AvP AvP full 
+\AW AW full 
+\AWPP AWPP full 
+\betaP βP full 
+\BH BH basic 
+\BP BP full 
+\BPE BPE basic 
+\BPEE BPEE basic 
+\BPHSPACE BPH SPACE full 
+\BPL BPL full 
+\BPP BPP basic 
+\BPPOBDD BPP-OBDD full 
+\BPPpath BPPpath full 
+\BPQP BPQP full 
+\BPSPACE BPSPACE basic 
+\BPTIME BPTIME basic 
+\BQNC BQNC full 
+\BQNP BQNP full 
+\BQP BQP basic 
+\BQPOBDD BQP-OBDD full 
+\BQTIME BQTIME basic</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>61FFD720-8CF6-4904-8892-29ABADD1BD71</string>
+		</dict>
+	</array>
+</dict>
+</plist>

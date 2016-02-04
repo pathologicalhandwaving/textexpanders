@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Time</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>ttime</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-02-17T00:41:35Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-10-20T23:53:22Z</date>
+			<key>plainText</key>
+			<string>%H: %M: %S %p</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A1FCAC44-69B0-42B3-9C00-533AFA264F88</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ddate</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2009-06-19T14:50:01Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-10-20T23:53:16Z</date>
+			<key>plainText</key>
+			<string>%e %B %Y</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BC5508E9-1D45-4E54-9C2D-8CCF26578024</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mm</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-10-20T23:29:25Z</date>
+			<key>label</key>
+			<string>Date Time Key</string>
+			<key>modificationDate</key>
+			<date>2015-10-20T23:38:24Z</date>
+			<key>plainText</key>
+			<string>%b Short Month
+%B Long Month
+%m Numeric Month
+%d day
+%Y long year
+%y short year
+%p PM/AM
+%a Day of the week short
+%A Day of the week long
+%M minute
+%H hour (24 hour time)
+%S Seconds
+%e also the date (weird) 
+
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>940EA200-F46C-4768-B6BB-BA1D0FF9EEC7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-24T16:07:17Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-11-24T16:07:17Z</date>
+			<key>plainText</key>
+			<string></string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>7107BD59-D67B-4584-B17B-72E93F42566B</string>
+		</dict>
+	</array>
+</dict>
+</plist>

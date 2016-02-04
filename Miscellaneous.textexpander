@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Miscellaneous</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>ptjs2js</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-12T15:28:24Z</date>
+			<key>label</key>
+			<string>Remove TextExpander JavaScript Addition from Plain Text [Clipboard]</string>
+			<key>modificationDate</key>
+			<date>2015-07-25T19:57:37Z</date>
+			<key>plainText</key>
+			<string>var strOutput = TextExpander.pasteboardText;
+strOutput = strOutput.replace(RegExp('TextExpander.appendOutput\\("', 'g'), '');
+strOutput = strOutput.replace(RegExp('\\\\n"\\);', 'g'), '');
+</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>206022E1-D98A-4EF3-BB38-8D2DEF7BE837</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>laTeXOtherConstructionExamples</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-21T05:09:14Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-11-25T18:45:01Z</date>
+			<key>plainText</key>
+			<string>#! /bin/bash
+echo "￼￼"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>C43AFD8A-B105-46D0-A742-8294DEB65DA3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,concepts</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-01-21T02:54:27Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2016-01-21T02:54:27Z</date>
+			<key>plainText</key>
+			<string>\usepackage{concepts}{
+
+\NewConcept{shortName}{
+	name = real name, % options ‘plural, ‘Plural’
+	Name = Real Name, % are implicitly defined
+	namecmd = \realName, % defines the the operational command
+	symbols = {r}, 
+	symbolcmd = \r
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>552FD911-3E3B-4AC3-9C2B-9317CDFAE87A</string>
+		</dict>
+	</array>
+</dict>
+</plist>

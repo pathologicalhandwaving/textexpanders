@@ -1,0 +1,1949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>tizk Templates</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T15:15:38Z</date>
+			<key>label</key>
+			<string>Lemma TikZ</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:16:47Z</date>
+			<key>plainText</key>
+			<string>% Author: Berteun Damman
+% Faking slanted small caps using TikZ low level transforms.
+\documentclass{minimal}
+\usepackage{tikz}
+%%%&lt;
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\setlength\PreviewBorder{5pt}%
+%%%&gt;
+
+\begin{comment}
+:Title:  Faking slanted small caps using TikZ low level transforms
+:Slug: faking-slanted-small-caps
+
+In italicized environments normal small caps often looks wrong because of
+its upright shape. A solution is to simply use all-uppercase in these
+environments, but this too is ugly. Using TikZ one can fake a slant. This
+is not that great, but better than nothing.
+
+Note that `kpfonts &lt;http://www.ctan.org/tex-archive/fonts/kpfonts/&gt;`_ for example
+provides a font which has slanted small caps by default.
+
+\end{comment}
+
+\usepackage{amsthm}
+\newtheorem{lem}{Lemma}
+% If you externalize figures this will give a new figure for
+% each usage!
+\makeatletter
+\newcommand{\textscsl}[1]{%
+   \tikz[baseline=(N.base)]%
+   % The transform says:
+   % x' = 1x + 0.22y + 0pt
+   % y' = 0x + 1y    + 0pt
+   % This gives a slant - adjust the value for each font!
+   \pgfsys@transformcm{1}{0}{0.22}{1}{0pt}{0pt}%
+   \node[inner sep=0pt] (N) {\textsc{#1}};%
+}
+\makeatother
+\begin{document}
+   % In italicized environments normal small caps often looks wrong because of
+   % its upright shape. A solution is to simply use all-uppercase in these
+   % environments, but this too is ugly. Using TikZ one can fake a slant. This
+   % is not that great, but better than nothing.
+   %
+   % Note that http://www.ctan.org/tex-archive/fonts/kpfonts/ for example
+   % provides a font which has slanted small caps by default.
+\begin{preview}
+   \begin{minipage}{4.5cm}
+       \begin{lem}
+           The \textsc{gcd} of two numbers can be used to find
+           the \textsc{lcm} of these numbers.
+       \end{lem}
+       \begin{lem}
+           The \textscsl{gcd} of two numbers can be used to find
+           the \textscsl{lcm} of these numbers.
+       \end{lem}
+   \end{minipage}
+\end{preview}
+\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>DD42AB6C-839F-42A0-BCE3-816EDCB55963</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T15:16:30Z</date>
+			<key>label</key>
+			<string>Class Diagram TikZ</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:16:41Z</date>
+			<key>plainText</key>
+			<string>% Class diagram
+% Author: Remus Mihail Prunescu
+\documentclass{minimal}
+\usepackage[a4paper,margin=1cm,landscape]{geometry}
+\usepackage{tikz}
+
+%%%&lt;
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+%%%&gt;
+
+\begin{comment}
+:Title:  Class diagram
+
+\end{comment}
+\usetikzlibrary{positioning,shapes,shadows,arrows}
+
+\begin{document}
+\tikzstyle{abstract}=[rectangle, draw=black, rounded corners, fill=blue!40, drop shadow,
+        text centered, anchor=north, text=white, text width=3cm]
+\tikzstyle{comment}=[rectangle, draw=black, rounded corners, fill=green, drop shadow,
+        text centered, anchor=north, text=white, text width=3cm]
+\tikzstyle{myarrow}=[-&gt;, &gt;=open triangle 90, thick]
+\tikzstyle{line}=[-, thick]
+        
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+    \node (Item) [abstract, rectangle split, rectangle split parts=2]
+        {
+            \textbf{ITEM}
+            \nodepart{second}name
+        };
+    \node (AuxNode01) [text width=4cm, below=of Item] {};
+    \node (Component) [abstract, rectangle split, rectangle split parts=2, left=of AuxNode01]
+        {
+            \textbf{COMPONENT}
+            \nodepart{second}nil
+        };
+    \node (System) [abstract, rectangle split, rectangle split parts=2, right=of AuxNode01]
+        {
+            \textbf{SYSTEM}
+            \nodepart{second}parts
+        };
+    \node (AuxNode02) [text width=0.5cm, below=of Component] {};
+    \node (Sensor) [abstract, rectangle split, rectangle split parts=2, left=of AuxNode02]
+        {
+            \textbf{SENSOR}
+            \nodepart{second}nil
+        };
+    \node (Part) [abstract, rectangle split, rectangle split parts=2, right=of AuxNode02]
+        {
+            \textbf{PART}
+            \nodepart{second}nil
+        };
+        
+    \node (AuxNode03) [below=of Sensor] {};
+    \node (Pressure) [abstract, rectangle split, rectangle split parts=2, left=of AuxNode03, xshift=2cm]
+        {
+            \textbf{Pressure}
+            \nodepart{second}nil
+        };
+    \node (Temperature) [abstract, rectangle split, rectangle split parts=2, right=of AuxNode03, xshift=-2cm]
+        {
+            \textbf{Temperature}
+            \nodepart{second}nil
+        };
+    \node (PressureInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of Pressure, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}fw-p-suction\newline fw-p-delivery\newline fw-p-loop\newline sw-p-suction\newline sw-p-delivery
+                \newline sw-p-loop
+        };
+    \node (ClOp) [abstract, rectangle split, rectangle split parts=2, below=0.4cm of PressureInstants]
+        {
+            \textbf{Closed/Open}
+            \nodepart{second}nil
+        };
+    \node (ClOpInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of ClOp, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}fw-clop-warm-up\newline sw-clop-control
+        };
+    \node (TemperatureInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of Temperature, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}fw-t-engine\newline fw-t-heat-exch.\newline sw-t-heat-exch.
+        };
+    \node (Level) [abstract, rectangle split, rectangle split parts=2, below=0.4cm of TemperatureInstants]
+        {
+            \textbf{Level}
+            \nodepart{second}nil
+        };
+    \node (LevelInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of Level, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}fw-l-tank
+        };
+    \node (Ammeter) [abstract, rectangle split, rectangle split parts=2, below=0.4cm of LevelInstants]
+        {
+            \textbf{Ammeter}
+            \nodepart{second}nil
+        };
+    \node (AmmeterInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of Ammeter, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}fw-pump-ammeter\newline sw-pump-ammeter
+        };
+        
+    \node (AuxNode04) [below=of Part] {};
+    \node (Pump) [abstract, rectangle split, rectangle split parts=2, left=of AuxNode04, xshift=2cm]
+        {
+            \textbf{Pump}
+            \nodepart{second}nil
+        };
+    \node (Valve) [abstract, rectangle split, rectangle split parts=2, right=of AuxNode04, xshift=-2cm]
+        {
+            \textbf{Valve}
+            \nodepart{second}nil
+        };
+    \node (PumpInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of Pump, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}fw-pump\newline sw-pump
+        };
+    \node (Tank) [abstract, rectangle split, rectangle split parts=2, below=0.4cm of PumpInstants]
+        {
+            \textbf{Tank}
+            \nodepart{second}nil
+        };
+    \node (ValveInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of Valve, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}fw-suction-valve\newline fw-delivery-valve\newline sw-suction-valve\newline sw-delivery-valve
+                \newline sw-discharge-valve\newline sw-control-valve
+        };
+    \node (Engine) [abstract, rectangle split, rectangle split parts=2, below=0.4cm of ValveInstants]
+        {
+            \textbf{Engine}
+            \nodepart{second}nil
+        };
+    \node (TankInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of Tank, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}fw-expansion-tank
+        };
+    \node (HeatExchanger) [abstract, rectangle split, rectangle split parts=2, below=0.4cm of TankInstants]
+        {
+            \textbf{Heat Exchanger}
+            \nodepart{second}nil
+        };
+    \node (HeatExchangerInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of HeatExchanger, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}fw-heat-exchanger
+        };
+    \node (EngineInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of Engine, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}fw-engine
+        };
+    \node (Strainer) [abstract, rectangle split, rectangle split parts=2, below=0.4cm of HeatExchangerInstants]
+        {
+            \textbf{Strainer}
+            \nodepart{second}nil
+        };
+    \node (StrainerInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of Strainer, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}sw-strainer
+        };
+    \node (Coolant) [abstract, rectangle split, rectangle split parts=2, below=0.4cm of EngineInstants]
+        {
+            \textbf{Coolant}
+            \nodepart{second}nil
+        };
+    \node (CoolantInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of Coolant, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}fw-coolant\newline sw-coolant
+        };  
+
+    \node (AuxNode05) [below=of System] {};
+    \node (CoolingSystem) [abstract, rectangle split, rectangle split parts=2, left=of AuxNode05, xshift=2cm]
+        {
+            \textbf{Cooling System}
+            \nodepart{second}nil
+        };
+    \node (CoolingLoop) [abstract, rectangle split, rectangle split parts=2, right=of AuxNode05, xshift=-2cm]
+        {
+            \textbf{Cooling Loop}
+            \nodepart{second}nil
+        };
+    \node (CoolingSystemInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of CoolingSystem, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}cool
+        };
+    \node (CoolingLoopInstants) [comment, rectangle split, rectangle split parts=2, below=0.2cm of CoolingLoop, text justified]
+        {
+            \textbf{Instants}
+            \nodepart{second}fw-loop\newline sw-loop
+        };
+    
+    \draw[myarrow] (Component.north) -- ++(0,0.8) -| (Item.south);
+    \draw[line] (Component.north) -- ++(0,0.8) -| (System.north);
+    
+    \draw[myarrow] (Sensor.north) -- ++(0,0.8) -| (Component.south);
+    \draw[line] (Sensor.north) -- ++(0,0.8) -| (Part.north);
+    
+    \draw[line] (Pressure.west) -- ++(-0.2,0);
+    \draw[line] (Temperature.east) -- ++(0.2,0);
+    \draw[line] (Level.east) -- ++(0.2,0);
+    \draw[myarrow] (ClOp.west) -- ++(-0.2,0) -- ([yshift=0.5cm, xshift=-0.2cm] Pressure.north west) -|
+     ([xshift=-1cm]Sensor.south);
+    \draw[myarrow] (Ammeter.east) -- ++(0.2,0) -- ([yshift=0.5cm, xshift=0.2cm] Temperature.north east) -|
+     ([xshift=1cm]Sensor.south);
+     
+    \draw[line] (Tank.west) -- ++(-0.2,0);
+    \draw[line] (HeatExchanger.west) -- ++(-0.2,0);
+    \draw[line] (Pump.west) -- ++(-0.2,0);
+    \draw[line] (Valve.east) -- ++(0.2,0);
+    \draw[line] (Engine.east) -- ++(0.2,0);
+    \draw[myarrow] (Strainer.west) -- ++(-0.2,0) -- ([yshift=0.5cm, xshift=-0.2cm] Pump.north west) -|
+     ([xshift=-1cm]Part.south);
+    \draw[myarrow] (Coolant.east) -- ++(0.2,0) -- ([yshift=0.5cm, xshift=0.2cm] Valve.north east) -|
+     ([xshift=1cm]Part.south);
+     
+    \draw[myarrow] (CoolingSystem.north) -- ++(0,0.8) -| (System.south);
+    \draw[line] (CoolingSystem.north) -- ++(0,0.8) -| (CoolingLoop.north);
+        
+        
+\end{tikzpicture}
+\end{center}
+\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1A34771A-AEF1-46C8-BFE3-7D4F0C684E37</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T15:16:58Z</date>
+			<key>label</key>
+			<string>Chains TikZ</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:17:08Z</date>
+			<key>plainText</key>
+			<string>% TikZ chains with labeled edges
+% Author: Stefan Kottwitz , http://texblog.net
+\documentclass[a4paper,10pt]{article}
+\usepackage{tikz}
+%%%&lt;
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+%%%&gt;
+\begin{comment}
+:Title: Chains with labeled edges
+:Tags: Matrices, Chains,Styles
+:Author: Stefan Kottwitz
+:Slug: labeled-chain
+http://texblog.net/latex-archive/maths/pgf-tikz-commutative-diagram/
+
+The chains library is very useful for writing exact sequences. Yet there's no feature
+for labeling the edges of a chain. Besides arrows, we might need to write symbols for
+maps over, under, or just next to it.
+
+This example shows a way by modifying the join method of the chains library.
+Its original syntax is join=with&lt;node&gt; by &lt;options&gt;, here the syntax is changed
+to join={node[options] {label}}.
+
+Furthermore, we define a style for the labels, so that all are in math mode
+and typeset in scriptstyle.
+\end{comment}
+\usetikzlibrary{arrows,chains,matrix,positioning,scopes}
+%
+\makeatletter
+\tikzset{join/.code=\tikzset{after node path={%
+\ifx\tikzchainprevious\pgfutil@empty\else(\tikzchainprevious)%
+edge[every join]#1(\tikzchaincurrent)\fi}}}
+\makeatother
+%
+\tikzset{&gt;=stealth',every on chain/.append style={join},
+         every join/.style={-&gt;}}
+\tikzstyle{labeled}=[execute at begin node=$\scriptstyle,
+   execute at end node=$]
+%
+\begin{document}
+\begin{tikzpicture}
+  \matrix (m) [matrix of math nodes, row sep=3em, column sep=3em]
+    { 0 &amp; A  &amp; B  &amp; C  &amp; 0 \\
+      0 &amp; A' &amp; B' &amp; C' &amp; 0 \\ };
+  { [start chain] \chainin (m-1-1);
+    \chainin (m-1-2);
+    { [start branch=A] \chainin (m-2-2)
+        [join={node[right,labeled] {\eta_1}}];}
+    \chainin (m-1-3) [join={node[above,labeled] {\varphi}}];
+    { [start branch=B] \chainin (m-2-3)
+        [join={node[right,labeled] {\eta_2}}];}
+    \chainin (m-1-4) [join={node[above,labeled] {\psi}}];
+    { [start branch=C] \chainin (m-2-4)
+        [join={node[right,labeled] {\eta_3}}];}
+    \chainin (m-1-5); }
+  { [start chain] \chainin (m-2-1);
+    \chainin (m-2-2);
+    \chainin (m-2-3) [join={node[above,labeled] {\varphi'}}];
+    \chainin (m-2-4) [join={node[above,labeled] {\psi'}}];
+    \chainin (m-2-5); }
+\end{tikzpicture}
+\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>7B88DFAD-846A-4641-8F0D-F8E985991382</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T15:17:18Z</date>
+			<key>label</key>
+			<string>Polygon Division TikZ</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:17:29Z</date>
+			<key>plainText</key>
+			<string>% Polygon division
+% Author: Eric D�trez
+\documentclass{minimal}
+\usepackage{tikz}
+\usepackage{verbatim}
+
+\begin{comment}
+
+:Title: Polygon division
+:Slug: polygon-division
+:Author: Eric D�trez
+
+This example shows the solution of `Euler's polygon division problem`_ for a heptagon. 
+The problem is to find in how many ways a plane convex polygon of *n* sides can
+be divided into triangles. The solution is given by the `Catalan number`_. For
+a heptagon the number is 42. 
+
+.. _Euler's polygon division problem: http://mathworld.wolfram.com/EulersPolygonDivisionProblem.html
+.. _Catalan number: http://mathworld.wolfram.com/CatalanNumber.html
+\end{comment}
+
+\begin{document}
+% Macro for drawing a heptagon   
+\def\hepta{\draw(A) -- (B) -- (C) -- (D) -- (E) -- (F) -- (G) -- cycle;}
+
+% Macro for drawing polygon diagonals. 
+% Example \slice{A/C,C/E,E/G,C/G}
+\newcommand{\slice}[1]{%
+    \hepta
+    \draw \foreach \x/\y in {#1} {(\x)--(\y)};
+}
+
+
+\begin{tikzpicture}
+    % Define the heptagon coordinates
+    \coordinate (A) at (-0.76,1.54);
+    \coordinate (B) at (-0.76,0.69);
+    \coordinate (C) at (-0.10,0.16);
+    \coordinate (D) at (0.73,0.35);
+    \coordinate (E) at (1.1,1.11);
+    \coordinate (F) at (0.73,1.88);
+    \coordinate (G) at (-0.10,2.07);
+
+\matrix[column sep=0.8cm,row sep=0.5cm]
+{
+    \slice{A/C,C/E,E/G,C/G}&amp;
+    \slice{A/C,C/E,E/G,A/E}&amp;
+    \slice{A/C,C/E,A/E,A/F}&amp;
+    \slice{A/C,C/E,C/F,A/F}&amp;
+    \slice{A/C,C/E,C/F,C/G}&amp;
+    \slice{A/C,C/F,D/F,A/F}\\
+    \slice{A/C,C/F,D/F,C/G}&amp;
+    \slice{A/C,C/G,D/G,D/F}&amp;
+    \slice{A/C,C/G,D/G,E/G}&amp;
+    \slice{A/C,A/D,D/F,A/F}&amp;
+    \slice{A/C,A/D,D/F,D/G}&amp;
+    \slice{A/C,A/D,D/G,E/G}\\
+    \slice{A/C,A/D,A/E,E/G}&amp;
+    \slice{A/C,A/D,A/E,A/F}&amp;
+    \slice{A/D,B/D,D/F,A/F}&amp;
+    \slice{A/D,B/D,D/F,D/G}&amp;
+    \slice{A/D,B/D,D/G,E/G}&amp;
+    \slice{A/D,B/D,A/E,E/G}\\
+    \slice{A/D,B/D,A/E,A/F}&amp;
+    \slice{A/E,B/E,B/D,E/G}&amp;
+    \slice{A/E,B/E,B/D,A/F}&amp;
+    \slice{A/E,B/E,C/E,E/G}&amp;
+    \slice{A/E,B/E,C/E,A/F}&amp;
+    \slice{A/F,B/F,B/D,D/F}\\
+    \slice{A/F,B/F,B/D,B/E}&amp;
+    \slice{A/F,B/F,B/E,C/E}&amp;
+    \slice{A/F,B/F,C/F,C/E}&amp;
+    \slice{A/F,B/F,C/F,D/F}&amp;
+    \slice{B/G,B/D,D/F,B/F}&amp;
+    \slice{B/G,B/D,D/F,D/G}\\
+    \slice{B/G,B/D,D/G,E/G}&amp;
+    \slice{B/G,B/D,B/E,E/G}&amp;
+    \slice{B/G,B/D,B/E,B/F}&amp;
+    \slice{B/G,B/E,C/E,E/G}&amp;
+    \slice{B/G,B/E,C/E,B/F}&amp;
+    \slice{B/G,B/F,C/F,C/E}\\
+    \slice{B/G,B/F,C/F,D/F}&amp;
+    \slice{B/G,C/G,C/E,E/G}&amp;
+    \slice{B/G,C/G,C/E,C/F}&amp;
+    \slice{B/G,C/G,C/F,D/F}&amp;
+    \slice{B/G,C/G,D/G,D/F}&amp;
+    \slice{B/G,C/G,D/G,E/G}\\
+};
+\end{tikzpicture}
+
+\end{document}
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2BBC72B3-3C65-4892-BBF8-CBA881CEC584</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T15:17:40Z</date>
+			<key>label</key>
+			<string>3D Commutative Diagram TikZ</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:17:54Z</date>
+			<key>plainText</key>
+			<string>% Commutative diagram with edges passing under/over
+% Jan 7, 2009, Stefan Kottwitz
+% http://texblog.net
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+%%%&lt;
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\usepackage{subfig}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+%%%&gt;
+\begin{comment}
+:Title:  Commutative diagram with crossing edges
+:Tags: Matrices; Diagrams
+:Author: Stefan Kottwitz
+:Slug: commutative-diagram
+\end{comment}
+\begin{document}
+\begin{tikzpicture}
+  \matrix (m) [matrix of math nodes, row sep=3em,
+    column sep=3em]{
+    &amp; f^\ast E_V&amp; &amp; \vphantom{f^\ast}E_V \\
+    f^\ast E &amp; &amp; \vphantom{f^\ast}E &amp; \\
+    &amp; U &amp; &amp; V \\
+    M &amp; &amp; N &amp; \\};
+  \path[-stealth]
+    (m-1-2) edge (m-1-4) edge (m-2-1)
+            edge [densely dotted] (m-3-2)
+    (m-1-4) edge (m-3-4) edge (m-2-3)
+    (m-2-1) edge [-,line width=6pt,draw=white] (m-2-3)
+            edge (m-2-3) edge (m-4-1)
+    (m-3-2) edge [densely dotted] (m-3-4)
+            edge [densely dotted] (m-4-1)
+    (m-4-1) edge (m-4-3)
+    (m-3-4) edge (m-4-3)
+    (m-2-3) edge [-,line width=6pt,draw=white] (m-4-3)
+            edge (m-4-3);
+\end{tikzpicture}
+\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>15640F3B-FF62-4320-9C65-1AA2B5900C1C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T15:18:08Z</date>
+			<key>label</key>
+			<string>Scatter Plot TikZ</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:18:20Z</date>
+			<key>plainText</key>
+			<string>% Author:  Ista Zahn
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+
+\begin{comment}
+:Title: Scatterplot
+:Tags: Plots, Axes, Foreach
+
+A scatterplot of the relationship between education and income. The plotted
+data is from the `car R package`_ by John Fox. Note that the data is released
+under the GPL 2 licence.
+
+:Author: Ista Zahn
+
+.. _car R package: http://cran.r-project.org/src/contrib/Descriptions/car.html
+\end{comment}
+
+\begin{document}
+
+\begin{tikzpicture}[only marks, y=.5cm]
+    \draw plot[mark=*,xshift=-6cm] file {data/ScatterPlotExampleData.data};
+    \draw[-&gt;,xshift=-6cm] (6,0) -- coordinate (x axis mid) (17,0);
+    \draw[-&gt;,xshift=-6cm] (6,0) -- coordinate (y axis mid)(6,27);
+    \foreach \x in {6,8,10,12,14,16}
+        \draw [xshift=-6cm](\x cm,1pt) -- (\x cm,-3pt)
+            node[anchor=north] {$\x$};
+    \foreach \y/\ytext in {0/0,2.5/5000,5/10000,7.5/15000,10/20000,12.5/25000}
+        \draw (1pt,\y cm) -- (-3pt,\y cm) node[anchor=east] {$\ytext$};
+    \node[below=1cm] at (x axis mid) {Education};
+    \node[left=2cm,rotate=90] at (y axis mid) {Income};
+\end{tikzpicture}
+
+\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9AC13950-6D60-41A6-931A-1C78B249E050</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T15:18:31Z</date>
+			<key>label</key>
+			<string>Homotopy of Paths TikZ</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:18:41Z</date>
+			<key>plainText</key>
+			<string>% Homotopy of paths
+% Author: Alain Matthes
+\documentclass[a4paper,10pt]{article}
+\usepackage{tikz}
+%%%&lt;
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+%%%&gt;
+\begin{comment}
+:Title: Homotopy of paths
+:Tags: Coordinate calculations, Decorations, Diagrams, Geometry, Mathematics
+:Author: Alain Matthes
+:Slug: homotopy
+http://texblog.net/latex-archive/maths/jpgfdraw-example/ rewritten in TikZ
+
+Following an illustration in Singer/Thorpe: Lecture Notes in Elementary Topology
+and Geometry, the example has been drawn by Stefan Kottwitz using jpgfdraw,
+and programmed by Alain Matthes on http://tex.stackexchange.com/q/1238/ .
+\end{comment}
+\usetikzlibrary{arrows,calc,shapes,decorations.pathreplacing}
+\begin{document}
+\begin{tikzpicture}
+  \node at (0,0) {$F : I \times I \rightarrow X$};
+  \node[label=below:$x_1$]  (x1) at (6,0)  {$\bullet$};
+  \node[label=above:$x_0$]  (x0) at (9,4)  {$\bullet$};  
+  \node  at (9.5,2)  {$\subset X$}; 
+  \draw (x1.center) to [out=5,in=-90]++(2.8,1.8) to[out=90,in=-95](x0.center);
+  \draw (x1.center) to [out=10,in=-110]++(2.6,2) to[out=70,in=-103](x0.center); 
+  \draw (x1.center) to [out=15,in=-105](x0.center);
+  \draw (x1.center) to [out=30,in=-150](x0.center);
+  \draw (x1.center) to [out=45,in=-170](x0.center); 
+  \draw (x1.center) to [out=50,in=-105]++(1.2,3)to [out=75,in=-172](x0.center); 
+  \draw (x1.center) to [out=55,in=-100]++(1.0,3) to[out=80,in=-175](x0.center); 
+  \draw (x1.center) to [out=60,in=-90]++(0.8,3) to[out=90,in=-180] (x0.center);
+  \begin{scope}[every node/.style={draw, anchor=text, rectangle split,
+    rectangle split parts=7,minimum width=2cm}]
+    \node (R) at (2,4){ \nodepart{two} \nodepart{three}
+    \nodepart{four}$I\times I$\nodepart{five}\nodepart{six}\nodepart{seven}};
+  \end{scope}
+  \draw[decorate,decoration={brace,mirror,raise=6pt,amplitude=10pt}, thick]
+    (R.north west)--(R.south west) ;
+  \draw[decorate,decoration={brace,raise=6pt,amplitude=10pt}, thick]
+    (R.north east)--(R.south east); 
+  \draw[-&gt;] ($(R.west)+(-20pt,0)$) to[out=-180,in=240] ++(0,2)
+    to [out=60,in=120]node[above,midway]{$F(0,t_2)$}(x0) ; 
+  \draw[-&gt;] ($(R.north)+(0,10pt)$) to [out=60,in=120]
+    node[above,midway]{$\beta \simeq \alpha$} ++(4.5,-1) ; 
+  \draw[-&gt;] ($(R.east)+(20pt,0)$)  to [out=0,in=140]
+    node[right,midway]{$F(1,t_2)$}(x1) ; 
+  \draw[-&gt;] ($(R.south)+(0,-20pt)$)  to [out=-85,in=-30]
+    node[below,midway]{$\alpha$}++(7,0) ;    
+\end{tikzpicture}
+\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>5F2568BE-07C9-4EDD-BD0A-3D5330F61892</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T15:18:59Z</date>
+			<key>label</key>
+			<string>Sphere Packing Lattice TikZ</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:19:16Z</date>
+			<key>plainText</key>
+			<string>
+\documentclass[10pt]{article}
+\usepackage{amsfonts,amsthm,amsmath,amssymb}
+\usepackage{array}
+\usepackage{epsfig}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage[colorlinks=true,citecolor=blue]{hyperref}
+
+\usepackage{tikz}
+\usepackage{subfig}
+
+%%%%%%%%%%%%%% VINOD's DEFS %%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\eqdef}{\stackrel{\small \sf def}{=}}
+\newcommand{\lat}{\mathcal{L}}
+\newcommand{\Span}{\mathsf{Span}}
+\newcommand{\ppd}{\mathcal{P}}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\newcommand{\matB}{\mathbf{B}}
+\newcommand{\matBt}{\tilde{\matB}}
+\newcommand{\matU}{\mathbf{U}}
+\newcommand{\matV}{\mathbf{V}}
+
+\newcommand{\vecbt}{\tilde{\vecb}}
+
+% Inner product
+\newcommand{\inner}[1]{\langle {#1} \rangle}
+
+% Red text
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\begin{document}
+\input{preamble.tex}
+
+
+\lecture{1}{September 13, 2011}{Vinod Vaikuntanathan}{Vinod Vaikuntanathan}
+
+%%%% body goes in here %%%%
+
+Lattices are amazing mathematical objects with applications all over mathematics and theoretical computer science. Examples include
+\begin{itemize}
+
+\item \textbf{Sphere Packing:} A classical problem called the ``Sphere Packing Problem'' asks for a way to pack the largest number of spheres of equal volume in $3$-dimensional space (in an asymptotic sense, as the volume of the available space goes to infinity). The so-called {\em Kepler's Conjecture}, recently turned into a theorem by Hales, states that the face-centered cubic lattice offers the optimal packing of spheres in $3$ dimensions.
+
+    The optimal sphere packing in $2$ and $3$ dimensions are lattice packings -- could this be the case in higher dimensions as well? This remains a mystery.
+    
+\item \textbf{Error Correcting Codes:} Generalizing to $n$ dimensions, the sphere packing problem and friends have applications to constructing {\em error-correcting codes} with the optimal rate.
+
+\item \textbf{Number Theory:} In mathematics, the study of lattices is called the ``Geometry of Numbers'', a term coined by Hermann Minkowski. Minkowski's Theorem and subsequent developments have had an enormous impact on Number Theory, Functional Analysis and Convex Geometry. Lattices have been used to test various number theoretic conjectures, the most famous being a disproof of Merten's Conjecture by Odlyzko and te Riele in 1985.
+    
+\end{itemize}
+
+\medskip \noindent
+Lattices have also been quite influential in Theoretical Computer Science:
+
+\begin{itemize}
+
+\item In {\bf Algorithms:} The famed Lenstra-Lenstra-Lov\'{a}sz algorithm for the shortest vector problem has generated a treasure-trove of algorithmic applications. Lattices have been used to construct an Integer Linear Programming algorithm in constant dimensions, in factoring polynomials over the rationals, and algorithms to find small solutions to systems of polynomial equations.
+
+\item In {\bf Complexity Theory:} Lattices provide one of the most striking sources of problems with a worst-case to average-case connection. NP-hard problems are widely believed to be hard in the worst case, but are they hard on typical or average instances? For many problems and many average-case distributions, we know that this is not the case. In contrast, for the (approximate) shortest vector problem, we can show that finding a solution in a ``random lattice'' chosen from a certain easily sampleable distribution is as hard as finding a solution in the worst case, namely for arbitrary lattices.
+
+\item In {\bf Cryptography:} The first applications of lattices in Cryptography have been in breaking cryptosystems, for example, variants of the knapsack cryptosystem, the NTRU cryptosystem and special cases of the RSA function. More recently, however, lattices have been used quite successfully in constructing secure cryptographic algorithms that achieve highly expressive functionalities such as fully homomorphic encryption.
+
+\end{itemize}
+
+In this course, we will study lattices from the point of view of theoretical computer science, first the mathematics of lattices, then the algorithms and complexity theory and finally lattice-based cryptography.
+
+\paragraph{Notation.} We will denote the natural numbers by $\N$, integers by $\Z$, rationals by $\Q$ and the reals by $\R$.
+
+\section{Lattices}
+
+\begin{definition}[Lattices]\label{def:lattices}
+Given $n$ {\em linearly independent} vectors $\vecb_1,\ldots,\vecb_n \in \mathbb{R}^m$, the lattice generated by them is defined as
+\[ \lat(\vecb_1,\ldots,\vecb_n) \eqdef \bigg\{ \sum_{i=1}^n x_i \vecb_i \ | \ x_i \in \Z \bigg\} \]
+\end{definition}
+
+We call $\vecb_1,\ldots,\vecb_n$ a {\em basis} of the lattice.
+Note that the definition requires $\vecb_1,\ldots,\vecb_n$ to be linearly independent over $\R$ (and not over $\Z$).
+
+We call $n$ the {\em rank} of the lattice, and $m$ the {\em dimension} of the lattice. In general, $n \leq m$. When $n=m$, we call the lattice a {\em full-rank} lattice. Throughout this course, we will focus on full-rank lattices -- most results we prove can be generalized to the non full-rank case.
+
+We will use a notational short-hand when dealing with bases, denoting them by a matrix $\matB$ whose columns are the basis vectors $\vecb_1,\ldots,\vecb_n$.  That is, we will write
+ \[ \matB = \left( \begin{array}{ccc} \vert  &amp; &amp; \vert \\
+            \vecb_1 &amp; \ldots &amp; \vecb_n \\
+            \vert &amp; &amp; \vert \end{array} \right)
+ \]
+and thus, in this notation,
+\[ \lat(\matB) \eqdef \{\matB \vecx \ |\ \vecx\in\Z^n\}\]
+
+In general, we treat all vectors as column vectors unless otherwise specified. For a matrix $\matB$ (resp. row vector $\vecv$), $\matB^T$ (resp. $\vecv^T$) denotes the transpose of $\matB$ (resp. $\vecv$).
+
+\begin{center}
+\begin{figure}
+%%%% Figure 1
+\subfloat[The lattice $\Z^2$ with basis vectors $(0,1)$ and $(1,0)$.]{
+\begin{tikzpicture}[scale=3]
+\clip (-0.9,-1.2) rectangle (1.75,1.55);
+\draw[step=.4cm,gray,very thin] (-0.9,-1.1) grid (1.4,1.4);
+\draw[-&gt;] (-1.4,0) -- (1.4,0);
+\draw[-&gt;] (0,-1.1) -- (0,1.5);
+(0:30:3mm) -- cycle;
+\draw[-&gt;,red,very thick] (30:1cm) (0,0) -- ++(0,0.4) node[anchor=west] {$b_2$};
+\draw[-&gt;,blue,very thick] (30:1cm) (0,0) -- ++(0.4,0) node[anchor=south] {$b_1$};
+
+\foreach \x in {-0.8,-0.4,0,0.4,0.8,1.2}
+    \foreach \y in {-0.8,-0.4,0,0.4,0.8,1.2}
+        \filldraw (\x,\y) circle (0.5pt);
+\end{tikzpicture}
+}
+%%%% Figure 2
+\subfloat[The lattice $\Z^2$ with a different basis consisting of vectors $(1,2)$ and $(2,3)$. In fact, any lattice has infinitely many bases.]{
+\begin{tikzpicture}[scale=3]
+\clip (-1.0,-1.2) rectangle (1.6,1.55);
+\draw[step=.4cm,gray,very thin] (-0.9,-1.1) grid (1.4,1.4);
+\draw[-&gt;] (-1.0,0) -- (1.4,0);
+\draw[-&gt;] (0,-1.1) -- (0,1.5);
+(0:30:3mm) -- cycle;
+\draw[-&gt;,blue,very thick] (30:1cm) (0,0) -- ++(0.8,1.2) node[anchor=west] {$b_1$};
+\draw[-&gt;,red,very thick] (30:1cm) (0,0) -- ++(0.4,0.8) node[anchor=south] {$b_2$};
+
+\foreach \x in {-0.8,-0.4,0,0.4,0.8,1.2}
+    \foreach \y in {-0.8,-0.4,0,0.4,0.8,1.2}
+        \filldraw (\x,\y) circle (0.5pt);
+\end{tikzpicture}
+}
+\newline
+%%%% Figure 3
+\subfloat[A full-rank lattice generated by the basis vectors $(1,1)$ and $(2,0)$. Note that this is a sub-lattice of $\Z^2$.]{
+\begin{tikzpicture}[scale=3]
+\clip (-0.9,-1.2) rectangle (1.75,1.55);
+\draw[step=.4cm,gray,very thin] (-0.9,-1.1) grid (1.4,1.4);
+\draw[-&gt;] (-1.4,0) -- (1.4,0);
+\draw[-&gt;] (0,-1.1) -- (0,1.5);
+(0:30:3mm) -- cycle;
+\draw[-&gt;,blue,very thick] (30:1cm) (0,0) -- ++(0.8,0) node[anchor=west] {$b_1$};
+\draw[-&gt;,red,very thick] (30:1cm) (0,0) -- ++(0.4,0.4) node[anchor=south] {$b_2$};
+
+\foreach \x in {-0.8,0,0.8}
+    \foreach \y in {-0.8,0,0.8}
+        \filldraw (\x,\y) circle (0.5pt);
+
+\foreach \x in {-0.4,0.4,1.2}
+    \foreach \y in {-0.4,0.4,1.2}
+        \filldraw (\x,\y) circle (0.5pt);
+\end{tikzpicture}
+}
+%%%% Figure 4
+\subfloat[A {\em non full-rank} lattice with basis vector $(1,1)$]{
+\begin{tikzpicture}[scale=3]
+\clip (-1.0,-1.2) rectangle (1.6,1.55);
+\draw[step=.4cm,gray,very thin] (-0.9,-1.1) grid (1.4,1.4);
+\draw[-&gt;] (-1.4,0) -- (1.4,0);
+\draw[-&gt;] (0,-1.1) -- (0,1.5);
+(0:30:3mm) -- cycle;
+\draw[-&gt;,blue,very thick] (30:1cm) (0,0) -- ++(0.4,0.4) node[anchor=west] {$b_1$};
+%\draw[-&gt;,red,very thick] (30:1cm) (0,0) -- ++(0.4,0.8) node[anchor=south] {$b_2$};
+
+\foreach \x in {-0.8,-0.4,0,0.4,0.8,1.2}
+    \filldraw (\x,\x) circle (0.5pt);
+\end{tikzpicture}
+}
+\caption{Various lattices and their bases.}
+\end{figure}\label{fig:lat}
+\end{center}
+
+\paragraph{Examples of Lattices.}
+\begin{enumerate}
+
+\item  Figure~\ref{fig:lat}\red{(a)} shows the lattice in $2$ dimensions generated by the vectors $(1,0)^T$ and $(0,1)^T$. This lattice is the set of all points in $\R^2$ with integer coordinates.
+
+    This can be generalized to $n$ dimensions, where the lattice $\Z^n$ is called the {\em integer lattice}.
+
+\item Figure~\ref{fig:lat}\red{(b)} shows a different basis for the same lattice, namely the basis consisting of the vectors $(1,2)^T$ and $(2,3)^T$.
+
+\item Figure~\ref{fig:lat}\red{(c)} shows a different lattice in $2$ dimensions, generated by the basis vectors $(2,0)^T$ and $(1,1)^T$. Note that this is a sub-lattice of $\Z^2$, namely a subset of $\Z^2$ which is also a lattice. (We will formally define sublattices later in the course).
+
+\item In one dimension, all lattices are multiples of a single number. For example, the lattice generated by $(2)$ is the set of all even numbers.
+
+\item All the examples we saw so far are full-rank lattices. Figure~\ref{fig:lat}\red{(d)} shows a lattice in $2$ dimensions generated by the vector $(1,1)^T$ -- this lattice has rank $1$. We will not deal with non full-rank lattices in this course.
+
+\item The set of points generated by $(1)$ and $(\sqrt{2})$ in one dimension is not a lattice. First, this example does not conform to Definition~\ref{def:lattices} since $1$ and $\sqrt{2}$ are {\em linearly dependent} over $\R$. Secondly, any $n$-dimensional lattice is a discrete subset of $\Z^n$ (see Lecture $2$ for why this is the case). However, the set generated by $(1)$ and $(\sqrt{2})$ is not a discrete subset of $\Z$ since one can generate arbitrarily small numbers as linear combinations of $1$ and $\sqrt{2}$.
+
+\end{enumerate}
+
+It is instructive to compare the definition of a lattice generated by $n$ linearly independent vectors $\vecb_1,\ldots,\vecb_n$ to the definition of the span of these vectors.
+\begin{definition}[Span]
+Given $n$ {\em linearly independent} vectors $\vecb_1,\ldots,\vecb_n \in \mathbb{R}^m$, their {\em span} is defined as
+\[ \Span(\vecb_1,\ldots,\vecb_n) \eqdef \bigg\{ \sum_{i=1}^n x_i \vecb_i \ | \ x_i \in \R \bigg\} \]
+\end{definition}
+
+Note the difference between Definition~\ref{def:lattices} of a lattice generated by a set of vectors -- which consists of all of its {\em integer} linear combinations -- and the above definition of the span of a set of vectors -- which consists of all of its linear combinations with {\em real} coefficients. The crucial power of lattices comes from the fact that it is a discrete set (which the span is not). 
+
+Clearly, $\Span(\vecb_1,\ldots,\vecb_n) \supset \lat(\vecb_1,\ldots,\vecb_n)$.
+\section{Same Lattice, Many Bases}
+
+We already saw from the examples above (Figure~\ref{fig:lat}\red{(a)} and Figure~\ref{fig:lat}\red{(b)}) that the same lattice can have many different bases. For example, it turns out that all the bases given below generate the same lattice, namely $\Z^2$:
+\[  \matB_1 = \left( \begin{array}{cc} 1  &amp; 0 \\ 0 &amp; 1 \end{array} \right)
+    \hspace{0.2in} \mbox{and} \hspace{0.2in}
+    \matB_2 = \left( \begin{array}{cc} 2 &amp; 1 \\ 1 &amp; 1  \end{array} \right)
+    \hspace{0.2in} \mbox{and} \hspace{0.2in}
+    \matB_3 = \left( \begin{array}{cc} 647 &amp; 64 \\ 91 &amp; 9 \end{array} \right)
+\]
+but the following basis {\em does not} generate $\Z^2$, but only a proper {\em sub-lattice} of $\Z^2$.
+\[
+\matB_4 = \left( \begin{array}{cc} 42  &amp; 41 \\ 9 &amp; 8 \end{array} \right)
+\]
+In fact, any lattice has infinitely many bases. In particular, the bases can have  arbitrarily large coefficients.
+
+\medskip \noindent
+A natural question to ask is: {\em how can we efficiently tell if two given bases $\matB$ and $\matB'$ generate the same lattice?} We will give two answers to this question -- an algebraic answer and a geometric answer.
+
+\subsection{An Algebraic Characterization using Unimodular Matrices}
+
+Our first characterization provides an efficient algorithm to determine if two bases generate the same lattice. In order to present the characterization, we first need to define the notion of a {\em unimodular matrix}.
+
+\paragraph{Notation.} For any $x \in \R$, we will let $|x|$ represent the absolute value of $x$.
+
+\begin{definition}\label{def:unimodular}
+A matrix $\matU \in \Z^{n\times n}$ is unimodular if $|\det(\matU)| = 1$.
+\end{definition}
+\noindent
+Here, $\det(\matU)$ denotes the determinant of the (square) matrix $\matU$, and $|\cdot|$ denotes the absolute value.
+For example, the matrix $\bigl(\begin{smallmatrix} 2&amp;1\\ 1&amp;1 \end{smallmatrix} \bigr)$ is unimodular, and so is $\bigl(\begin{smallmatrix} 647&amp;64\\ 91&amp;9 \end{smallmatrix} \bigr)$, but not $\bigl(\begin{smallmatrix} 42&amp;41\\ 9&amp;8 \end{smallmatrix} \bigr)$.
+
+\begin{proposition}\label{fact:unimodular}
+If $\matU$ is unimodular, so is $\matU^{-1}$.
+\end{proposition}
+
+\begin{proof}
+This follows from the way inverses are computed. In particular,
+\begin{itemize}
+\item Each entry in $\matU^{-1}$ is the ratio of the  determinant of a {\em minor} of $\matU$ to the determinant of $\matU$ itself. Since the determinant of any minor of $\matU$ is an integer, and the determinant of $\matU$ is $\pm 1$, each entry of $\matU^{-1}$ is an integer. Thus, $\matU^{-1} \in \Z^{n\times n}$.
+\item $\det(\matU^{-1}) = 1/\det(\matU) = \pm 1$. Thus, $|\det(\matU^{-1})| = 1$.
+\end{itemize}
+Together, these two observations mean that $\matU$ is unimodular.
+\end{proof}
+
+We can now state the characterization of equivalent bases.
+
+\begin{theorem}\label{thm:unimodular}
+Given two full-rank bases $\matB \in \R^{n\times n}$ and $\matB' \in \R^{n\times n}$,
+the following two conditions are equivalent:
+\begin{itemize}
+\item $\lat(\matB) = \lat(\matB')$
+\item There exists a unimodular matrix $\matU$ such that $\matB' = \matB \matU$.
+\end{itemize}
+\end{theorem}
+
+\begin{proof}
+(``$\Rightarrow$'') First, assume that $\lat(\matB) = \lat(\matB')$. Then,
+there are integer matrices $\matV$ and $\matV'$ such that 
+\[ \matB' = \matB\matV \hspace{0.3in} \mbox{and} \hspace{0.3in} \matB = \matB'\matV' \]
+It suffices to show that $|\det(\matV)| = |\det(\matV')| = 1$.
+
+Putting these two equations together, we have $\matB' = \matB \matV = \matB' (\matV'\matV)$.
+Since $\matB'$ is non-singular (remember: $\matB$ is a full-rank matrix, and so is $\matB'$) we can
+multiply both sides of the equation by $(\matB')^{-1}$ and we get 
+\begin{eqnarray} \matV' \matV = \mathbf{1}_{n} \end{eqnarray}
+were $\mathbf{1}_n$ denotes the $n$-by-$n$ identity matrix. 
+
+
+Since determinant is multiplicative, we get $\det(\matV')\det(\matV) = 1$. Since $\matV$ and 
+$\matV'$ are integer matrices, their determinant is also an integer. 
+
+Putting these two facts together, we see that the only two choices are:
+\begin{itemize}
+\item $\det(\matV) = \det(\matV') = 1$, or 
+\item $\det(\matV) = \det(\matV') = -1$
+\end{itemize}
+In either case, $|\det(\matV)| = |\det(\matV')| = 1$, and we are done.
+
+\medskip\noindent
+(``$\Leftarrow$'') For the other direction, assume that there is a unimodular matrix 
+$\matU$ such that $\matB' = \matB \matU$. Then, since $\matU$ is an integer matrix,
+\[ \lat(\matB') \subseteq \lat(\matB) \]
+This is because each vector (column) of $\matB'$ can be written as a linear combination of 
+vectors in $\matB$. Thus, the set of all integer linear combinations of vectors in $\matB'$ is 
+contained in the set of all integer linear combinations of vectors in $\matB$.
+
+Now, $\matB = \matB' (\matU^{-1})$ where $\matU^{-1}$ is also unimodular by Proposition~\ref{fact:unimodular}.
+This shows that \[ \lat(\matB) \subseteq \lat(\matB') \] 
+by the same argument as above. Together,  we have $\lat(\matB) = \lat(\matB')$.
+\end{proof}
+
+\subsection{A Geometric Characterization using the Fundamental Parallelepiped}
+
+We need the notion of a fundamental parallelepiped of a basis $\vecb_1,\ldots,\vecb_n$.
+\begin{definition}[Fundamental Parallelepiped]
+Given $n$ {\em linearly independent} vectors $\vecb_1,\ldots,\vecb_n \in \mathbb{R}^m$, their {\em fundamental parallelepiped} is defined as
+\[ \ppd(\vecb_1,\ldots,\vecb_n) \eqdef \bigg\{ \sum_{i=1}^n x_i \vecb_i \ | \ x_i \in \R, 0 \leq x_i &lt; 1 \bigg\} \]
+\end{definition}
+
+Thus, pictorially, a fundamental parallelepiped is the (half-open) region enclosed by the vectors $\vecb_1,\ldots,\vecb_n$. Clearly, different bases of the same lattice generate different fundamental paralellepipeds. See Figure~\ref{fig:ppd}\red{(a)} and \ref{fig:ppd}\red{(b)}.
+
+
+\begin{center}
+\begin{figure}\label{fig:ppd}
+%%%% Figure 1
+\subfloat[The lattice $\Z^2$ with basis vectors $(0,1)$ and $(1,0)$ and\newline the associated fundamental parallelepiped.]{
+\begin{tikzpicture}[scale=3]
+\clip (-0.9,-1.2) rectangle (2,1.55);
+\draw[step=.4cm,gray,very thin] (-0.9,-1.1) grid (1.4,1.4);
+
+\filldraw[fill=green!20!white, draw=green!50!white] (0,0) -- (0,0.399) -- (0.399,0.399) -- (0.399,0) -- (0,0);
+\draw[-&gt;] (-1.4,0) -- (1.4,0);
+\draw[-&gt;] (0,-1.1) -- (0,1.5);
+(0:30:3mm) -- cycle;
+\draw[-&gt;,red,very thick] (30:1cm) (0,0) -- ++(0,0.4) node[anchor=east] {$b_2$};
+\draw[-&gt;,blue,very thick] (30:1cm) (0,0) -- ++(0.4,0) node[anchor=north] {$b_1$};
+
+\draw[green,dotted, very thick] (30:1cm) (0,0.4) -- (0.4,0.4);
+\draw[green,dotted, very thick] (30:1cm) (0.4,0) -- (0.4,0.4);
+
+\foreach \x in {-0.8,-0.4,0,0.4,0.8,1.2}
+    \foreach \y in {-0.8,-0.4,0,0.4,0.8,1.2}
+        \filldraw (\x,\y) circle (0.5pt);
+\end{tikzpicture}
+}
+%%%% Figure 2
+\subfloat[The lattice $\Z^2$ with a different basis consisting of vectors $(1,1)$ and $(2,1)$, and the associated fundamental parallelepiped.]{
+\begin{tikzpicture}[scale=3]
+\clip (-1.0,-1.2) rectangle (1.6,1.55);
+\draw[step=.4cm,gray,very thin] (-0.9,-1.1) grid (1.4,1.4);
+
+\filldraw[fill=green!20!white, draw=green!50!white] (0,0) -- (0.399,0.399) -- (1.199,0.799) -- (0.799,0.399) -- (0,0);
+\draw[-&gt;] (-1.0,0) -- (1.4,0);
+\draw[-&gt;] (0,-1.1) -- (0,1.5);
+(0:30:3mm) -- cycle;
+\draw[-&gt;,blue,very thick] (30:1cm) (0,0) -- ++(0.8,0.4) node[anchor=west] {$b_1$};
+\draw[-&gt;,red,very thick] (30:1cm) (0,0) -- ++(0.4,0.4) node[anchor=south] {$b_2$};
+
+\draw[green,dotted, very thick] (30:1cm) (0.4,0.4) -- (1.2,0.8);
+\draw[green,dotted, very thick] (30:1cm) (0.8,0.4) -- (1.2,0.8);
+
+
+\foreach \x in {-0.8,-0.4,0,0.4,0.8,1.2}
+    \foreach \y in {-0.8,-0.4,0,0.4,0.8,1.2}
+        \filldraw (\x,\y) circle (0.5pt);
+\end{tikzpicture}
+}
+\caption{Parallelepipeds for various bases of the lattice $\Z^2$. Note that the parallelepipeds in either case do not contain any non-zero lattice point.}
+\label{fig:ppd}
+\end{figure}
+\end{center}
+
+\begin{center}
+\begin{figure}
+\hspace{1.75in}
+\begin{tikzpicture}[scale=3]
+\clip (-1.0,-1.2) rectangle (1.6,1.55);
+\draw[step=.4cm,gray,very thin] (-0.9,-1.1) grid (1.4,1.4);
+
+\filldraw[fill=green!20!white, draw=green!50!white] (0,0) -- (0.399,0.399) -- (0.799,0) -- (0.399,-0.399) -- (0,0);
+\draw[-&gt;] (-1.0,0) -- (1.4,0);
+\draw[-&gt;] (0,-1.1) -- (0,1.5);
+(0:30:3mm) -- cycle;
+\draw[-&gt;,blue,very thick] (30:1cm) (0,0) -- ++(0.4,-0.4) node[anchor=west] {$b_1$};
+\draw[-&gt;,red,very thick] (30:1cm) (0,0) -- ++(0.4,0.4) node[anchor=south] {$b_2$};
+
+
+\draw[green,dotted, very thick] (30:1cm) (0.4,0.4) -- (0.8,0);
+\draw[green,dotted, very thick] (30:1cm) (0.4,-0.4) -- (0.8,0);
+
+
+\foreach \x in {-0.8,-0.4,0,0.4,0.8,1.2}
+    \foreach \y in {-0.8,-0.4,0,0.4,0.8,1.2}
+        \filldraw (\x,\y) circle (0.5pt);
+\end{tikzpicture}
+\caption{$\vecb_1$ and $\vecb_2$ do not form a basis of $\Z^2$. Note that the parallelepiped of $\vecb_1$ and $\vecb_2$ contains a non-zero lattice point, namely $(1,0)$.}
+\label{fig:ppd2}
+\end{figure}
+\end{center}
+
+Note that in Figures~\ref{fig:ppd}\red{(a)} and \ref{fig:ppd}\red{(b)}, the vectors $\vecb_1$ and $\vecb_2$ form a basis of the lattice, and the parallelepiped associated to the basis does not contain any lattice point other than $\mathbf{0}$. On the other hand, in Figure~\ref{fig:ppd2}, the vectors $\vecb_1$ and $\vecb_2$ do not form a basis of the lattice, and the parallelepiped associated to the basis contains a non-zero lattice point. In fact, this is not a coincidence as our next theorem shows.
+
+\begin{theorem}\label{thm:ppd}
+Let $\lat$ be a full-rank $n$-dimensional lattice, and let $\vecb_1,\ldots,\vecb_n \in \mathbb{R}^n$ denote {\em linearly independent} vectors in $\lat$.
+Then, $\vecb_1,\ldots,\vecb_n$ form a basis of $\lat$ {\em if and only if} $\ppd(\vecb_1,\ldots,\vecb_n) \cap \lat = \{\mathbf{0}\}$.
+\end{theorem}
+
+\begin{proof}
+(``$\Rightarrow$'') Suppose that $\vecb_1,\ldots,\vecb_n$ is a basis of $\lat$. Let \[ \veca = \sum_{i=1}^n x_i \vecb_i \in \lat(\vecb_1,\ldots,\vecb_n) \cap \ppd(\vecb_1,\ldots,\vecb_n) \] We will show that $\veca = \mathbf{0}$.
+
+Since $\veca \in \lat(\vecb_1,\ldots,\vecb_n)$, $x_i \in \Z$ for all $i$. Since $\veca \in \ppd(\vecb_1,\ldots,\vecb_n)$, $x_i \in [0,1)$ for all $i$. Together, this means that $x_i = 0$ for all $i$, and thus, $\veca = \mathbf{0}$.
+
+\medskip \noindent
+(``$\Leftarrow$'') Suppose that $\ppd(\vecb_1,\ldots,\vecb_n) \cap \lat = \{\mathbf{0}\}$. We would like to show that $\vecb_1,\ldots,\vecb_n$ form a basis of $\lat$.
+
+The vectors $\vecb_1,\ldots,\vecb_n$ are linearly independent. Since they belong to $\lat$, $\lat(\vecb_1,\ldots,\vecb_n) \subseteq \lat$. What remains is to show that $\lat \subseteq \lat(\vecb_1,\ldots,\vecb_n)$. Pick any vector $\veca \in \lat$ and write it as 
+\[ \veca = \sum_{i=1}^n x_i\vecb_i \hspace{0.2in} \mbox{where } x_i \in \R \]
+Consider now the vector 
+\[ \veca' = \sum_{i=1}^n \floor{x_i}\vecb_i \hspace{0.2in} \in \lat(\vecb_1,\ldots,\vecb_n) \]
+which is clearly in the lattice $\lat(\vecb_1,\ldots,\vecb_n)$ since the coefficients $\floor{x_i}$ are integers. Therefore, the vector $\veca - \veca'$ is in $\lat(\vecb_1,\ldots,\vecb_n)$ as well.
+Now,
+\[ \veca - \veca' = \sum_{i=1}^n (x_i - \floor{x_i}) \vecb_i \hspace{0.2in} \in \ppd(\vecb_1,\ldots,\vecb_n) \]
+is in the parallelepiped of $\vecb_1,\ldots,\vecb_n$ since $0 \leq x_i - \floor{x_i} &lt; 1$ for all $i$. 
+
+Since $\veca - \veca' \in \lat(\vecb_1,\ldots,\vecb_n) \cap \ppd(\vecb_1,\ldots,\vecb_n)$, it must be the case that $\veca-\veca' = 0$ by assumption.
+Since the vectors $\vecb_1,\ldots,\vecb_n$ are linearly independent, this means that $x_i - \floor{x_i} = 0$ for all $i$ which in turn means that 
+$x_i \in \Z$ for all $i$. 
+
+Thus, $\veca \in \lat(\vecb_1,\ldots,\vecb_n)$, showing us that $\lat \subseteq \lat(\vecb_1,\ldots,\vecb_n)$. 
+\end{proof}
+
+\subsection{Determinant of a Lattice}
+
+Another quantity associated to a lattice is its determinant, denoted $\det(\lat)$. The determinant of a lattice is the $n$-dimensional volume of its fundamental parallelepiped, computed as the absolute value of the determinant of its basis matrix $\matB$. A couple of facts about the determinant of a lattice are worth noting:
+
+\begin{enumerate}
+\item The parallelepipeds associated with different bases of a lattice have the same volume. Thus, {\em the determinant is a lattice invariant}.
+This is easy to see using our characterization of equivalent bases from Theorem~\ref{thm:unimodular}. 
+
+Let $\matB$ and $\matB'$ be any two lattice bases. By Theorem~\ref{thm:unimodular}, there is a unimodular matrix $\matU$ such that $\matB'=\matB \matU$. Thus, $|\det(\matB')| = |\det(\matB)| \cdot |\det(\matU)| = |\det(\matB)|$ since $|\det(\matU)| = 1$.
+
+\item Intuitively, the determinant of a lattice is inversely proportional to its ``density''. The larger the determinant, the sparser the lattice.
+
+\end{enumerate}
+
+\section{Gram-Schmidt Orthogonalization}
+
+Gram-Schmidt orthogonalization is a procedure in linear algebra that transforms a set of vectors $\vecb_1,\ldots,\vecb_n$ into a set of 
+orthogonal vectors $\vecbt_1,\ldots,\vecbt_n$. In two dimensions, this proceeds as follows:
+
+\begin{itemize}
+\item The first Gram-Schmidt vector $\vecbt_1$ is $\vecb_1$ itself. 
+
+\item The second Gram-Schmidt vector $\vecbt_2$ is the component of $\vecb_2$ that is orthogonal to $\Span(\vecbt_1)$. This can be 
+computed as 
+\[ \vecbt_2 = \vecb_2 - \bigg( \frac{\inner{\vecb_2,\vecbt_1}}{\inner{\vecbt_1,\vecbt_1}} \bigg) \vecbt_1 \]
+See Figure~\ref{fig:GS} for an illustration of this process.
+\end{itemize}
+In general, the Gram-Schmidt vectors are obtained by projecting each vector successively on the space orthogonal to the span of all the previous vectors. 
+\begin{definition}[Gram-Schmidt Orthogonalization]\label{def:GS}
+For a sequence of $n$ linearly independent vectors $\vecb_1,\ldots,\vecb_n \in \R^n$, we define their {\em Gram-Schmidt orthogonalization} as the sequence of vectors $\vecbt_1,\ldots,\vecbt_n$ defined as follows:
+\[ \vecbt_i = \vecb_i - \sum_{j=1}^{i-1} \mu_{i,j} \vecbt_j \hspace{0.2in} \mbox{where } \mu_{i,j} = \frac{\inner{\vecb_i,\vecbt_j}}{\inner{\vecbt_j,\vecbt_j}} \]
+Thus, $\vecbt_j$ is the component of $\vecb_i$ that is orthogonal to $\vecbt_1,\ldots,\vecbt_{i-1}$. The coefficients $\mu_{i,j}$ are called the Gram-Schmidt coefficients.
+\end{definition}
+
+
+\begin{center}
+\begin{figure}
+%%%% Figure 1
+\subfloat[Gram-Schmidt orthogonalization of the vectors $b_1$ and $b_2$ \newline in that order.]{
+\begin{tikzpicture}[scale=3]
+\clip (-0.9,-1.2) rectangle (2,1.55);
+\draw[step=.4cm,gray,very thin] (-0.9,-1.1) grid (1.4,1.4);
+
+\draw[-&gt;] (-1.0,0) -- (1.4,0);
+\draw[-&gt;] (0,-1.1) -- (0,1.5);
+(0:30:3mm) -- cycle;
+\draw[-&gt;,blue,very thick] (30:1cm) (0,0) -- ++(0.8,0.4) node[anchor=west] {\small{$\tilde{b}_1=b_1$}};
+\draw[-&gt;,red,very thick] (30:1cm) (0,0) -- ++(0.4,0.4) node[anchor=south] {$b_2$};
+\draw[-&gt;,green,very thick] (30:1cm) (0,0) -- ++(-0.08,0.16) node[anchor=south] {$\tilde{b}_2$};
+\draw[black,dotted] (30:1cm) (-0.88,-0.24) -- (1.52,0.96);
+
+\foreach \x in {-0.8,-0.4,0,0.4,0.8,1.2}
+    \foreach \y in {-0.8,-0.4,0,0.4,0.8,1.2}
+        \filldraw (\x,\y) circle (0.5pt);
+\end{tikzpicture}
+}
+%%% Figure 2
+\subfloat[Gram-Schmidt orthogonalization of the same vectors, \newline but in the opposite order.]{
+\begin{tikzpicture}[scale=3]
+\clip (-0.9,-1.2) rectangle (2,1.55);
+\draw[step=.4cm,gray,very thin] (-0.9,-1.1) grid (1.4,1.4);
+
+\draw[-&gt;] (-1.0,0) -- (1.4,0);
+\draw[-&gt;] (0,-1.1) -- (0,1.5);
+(0:30:3mm) -- cycle;
+\draw[-&gt;,blue,very thick] (30:1cm) (0,0) -- ++(0.8,0.4) node[anchor=west] {$b_2$};
+\draw[-&gt;,red,very thick] (30:1cm) (0,0) -- ++(0.4,0.4) node[anchor=south] {\small{$\tilde{b}_1=b_1$}};
+\draw[-&gt;,green,very thick] (30:1cm) (0,0) -- (0.2,-0.2) node[anchor=south] {$\tilde{b}_2$};
+\draw[black,dotted] (30:1cm) (-0.4,-0.8) -- (1.4,1.0);
+
+\foreach \x in {-0.8,-0.4,0,0.4,0.8,1.2}
+    \foreach \y in {-0.8,-0.4,0,0.4,0.8,1.2}
+        \filldraw (\x,\y) circle (0.5pt);
+\end{tikzpicture}
+}
+\caption{Gram-Schmidt Orthogonalization.}
+\label{fig:GS}
+\end{figure}
+
+\end{center}
+
+\paragraph{Remarks.}  
+\begin{enumerate}
+\item  True to its name, the different Gram-Schmidt vectors $\vecbt_1,\ldots,\vecbt_n$ are orthogonal to each other. That is, for each $i\neq j$, $\inner{\vecbt_i, \vecbt_j} = 0$. This is an easy consequence of Definition~\ref{def:GS}.
+
+\item The span of $\vecbt_1,\ldots,\vecbt_i$ is the same as the span of $\vecb_1,\ldots,\vecb_i$ for all $1 \leq i \leq n$. 
+
+\item The vectors $\vecbt_1,\ldots,\vecbt_n$ do not form a lattice basis. In fact, the Gram-Schmidt vectors are not necessarily in the lattice. See Figure~\ref{fig:GS} for example.
+    
+\item The (Euclidean) length of the Gram-Schmidt vector $\vecbt_i$ is at most the length of the basis vector $\vecb_i$.  Namely,  $\|\vecbt_i\| \leq \| \vecb_i \|$.
+    
+\item Clearly, as seen in Figure~\ref{fig:GS}, the Gram-Schmidt vectors depend on the order in which the vectors $\vecb_1,\ldots,\vecb_n$ are processed.
+\end{enumerate}
+
+Let $\vecbt_1/\|\vecbt_1\|, \ldots, \vecbt_n/\|\vecbt_n\|$ denote the unit vectors in the direction of the Gram-Schmidt vectors. Then, the Gram-Schmidt orthogonalization process can be written in matrix form as
+\begin{eqnarray*} 
+        \left( \begin{array}{ccc} \vert  &amp; &amp; \vert \\
+            \vecb_1 &amp; \ldots &amp; \vecb_n \\
+            \vert &amp; &amp; \vert \end{array} \right)  &amp; = &amp; 
+        \left( \begin{array}{ccc} \vert  &amp; &amp; \vert \\
+             \vecbt_1 &amp; \ldots &amp; \vecbt_n \\
+            \vert &amp; &amp; \vert \end{array} \right)  \cdot 
+        \left( \begin{array}{ccccc} 
+             1 &amp; \mu_{2,1} &amp; \mu_{3,1} &amp; \ldots &amp; \mu_{n,1} \\
+             0 &amp; 1 &amp; \mu_{3,2} &amp; \ldots &amp; \mu_{n,2} \\
+              0 &amp; 0 &amp; 1  &amp; \ldots &amp; \mu_{n,3} \\
+             \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots \\
+             0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \end{array} \right) \\
+        &amp; = &amp; 
+        \left( \begin{array}{ccc} \vert  &amp; &amp; \vert \\
+             \frac{\vecbt_1}{\|\vecbt_1\|} &amp; \ldots &amp; \frac{\vecbt_n}{\|\vecbt_n\|} \\
+            \vert &amp; &amp; \vert \end{array} \right)  \cdot
+        \left( \begin{array}{ccccc}
+             \|\vecbt_1\| &amp; \mu_{2,1}\|\vecbt_1\| &amp; \mu_{3,1}\|\vecbt_1\| &amp; \ldots &amp; \mu_{n,1}\|\vecbt_1\| \\
+             0 &amp; \|\vecbt_2\| &amp; \mu_{3,2}\|\vecbt_2\| &amp; \ldots &amp; \mu_{n,2}\|\vecbt_2\| \\
+              0 &amp; 0 &amp; \|\vecbt_3\|  &amp; \ldots &amp; \mu_{n,3}\|\vecbt_3\|  \\
+             \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots \\
+             0 &amp; 0 &amp; 0 &amp; 0 &amp; \|\vecbt_n\|  \end{array} \right) 
+\end{eqnarray*}
+Since the vectors $\frac{\vecbt_i}{\|\vecbt_i\|}$  are orthonormal, the determinant of the matrix
+with columns $\frac{\vecbt_i}{\|\vecbt_i\|}$ is $1$. 
+
+Thus, we have
+\[ \det(\lat(\matB)) = \prod_{i=1}^n \|\vecbt_i \| \]
+
+In other words, the Gram-Schmidt orthogonalization process is a volume-preserving transformation that results in a
+set of orthogonal vectors $\vecbt_1,\ldots,\vecbt_n$, whose enclosing parallelepiped is rectangular and 
+generates a volume of $\prod_{i=1}^n \|\vecbt_i \|$.
+
+
+\section{Successive Minima of a Lattice}
+
+A basic parameter of the lattice is the length of the shortest non-zero vector in the lattice (since any lattice contains the zero vector which has norm zero, we have to ask for a non-zero vector). This parameter is also called the {\em first successive minimum} of the lattice, and is denoted $\lambda_1(\lat)$. When we speak of length, we mean the Euclidean norm defined as follows: for a vector $\vecx = (x_1,\ldots,x_n) \in \R^n$, the Euclidean norm of $\vecx$, denoted $\|\vecx\|_2$ (or simply as $\|\vecx\|$ is defined as
+\[ \|\vecx\| = \sqrt{\sum_{i=1}^n x_i^2} \]
+
+The Euclidean norm is also frequently referred to as the $\ell_2$ norm.
+We can speak of other norms such as the $\ell_1$ norm -- $\|\vecx\|_1 = \sum_{i=1}^n |x_i|$ -- and the $\ell_{\infty}$ norm -- $\|\vecx\|_{\infty} = \max_{i=1}^n |x_i|$, but we will stick to the Euclidean norm for most of this course.
+
+Figure~\ref{fig:SH} shows a shortest vector in the lattice generated by $(1,1)$ and $(2,0)$. The shortest vector is not unique in general. There could be many, even exponentially many, shortest vectors. Clearly, there are at least two -- if $\vecv$ is a shortest vector in a lattice, then so is $-\vecv$.
+
+\begin{center}
+\begin{figure}
+%%%% Figure 3
+\hspace{1.75in}
+\begin{tikzpicture}[scale=3]
+\clip (-0.9,-1.2) rectangle (1.75,1.55);
+
+\filldraw[fill=green!20!white, draw=green!50!black] circle (0.5656);
+
+\draw[step=.4cm,gray,very thin] (-0.9,-1.1) grid (1.4,1.4);
+\draw[-&gt;] (-1.4,0) -- (1.4,0);
+\draw[-&gt;] (0,-1.1) -- (0,1.5);
+(0:30:3mm) -- cycle;
+\draw[-&gt;,blue,very thick] (30:1cm) (0,0) -- ++(0.8,0) node[anchor=west] {$b_1$};
+\draw[-&gt;,red,very thick] (30:1cm) (0,0) -- ++(0.4,0.4) node[anchor=south] {$b_2$};
+
+
+
+\foreach \x in {-0.8,0,0.8}
+    \foreach \y in {-0.8,0,0.8}
+        \filldraw (\x,\y) circle (0.5pt);
+
+\foreach \x in {-0.4,0.4,1.2}
+    \foreach \y in {-0.4,0.4,1.2}
+        \filldraw (\x,\y) circle (0.5pt);
+\end{tikzpicture}
+\caption{The shortest vector in the lattice generated by $(1,1)$ and $(2,0)$. $\lambda_1(\lat) = \sqrt{2}$.}
+\label{fig:SH}
+\end{figure}
+\end{center}
+
+We will be interested in lower and upper bounds on $\lambda_1$. We first show a lower bound on $\lambda_1$ using Gram-Schmidt orthogonalization. In the next lecture, we will prove Minkowski's theorem which provides an upper bound on $\lambda_1$ in terms of the determinant of the lattice.
+
+\paragraph{Lower Bound on $\lambda_1$.} We show the following theorem. Roughly speaking, the theorem says that the shortest non-zero vector in a lattice is at least as long as the shortest Gram-Schmidt vector of a basis of the lattice. To see why, observe that a lattice can be partitioned into many hyperplanes perpendicular to its Gram-Schmidt vector $\vecbt_n$. See Figure~\ref{fig:hyper} for an illustration in two dimensions. 
+
+Now, there are two possibilities: 
+
+\begin{itemize}
+
+\item There is a shortest non-zero vector in one of the hyper-planes not passing through the origin. In that case, the vector has to have length at least $\|\vecbt_n\| \geq \min_{j} \|\vecbt_j\|$ since the $i^{th}$ such hyper-plane is at a distance of $i\cdot\|\vecbt_n\|$ from the origin. 
+
+\item The shortest non-zero vector lives in the hyper-plane that passes through the origin, in which case, repeat the same argument in dimension $n-1$ with the $(n-1)$-dimensional sublattice partitioned into hyper-planes perpendicular to $\vecbt_{n-1}$. 
+\end{itemize}
+
+Eventually, if the argument reaches dimension $1$, the shortest non-zero vector has to have length at least $\|\vecb_1\| = \|\vecbt_1\| \geq \min_j \|\vecbt_j\|$.
+
+\medskip\noindent
+The formal statement and proof of the theorem follows.
+
+\begin{center}
+\begin{figure}
+\hspace{1.75in}
+\subfloat{
+\begin{tikzpicture}[scale=3]
+\clip (-0.9,-1.2) rectangle (2,1.55);
+\draw[step=.4cm,gray,very thin] (-0.9,-1.1) grid (1.4,1.4);
+
+\draw[-&gt;] (-1.0,0) -- (1.4,0);
+\draw[-&gt;] (0,-1.1) -- (0,1.5);
+(0:30:3mm) -- cycle;
+\draw[-&gt;,blue,very thick] (30:1cm) (0,0) -- ++(0.8,0.4) node[anchor=west] {\small{$\tilde{b}_1=b_1$}};
+\draw[-&gt;,red,very thick] (30:1cm) (0,0) -- ++(0.4,0.4) node[anchor=south] {$b_2$};
+\draw[-&gt;,green,very thick] (30:1cm) (0,0) -- ++(-0.08,0.16) node[anchor=south] {$\tilde{b}_2$};
+
+\draw[black,dotted] (30:1cm) (-1.12,0.24) -- (1.28,1.46);
+\draw[black,dotted] (30:1cm) (-1.04,0.08) -- (1.36,1.30);
+\draw[black,dotted] (30:1cm) (-0.96,-0.08) -- (1.44,1.14);
+\draw[black,dotted] (30:1cm) (-0.88,-0.24) -- (1.52,0.96);
+\draw[black,dotted] (30:1cm) (-0.8,-0.4) -- (1.6,0.8);
+\draw[black,dotted] (30:1cm) (-0.72,-0.56) -- (1.68,0.64);
+\draw[black,dotted] (30:1cm) (-0.64,-0.72) -- (1.76,0.48);
+
+
+\foreach \x in {-0.8,-0.4,0,0.4,0.8,1.2}
+    \foreach \y in {-0.8,-0.4,0,0.4,0.8,1.2}
+        \filldraw (\x,\y) circle (0.5pt);
+\end{tikzpicture}
+}
+\caption{The lattice is partitioned into many parallel hyperplanes perpendicular to $\vecbt_2$. Either the shortest vector lives in a hyperplane that does not pass through the origin, in which case its length is at least $\|\vecbt_2\|$ or it lives in the hyperplane that passes through the origin, in which case its length is at least $\vecbt_1 = \|\vecbt_1\|$. In general, in two dimensions, $\lambda_1(\lat) \geq \min\{\|\vecbt_1\|,\|\vecbt_2\|\}$. This argument can be generalized to $n$ dimensions.}
+\label{fig:hyper}
+\end{figure}
+\end{center}
+ 
+ 
+\begin{theorem}
+Let $\matB$ be a rank-$n$ lattice basis, and $\matBt$ be its Gram-Schmidt orthogonalization. Then,
+\[ \lambda_1(\lat(\matB)) \geq \min_{i=1,\ldots,n} \|\vecbt_i\| &gt; 0 \]
+\end{theorem}
+
+\begin{proof}
+Let $\vecx \in \Z^n$ be {\em any} non-zero integer vector. We would like to show that the lattice vector $\matB\vecx \in \lat(\matB)$ has length at least $\min_{i} \|\vecbt_i\|$.
+
+The proof follows by calculating the quantity $|\inner{\matB\vecx, \vecbt_j}|$ in two different ways.
+
+\paragraph{$1$.}
+Let $j \in \{1,\ldots,n\}$ be the largest index such that $x_j \neq 0$. Then,
+\begin{equation}\label{eqn:lb1}
+|\inner{\matB\vecx, \vecbt_j}| = |\inner{\sum_{i=1}^n x_i\vecb_i, \vecbt_j}| =
+|\sum_{i=1}^n x_i \inner{\vecb_i, \vecbt_j}| = |x_j|\inner{\vecbt_j,\vecbt_j} = |x_j|\cdot \|\vecbt_j\|^2
+\end{equation}
+where the first equality follows by rewriting $\matB\vecx$ as $\sum_{i=1}^n x_i \vecb_i$, the second follows by the linearity of the inner product, and the third because
+\begin{itemize}
+\item for $j &lt; i$, $\inner{\vecb_i, \vecbt_j} = 0$
+
+\item for $j &gt; i$, $x_j=0$ by the definition of $j$.
+\end{itemize}
+The fourth equality follows by the definition of $\|\vecbt_j\|^2 = \inner{\vecbt_j,\vecbt_j}$.
+
+\paragraph{$2$.} On the other hand,
+\begin{equation}\label{eqn:lb2}
+|\inner{\matB\vecx, \vecbt_j}| \leq \|\matB\vecx\| \cdot \|\vecbt_j\|
+\end{equation}
+by the Cauchy-Schwarz inequality.
+
+\medskip\noindent
+Putting together Equations~\ref{eqn:lb1} and \ref{eqn:lb2}, we get
+\[ \|\matB\vecx\| \geq \frac{|\inner{\matB\vecx, \vecbt_j}|}{\|\vecbt_j\|} = |x_j| \cdot \|\vecbt_j\| \geq \|\vecbt_j\| \geq \min_{i=1\ldots n} \|\vecbt_i\|
+\]
+where the third inequality follows from the fact that $x_j$ is a non-zero integer. Since the length of any lattice vector is at least  $\min_{i} \|\vecbt_i\|$,
+\[ \lambda_1(\matB) \geq \min_{i=1\ldots n} \|\vecbt_i\| \]
+Since $\vecb_1,\ldots,\vecb_n$ are linearly independent, this quantity is strictly positive.
+\end{proof}
+
+A corollary of this theorem is that a lattice is a {\em discrete set}. In other words, lattice points cannot be arbitrarily close to one another. Formally:
+
+\begin{corollary}
+For every lattice $\lat$, there is an $\epsilon = \epsilon(\lat) &gt; 0$ such that
+$\| \vecx - \vecy \| \geq \epsilon$ for any two unequal lattice points $\vecx, \vecy \in \lat$.
+\end{corollary}
+
+\begin{proof}
+For any two $\vecx \neq \vecy \in \lat$, $\vecx - \vecy \in \lat$. Then, $\|\vecx - \vecy \| \geq \lambda_1(\lat) &gt; 0$. In particular, set $\epsilon = \lambda_1(\lat)$ to obtain the statement of the corollary.
+\end{proof}
+
+In fact, this leads us to a {\em basis-independent} characterization of a lattice. Namely, every discrete subset of $\R^n$ that is closed under subtraction is a lattice.
+\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0FF6FF5A-4B37-4CBD-A038-091C2FA52189</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T15:19:29Z</date>
+			<key>label</key>
+			<string>Yellow Notes TikZ</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:19:40Z</date>
+			<key>plainText</key>
+			<string>%
+%
+% Author:
+% Efraín Soto Apolinar.
+% http://www.aprendematematicas.org/
+% 
+% This document contains the definition of
+% two commands to include Yellow notes in 
+% the margin of a page.
+%
+
+\documentclass[12pt]{article}
+%%%&lt;
+\usepackage{verbatim}
+%%%&gt;
+
+\begin{comment}
+:Title: Yellow notes
+
+This document contains the definition of
+two commands to include Yellow notes in 
+the margin of a page.
+
+\end{comment}
+
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{calc}
+
+\setlength{\parskip}{0ex}
+\setlength{\parindent}{0ex}
+
+\newlength{\yellownotewidth}
+\setlength{\yellownotewidth}{2.5cm}
+\newlength{\yellownoteheight}
+\setlength{\yellownoteheight}{2.5cm}
+%   -   -   -   -   -   -   -   -   -   -   -   -
+% Yellow note...
+%   -   -   -   -   -   -   -   -   -   -   -   -
+\newcommand{\yellownote}[1]{
+\marginpar{
+    \vspace{-0.5\yellownoteheight}
+        \begin{center}
+        \begin{tikzpicture}
+            \draw[white,fill=gray!25,opacity=0.75,shift={(-0.125,-0.125)}] 
+                (0,0) rectangle (\yellownotewidth,\yellownoteheight);
+            \draw[fill=yellow!35] (0,0) rectangle (\yellownotewidth,\yellownoteheight);
+            \draw[opacity=0.45,fill=gray!50] (0.7\yellownotewidth,0) -- 
+                (0.9\yellownotewidth,0.45) -- (\yellownotewidth,0.4) -- cycle;
+            \node[blue,below] at (0.5\yellownotewidth,\yellownoteheight) {
+                \begin{minipage}{\yellownotewidth-1em}
+                    \scriptsize\sf#1
+                \end{minipage}
+            };
+        \end{tikzpicture}
+        \end{center}
+        \vspace{0.5\yellownoteheight}
+    }
+}
+
+%   -   -   -   -   -   -   -   -   -   -   -   -
+% Resizeable - Yellow note...
+%   -   -   -   -   -   -   -   -   -   -   -   -
+\newcommand{\resizeableyellownote}[3]{
+\setlength{\yellownotewidth}{#1cm}
+\setlength{\yellownoteheight}{#2cm}
+\marginpar{
+    \vspace{-0.5\yellownoteheight}
+        \begin{center}
+        \begin{tikzpicture}
+            \draw[white,fill=gray!25,opacity=0.75,shift={(-0.125,-0.125)}] 
+                (0,0) rectangle (\yellownotewidth,\yellownoteheight);
+            \draw[fill=yellow!35] (0,0) rectangle (\yellownotewidth,\yellownoteheight);
+            \draw[opacity=0.45,fill=gray!50] (0.7\yellownotewidth,0) -- 
+                (0.9\yellownotewidth,0.45) -- (\yellownotewidth,0.4) -- cycle;
+            \node[blue,below] at (0.5\yellownotewidth,\yellownoteheight) {
+                \begin{minipage}{\yellownotewidth-1em}
+                    \scriptsize\sf#3
+                \end{minipage}
+            };
+        \end{tikzpicture}
+        \end{center}
+        \vspace{0.5\yellownoteheight}
+    }
+}
+%
+% Fonts
+%
+\usepackage{slantsc}
+\usepackage[sc]{mathpazo}
+%
+%
+%
+\begin{document}
+%
+%
+%
+To include a yellow note into a document insert the 
+code:
+\begin{verbatim}
+\yellownote{
+   Message into a yellow note. We just want to see how it 
+   will look.
+}
+\end{verbatim}
+and you will see the first yellow note at the 
+margin of the page.
+\yellownote{
+Message into a yellow note. We just want to see how it 
+will look.
+}
+Include more text then...
+
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+
+And when neccesary, change the size of the yellow note 
+with the following command:
+\begin{verbatim}
+\resizeableyellownote{2.5}{1.5}{
+   Resizeable yellow note.
+}
+\end{verbatim}
+to get the second one... 
+\resizeableyellownote{2.5}{1.5}{Resizeable yellow note.}
+Each of the arguments are: \verb|{width}{height}| 
+in centimeters. You do not need to include the 
+unit in the argument. The instruction already 
+knows it. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+This text is only a test. This text is only a test. 
+
+I hope this help you improve your design.
+
+\end{document}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>5732A847-1C05-47F9-8BAF-A1AEB6EDDC8B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T15:19:48Z</date>
+			<key>label</key>
+			<string>Stereographic Projection TikZ</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:20:00Z</date>
+			<key>plainText</key>
+			<string>% Stereographic and cylindrical map projections
+% Author: Tomasz M. Trzeciak
+% Source: LaTeX-Community.org 
+%         &lt;http://www.latex-community.org/viewtopic.php?f=4&amp;t=2111&gt;
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{calc,fadings,decorations.pathreplacing}
+\usepackage{verbatim}
+
+\begin{comment}
+
+:Title: Stereographic and cylindrical map projections
+:Tags: 3D
+:Slug: map-projections
+:Grid: 2x2
+
+Examples inspired by the thread at comp.text.tex about `how to convert some hand
+drawn pictures into programmatic 3D sketches`__.
+
+.. __: http://groups.google.com/group/comp.text.tex/browse_thread/thread/a03baf5d6fa64865/f7e7b903f1d87a6a
+
+The sketches present stereographic and cylindrical map projections and they
+pose some interesting challenges for doing them with a 2D drawing package PGF/TikZ.
+
+The main idea is to draw in selected 3D planes and then project onto the canvas
+coordinate system with an appriopriate transformation. Some highlights:
+
+- usage of pgf math engine for calculation of projection transformations and
+  transitions points from visible (solid lines) to invisible (dashed lines) on
+  meridians and latitude circles
+- definition of 3D plane transformation with expanded styles so that they are robust
+  against redefinition of macros used in their construction
+- usage of named coordinates (nodes) for definition of characteristic points in
+  local coordinate systems so that they are accessible outside of their plane of
+  definition
+- calculation of intersections points with TikZ intersection coordinate system
+- usage of 'to' path operation instead of 'arc' for marking angles to allow for
+  easy positioning of text labels on the curve
+- 3D lighting effects with shading
+
+:Author: Tomasz M. Trzeciak
+:Source: LaTeX-Community.org_
+
+.. _LaTeX-Community.org: http://www.latex-community.org/viewtopic.php?f=4&amp;t=2111
+
+\end{comment}
+
+%% helper macros
+
+\newcommand\pgfmathsinandcos[3]{%
+  \pgfmathsetmacro#1{sin(#3)}%
+  \pgfmathsetmacro#2{cos(#3)}%
+}
+\newcommand\LongitudePlane[3][current plane]{%
+  \pgfmathsinandcos\sinEl\cosEl{#2} % elevation
+  \pgfmathsinandcos\sint\cost{#3} % azimuth
+  \tikzset{#1/.style={cm={\cost,\sint*\sinEl,0,\cosEl,(0,0)}}}
+}
+\newcommand\LatitudePlane[3][current plane]{%
+  \pgfmathsinandcos\sinEl\cosEl{#2} % elevation
+  \pgfmathsinandcos\sint\cost{#3} % latitude
+  \pgfmathsetmacro\yshift{\cosEl*\sint}
+  \tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}} %
+}
+\newcommand\DrawLongitudeCircle[2][1]{
+  \LongitudePlane{\angEl}{#2}
+  \tikzset{current plane/.prefix style={scale=#1}}
+   % angle of "visibility"
+  \pgfmathsetmacro\angVis{atan(sin(#2)*cos(\angEl)/sin(\angEl))} %
+  \draw[current plane] (\angVis:1) arc (\angVis:\angVis+180:1);
+  \draw[current plane,dashed] (\angVis-180:1) arc (\angVis-180:\angVis:1);
+}
+\newcommand\DrawLatitudeCircle[2][1]{
+  \LatitudePlane{\angEl}{#2}
+  \tikzset{current plane/.prefix style={scale=#1}}
+  \pgfmathsetmacro\sinVis{sin(#2)/cos(#2)*sin(\angEl)/cos(\angEl)}
+  % angle of "visibility"
+  \pgfmathsetmacro\angVis{asin(min(1,max(\sinVis,-1)))}
+  \draw[current plane] (\angVis:1) arc (\angVis:-\angVis-180:1);
+  \draw[current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
+}
+
+%% document-wide tikz options and styles
+
+\tikzset{%
+  &gt;=latex, % option for nice arrows
+  inner sep=0pt,%
+  outer sep=2pt,%
+  mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
+    fill=black,circle}%
+}
+
+\begin{document}
+
+\begin{tikzpicture} % "THE GLOBE" showcase
+
+\def\R{2.5} % sphere radius
+\def\angEl{35} % elevation angle
+\filldraw[ball color=white] (0,0) circle (\R);
+\foreach \t in {-80,-60,...,80} { \DrawLatitudeCircle[\R]{\t} }
+\foreach \t in {-5,-35,...,-175} { \DrawLongitudeCircle[\R]{\t} }
+
+\end{tikzpicture}
+
+\begin{tikzpicture} % CENT
+
+%% some definitions
+
+\def\R{2.5} % sphere radius
+\def\angEl{35} % elevation angle
+\def\angAz{-105} % azimuth angle
+\def\angPhi{-40} % longitude of point P
+\def\angBeta{19} % latitude of point P
+
+%% working planes
+
+\pgfmathsetmacro\H{\R*cos(\angEl)} % distance to north pole
+\tikzset{xyplane/.style={cm={cos(\angAz),sin(\angAz)*sin(\angEl),-sin(\angAz),
+                              cos(\angAz)*sin(\angEl),(0,-\H)}}}
+\LongitudePlane[xzplane]{\angEl}{\angAz}
+\LongitudePlane[pzplane]{\angEl}{\angPhi}
+\LatitudePlane[equator]{\angEl}{0}
+
+%% draw xyplane and sphere
+
+\draw[xyplane] (-2*\R,-2*\R) rectangle (2.2*\R,2.8*\R);
+\fill[ball color=white] (0,0) circle (\R); % 3D lighting effect
+\draw (0,0) circle (\R);
+
+%% characteristic points
+
+\coordinate (O) at (0,0);
+\coordinate[mark coordinate] (N) at (0,\H);
+\coordinate[mark coordinate] (S) at (0,-\H);
+\path[pzplane] (\angBeta:\R) coordinate[mark coordinate] (P);
+\path[pzplane] (\R,0) coordinate (PE);
+\path[xzplane] (\R,0) coordinate (XE);
+\path (PE) ++(0,-\H) coordinate (Paux); % to aid Phat calculation
+\coordinate[mark coordinate] (Phat) at (intersection cs: first line={(N)--(P)},
+                                        second line={(S)--(Paux)});
+
+%% draw meridians and latitude circles
+
+\DrawLatitudeCircle[\R]{0} % equator
+%\DrawLatitudeCircle[\R]{\angBeta}
+\DrawLongitudeCircle[\R]{\angAz} % xzplane
+\DrawLongitudeCircle[\R]{\angAz+90} % yzplane
+\DrawLongitudeCircle[\R]{\angPhi} % pzplane
+
+%% draw xyz coordinate system
+
+\draw[xyplane,&lt;-&gt;] (1.8*\R,0) node[below] {$x,\xi$} -- (0,0) -- (0,2.4*\R)
+    node[right] {$y,\eta$};
+\draw[-&gt;] (0,-\H) -- (0,1.6*\R) node[above] {$z,\zeta$};
+
+%% draw lines and put labels
+
+\draw[dashed] (P) -- (N) +(0.3ex,0.6ex) node[above left] {$\mathbf{N}$};
+\draw (P) -- (Phat) node[above right] {$\mathbf{\hat{P}}$};
+\path (S) +(0.4ex,-0.4ex) node[below] {$\mathbf{S}$};
+\draw[-&gt;] (O) -- (P) node[above right] {$\mathbf{P}$};
+\draw[dashed] (XE) -- (O) -- (PE);
+\draw[pzplane,-&gt;,thin] (0:0.5*\R) to[bend right=15]
+    node[pos=0.4,right] {$\beta$} (\angBeta:0.5*\R);
+\draw[equator,-&gt;,thin] (\angAz:0.4*\R) to[bend right=30]
+    node[pos=0.4,below] {$\phi$} (\angPhi:0.4*\R);
+\draw[thin,decorate,decoration={brace,raise=0.5pt,amplitude=1ex}] (N) -- (O)
+    node[midway,right=1ex] {$a$};
+
+\end{tikzpicture}
+
+\begin{tikzpicture} % MERC
+
+%% some definitions
+
+\def\R{3} % sphere radius
+\def\angEl{25} % elevation angle
+\def\angAz{-100} % azimuth angle
+\def\angPhiOne{-50} % longitude of point P
+\def\angPhiTwo{-35} % longitude of point Q
+\def\angBeta{33} % latitude of point P and Q
+
+%% working planes
+
+\pgfmathsetmacro\H{\R*cos(\angEl)} % distance to north pole
+\LongitudePlane[xzplane]{\angEl}{\angAz}
+\LongitudePlane[pzplane]{\angEl}{\angPhiOne}
+\LongitudePlane[qzplane]{\angEl}{\angPhiTwo}
+\LatitudePlane[equator]{\angEl}{0}
+
+%% draw background sphere
+
+\fill[ball color=white] (0,0) circle (\R); % 3D lighting effect
+%\fill[white] (0,0) circle (\R); % just a white circle
+\draw (0,0) circle (\R);
+
+%% characteristic points
+
+\coordinate (O) at (0,0);
+\coordinate[mark coordinate] (N) at (0,\H);
+\coordinate[mark coordinate] (S) at (0,-\H);
+\path[xzplane] (\R,0) coordinate (XE);
+\path[pzplane] (\angBeta:\R) coordinate (P);
+\path[pzplane] (\R,0) coordinate (PE);
+\path[qzplane] (\angBeta:\R) coordinate (Q);
+\path[qzplane] (\R,0) coordinate (QE);
+
+%% meridians and latitude circles
+
+% \DrawLongitudeCircle[\R]{\angAz} % xzplane
+% \DrawLongitudeCircle[\R]{\angAz+90} % yzplane
+\DrawLongitudeCircle[\R]{\angPhiOne} % pzplane
+\DrawLongitudeCircle[\R]{\angPhiTwo} % qzplane
+\DrawLatitudeCircle[\R]{\angBeta}
+\DrawLatitudeCircle[\R]{0} % equator
+
+% shifted equator in node with nested call to tikz 
+% (I didn't know it's possible)
+\node at (0,1.6*\R) { \tikz{\DrawLatitudeCircle[\R]{0}} };
+
+%% draw lines and put labels
+
+\draw (-\R,-\H) -- (-\R,2*\R) (\R,-\H) -- (\R,2*\R);
+\draw[-&gt;] (XE) -- +(0,2*\R) node[above] {$y$};
+\node[above=8pt] at (N) {$\mathbf{N}$};
+\node[below=8pt] at (S) {$\mathbf{S}$};
+\draw[-&gt;] (O) -- (P);
+\draw[dashed] (XE) -- (O) -- (PE);
+\draw[dashed] (O) -- (QE);
+\draw[pzplane,-&gt;,thin] (0:0.5*\R) to[bend right=15]
+    node[midway,right] {$\beta$} (\angBeta:0.5*\R);
+\path[pzplane] (0.5*\angBeta:\R) node[right] {$\hat{1}$};
+\path[qzplane] (0.5*\angBeta:\R) node[right] {$\hat{2}$};
+\draw[equator,-&gt;,thin] (\angAz:0.5*\R) to[bend right=30]
+    node[pos=0.4,above] {$\phi_1$} (\angPhiOne:0.5*\R);
+\draw[equator,-&gt;,thin] (\angAz:0.6*\R) to[bend right=35]
+    node[midway,below] {$\phi_2$} (\angPhiTwo:0.6*\R);
+\draw[equator,-&gt;] (-90:\R) arc (-90:-70:\R) node[below=0.3ex] {$x = a\phi$};
+\path[xzplane] (0:\R) node[below] {$\beta=0$};
+\path[xzplane] (\angBeta:\R) node[below left] {$\beta=\beta_0$};
+
+\end{tikzpicture}
+
+
+\begin{tikzpicture} % KART
+
+\def\R{2.5}
+
+\node[draw,minimum size=2cm*\R,inner sep=0,outer sep=0,circle] (C) at (0,0) {};
+\coordinate (O) at (0,0);
+\coordinate[mark coordinate] (Phat) at (20:2.5*\R);
+\coordinate (T1) at (tangent cs: node=C, point={(Phat)}, solution=1);
+\coordinate (T2) at (tangent cs: node=C, point={(Phat)}, solution=2);
+\coordinate[mark coordinate] (P) at ($(T1)!0.5!(T2)$);
+
+\draw[dashed] (T1) -- (O) -- (T2) -- (Phat) -- (T1) -- (T2);
+\draw[&lt;-&gt;] (0,1.5*\R) node[above] {$y$} |- (2.5*\R,0) node[right] {$x$};
+\draw (O) node[below left] {$\mathbf{O}$} -- (P)
+    +(1ex,0) node[above=1ex] {$\mathbf{P}$};
+\draw (P) -- (Phat) node[above=1ex] {$\mathbf{\hat{P}}$};
+
+\end{tikzpicture}
+
+\end{document} </string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9626440F-EF0E-4E97-9BE3-667463FA5829</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T15:20:12Z</date>
+			<key>label</key>
+			<string>CVP Bad Basis Lattice TikZ</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:20:28Z</date>
+			<key>plainText</key>
+			<string>% Drawing lattice points and vectors
+% Author: Bill Tourloupis
+\documentclass{article}
+%%%&lt;
+\usepackage{verbatim}
+\usepackage[active,tightpage,floats]{preview}
+\setlength\PreviewBorder{30pt}%
+%%%&gt;
+\begin{comment}
+:Title: Drawing lattice points and vectors
+:Tags: Foreach;Transformations;Graphs;Mathematics
+:Author: Bill Tourloupis
+:Slug: lattice-points
+An illustration of Babai's algorithm for the Closest Vector Problem (CVP):
+Find the closest lattice point for a given lattice and a target vector.
+Source: http://tex.stackexchange.com/q/42564/
+\end{comment}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\begin{document}
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}
+    \coordinate (Origin)   at (0,0);
+    \coordinate (XAxisMin) at (-3,0);
+    \coordinate (XAxisMax) at (5,0);
+    \coordinate (YAxisMin) at (0,-2);
+    \coordinate (YAxisMax) at (0,5);
+    \draw [thin, gray,-latex] (XAxisMin) -- (XAxisMax);% Draw x axis
+    \draw [thin, gray,-latex] (YAxisMin) -- (YAxisMax);% Draw y axis
+
+    \clip (-3,-2) rectangle (10cm,10cm); % Clips the picture...
+    \pgftransformcm{1}{0.6}{0.7}{1}{\pgfpoint{0cm}{0cm}}
+          % This is actually the transformation matrix entries that
+          % gives the slanted unit vectors. You might check it on
+           % MATLAB etc. . I got it by guessing.
+    \coordinate (Bone) at (0,2);
+    \coordinate (Btwo) at (2,-2);
+    \draw[style=help lines,dashed] (-14,-14) grid[step=2cm] (14,14);
+          % Draws a grid in the new coordinates.
+          %\filldraw[fill=gray, fill opacity=0.3, draw=black] (0,0) rectangle (2,2);
+              % Puts the shaded rectangle
+    \foreach \x in {-7,-6,...,7}{% Two indices running over each
+      \foreach \y in {-7,-6,...,7}{% node on the grid we have drawn 
+        \node[draw,circle,inner sep=2pt,fill] at (2*\x,2*\y) {};
+            % Places a dot at those points
+      }
+    }
+    \draw [ultra thick,-latex,red] (Origin)
+        -- (Bone) node [above left] {$b_1$};
+    \draw [ultra thick,-latex,red] (Origin)
+        -- (Btwo) node [below right] {$b_2$};
+    \draw [ultra thick,-latex,red] (Origin)
+        -- ($(Bone)+(Btwo)$) node [below right] {$b_1+b_2$};
+    \draw [ultra thick,-latex,red] (Origin)
+        -- ($2*(Bone)+(Btwo)$) node [above left] {2$b_1+b_2$};
+    \filldraw[fill=gray, fill opacity=0.3, draw=black] (Origin)
+        rectangle ($2*(Bone)+(Btwo)$);
+    %\draw [thin,-latex,red, fill=gray, fill opacity=0.3] (0,0)
+        % -- ($2*(0,2)+(2,-2)$)
+        % -- ($3*(0,2)+2*(2,-2)$) -- ($(0,2)+(2,-2)$) -- cycle;
+  \end{tikzpicture}
+  \caption{Babai's algorithm works poorly if the basis is ``bad''.}
+  \label{figure:solving-CVP-bad-basis}
+\end{figure}
+\end{document}
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F3D4619E-DA26-4DC7-97C2-E112A7B0BC3A</string>
+		</dict>
+	</array>
+</dict>
+</plist>

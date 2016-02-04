@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Concepts Package</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-01-24T01:04:14Z</date>
+			<key>label</key>
+			<string>new concept example</string>
+			<key>modificationDate</key>
+			<date>2016-01-24T01:06:29Z</date>
+			<key>plainText</key>
+			<string>\NewConcept{swproduct}{
+  name = software product,  
+% options 'plural', 'Plural' are implicitly defined
+  Name = Software Product,    
+  namecmd = \product,          
+% defines \product
+  symbols = {p},               
+% p represents a product
+  symbolcmd = \p                 
+% defines \p
+}
+
+\NewConcept{delta}{
+  namecmd,                     
+% defines \delta
+  symbols = {x, y, z},       
+% x, y and z represent deltas
+  symbolcmd = \d               
+% defines \d
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>42BD4400-C226-4691-AE72-7862F015BB08</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-01-24T01:06:46Z</date>
+			<key>label</key>
+			<string>conceptOption</string>
+			<key>modificationDate</key>
+			<date>2016-01-24T01:06:54Z</date>
+			<key>plainText</key>
+			<string>\ConceptOption{delta}{Plural}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C27A18E9-B8CA-4D33-B869-99DDB83BA06B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-01-24T01:07:25Z</date>
+			<key>label</key>
+			<string>ConceptName</string>
+			<key>modificationDate</key>
+			<date>2016-01-24T01:08:19Z</date>
+			<key>plainText</key>
+			<string>\ConceptName^*{delta} 
+can transform a 
+\ConceptName{swproduct}
+
+^ denotes uppercase
+* denotes plural
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D4B38C44-C729-4BE1-BB4F-614DBD0DB8B4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-01-24T01:09:03Z</date>
+			<key>label</key>
+			<string>Concept Symbol</string>
+			<key>modificationDate</key>
+			<date>2016-01-24T01:15:41Z</date>
+			<key>plainText</key>
+			<string>\ConceptSymbol{concept key}{symbol index}
+
+$\ConceptSymbol{delta}[2] \cdot \ConceptSymbol{delta}[1] =
+ \ConceptSymbol{delta}[1] \cdot \ConceptSymbol{delta}[2]$
+
+\ConceptSymbol{concept key}{separator}{last separator}{symbol indices}
+
+If you need any symbol in the resulting list to have some decoration (like a
+prime, subscript or superscript) you can decorate the corresponding index
+accordingly. 
+
+This currently only works for decorations that would be specified
+\emph{after} the symbol. 
+
+Each element of \meta{symbol indices} still needs to start with the index itself:
+
+$(\ConceptSymbols{delta}
+{1_1, 2'', 3^{\d1(\p)}})$
+
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3D1F673E-88BB-4B81-A3A9-184740375735</string>
+		</dict>
+	</array>
+</dict>
+</plist>

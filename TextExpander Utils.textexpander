@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>TextExpander Utils</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>tesi+</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-24T22:19:26Z</date>
+			<key>label</key>
+			<string>List TextExpander Snippet Info (AS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-25T11:27:56Z</date>
+			<key>plainText</key>
+			<string>on textexpander()
+	-- Set text to filter the snippet group names by.  Blank will return all groups.
+	set strFilterText to "%filltext:name=Filter snippet group name content for (optional):width=40%"
+
+
+	-- Set-up some special constants
+	-- New line
+	set EOL to ASCII character 10
+	-- Tab
+	set SEP to ASCII character 9
+
+
+	tell application "TextExpander"
+		-- Initialise
+		set strClipboard to ""
+		
+		-- Enumerate all the TextExpander snippet groups
+		set colGroups to groups
+		repeat with objGroup in colGroups
+			-- Optional restriction of group name
+			If strFilterText = "" then
+				set bFilter to false
+			else
+				if strFilterText is in name of objGroup then
+					set bFilter to false
+				else
+					set bFilter to true
+				end if
+			end if
+			if bFilter is false then
+				-- Enumerate all the TextExpander snippets in a group
+				set colSnippets to snippets of objGroup
+				repeat with objSnippet in colSnippets
+					-- If the clipboard variable is not still empty, add a new line on the end
+					if strClipboard ≠ "" then
+						set strClipboard to strClipboard &amp; EOL
+					end if
+					
+					-- Append the snippet group, snippet abbreviation and snippet name (tab separated)
+					set strClipboard to strClipboard &amp; name of objGroup &amp; SEP
+					set strClipboard to strClipboard &amp; name of objSnippet &amp; SEP
+					set strClipboard to strClipboard &amp; abbreviation of objSnippet
+				end repeat
+			end if
+		end repeat
+	end tell
+
+	— Output the snippet information
+	return strClipboard
+
+end textexpander
+
+%filltop%
+</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>08C39B5F-BF0B-4203-9DE7-43A035DCA990</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>tegi+</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-24T22:19:26Z</date>
+			<key>label</key>
+			<string>List TextExpander Group Info (AS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-25T20:54:16Z</date>
+			<key>plainText</key>
+			<string>on textexpander()
+	-- Set text to filter the snippet group names by.  Blank will return all groups.
+	set strFilterText to "%filltext:name=Filter snippet group name content for (optional):width=40%"
+
+	-- New line
+	set EOL to ASCII character 10
+
+
+
+	tell application "TextExpander"
+		-- Initialise
+		set strClipboard to ""
+		
+		-- Enumerate all the TextExpander snippet groups
+		set colGroups to groups
+		repeat with objGroup in colGroups
+			-- Optional restriction of group name
+			If strFilterText = "" then
+				set bFilter to false
+			else
+				if strFilterText is in name of objGroup then
+					set bFilter to false
+				else
+					set bFilter to true
+				end if
+			end if
+			if bFilter is false then
+				-- If the clipboard variable is not still empty, add a new line on the end
+				if strClipboard ≠ "" then
+					set strClipboard to strClipboard &amp; EOL
+				end if
+				
+				-- Append the snippet group, snippet abbreviation and snippet name (tab separated)
+				set strClipboard to strClipboard &amp; name of objGroup
+			end if
+		end repeat
+	end tell
+
+	— Output the snippet information
+	return strClipboard
+
+end textexpander
+
+%filltop%
+</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>65B11BDD-07D5-4787-A40B-BABC2647F2A9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>tesc+</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-24T22:19:26Z</date>
+			<key>label</key>
+			<string>Count TextExpander Snippets (AS)</string>
+			<key>modificationDate</key>
+			<date>2015-08-01T19:30:37Z</date>
+			<key>plainText</key>
+			<string>on textexpander()
+	-- Set text to filter the snippet group names by.  Blank will return all groups.
+	set strFilterText to "%filltext:name=Filter snippet group name content for (optional):width=40%"
+
+
+	-- Set-up some special constants
+	-- New line
+	set EOL to ASCII character 10
+	-- Tab
+	set SEP to ASCII character 9
+
+
+	tell application "TextExpander"
+		-- Initialise
+		set strClipboard to ""
+		set intTotal to 0
+		
+		-- Enumerate all the TextExpander snippet groups
+		set colGroups to groups
+		repeat with objGroup in colGroups
+			-- Optional restriction of group name
+			
+			if strFilterText = "" then
+				set bFilter to false
+			else
+				if strFilterText is in name of objGroup then
+					set bFilter to false
+				else
+					set bFilter to true
+				end if
+			end if
+
+			if bFilter is false then
+				-- Enumerate all the TextExpander snippets in a group
+				set intGroupCount to 0
+				set intGroupCount to intGroupCount + (count of snippets of objGroup)				set intTotal to intTotal + (count of snippets of objGroup)
+				
+				-- If the clipboard variable is not still empty, add a new line on the end
+				if strClipboard ≠ "" then
+					set strClipboard to strClipboard &amp; EOL
+				end if
+				log intGroupCount
+				set strClipboard to (strClipboard &amp; name of objGroup &amp; " (" &amp; intGroupCount as rich text) &amp; ")"
+			end if
+		end repeat
+	end tell
+
+	-- Output the snippet information
+	set strClipboard to strClipboard &amp; EOL &amp; "TOTAL = " &amp; intTotal
+	return strClipboard
+
+end textexpander
+
+%filltop%</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>AA7A5752-5687-400E-8964-AB7B90BFA315</string>
+		</dict>
+	</array>
+</dict>
+</plist>

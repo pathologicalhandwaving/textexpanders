@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Funny Stuff</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>//prehistoricwhale</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-16T04:39:25Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-05-16T04:39:25Z</date>
+			<key>plainText</key>
+			<string>.__________________________________________________________________________________________________________.
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C5276F7D-3740-4AA0-BAB2-AC77BC404170</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>//whale2sads</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-16T00:54:54Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-05-16T00:54:54Z</date>
+			<key>plainText</key>
+			<string>.___________________.       ( ._.)    (._. )      </string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>41B6C3D7-CD40-439E-8741-14B56BFC5803</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-25T17:27:50Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-11-25T17:27:50Z</date>
+			<key>plainText</key>
+			<string></string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>23A22025-9171-4404-AB53-A9CB3EEC16A9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,blll</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-29T15:11:03Z</date>
+			<key>label</key>
+			<string>bullet</string>
+			<key>modificationDate</key>
+			<date>2015-11-29T15:11:20Z</date>
+			<key>plainText</key>
+			<string>• </string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A8099379-24E8-4004-A729-FB3AF3936610</string>
+		</dict>
+	</array>
+</dict>
+</plist>

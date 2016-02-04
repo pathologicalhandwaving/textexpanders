@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>AE all snippets from blog post</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>xbye</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-21T13:46:55Z</date>
+			<key>label</key>
+			<string>Random Good Bye </string>
+			<key>modificationDate</key>
+			<date>2015-09-03T22:00:57Z</date>
+			<key>plainText</key>
+			<string>-- Helmut Hauser-- http://www.worksmartandberemarkable.com-- July 2015-- ------------------------------------------ for Asian Efficieny-- http://www.asianefficiency.com/-- ------------------------------------------ Script originally taken from http://smilesoftware.com/help/TextExpander/applescript.html------------------------------------------ You can adapt the list to your needs----------------------------------------set greetingsList to {"All the best", "Live long and prosper", "Hasta la vista baby", "Peace Out", "Have a good day"}
+----------------------------------------set listLength to count greetingsListset randomNumber to (random number from 1 to listLength)set selectedGreeting to item randomNumber of greetingsList------------------------------------------ You can change here some the formatting----------------------------------------set finalOutput to selectedGreeting &amp; "," &amp; return &amp; "Mike Schmitz"return finalOutput
+
+</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>E6F067C4-1FD2-4BCA-93BD-EA1840D0F13D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nxsat</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-21T09:16:55Z</date>
+			<key>label</key>
+			<string>date of next Saturday</string>
+			<key>modificationDate</key>
+			<date>2015-06-16T10:25:09Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g., set dateOfNextWeekday to getDateOfNextWeekWeekday(Monday) -- Mondayset dateOfNextWeekday to getDateOfNextWeekday(Saturday) -- Saturdayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day), with other textpiece like ")" # together with &amp;set fullOutput to "next " &amp; myWeekDay &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine from Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser# eneric script that allows you to get the date information of a specific upcoming weekday# e.g., to get the date of next Monday# getDateOfNextWeekday(Monday)# Note that the scripts caculates the next upcoming weekday # If today is Monday, getDateOfNextWeekday(Monday) will return the date for Monday next week# If today is Monday, getDateOfNextWeekday(Tuesday) will return the date of tomorrowon getDateOfNextWeekday(nextWeekdayToFind)	set returnDate to current date	if returnDate's weekday is nextWeekdayToFind then return (current date) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDateend getDateOfNextWeekday#----------------------------------------</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>1F564A8F-C1D1-42D8-9E89-E707E9C6A98C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nxsun</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-21T09:16:55Z</date>
+			<key>label</key>
+			<string>date of next Sunday</string>
+			<key>modificationDate</key>
+			<date>2015-06-16T10:22:18Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g., set dateOfNextWeekday to getDateOfNextWeekWeekday(Monday) -- Mondayset dateOfNextWeekday to getDateOfNextWeekday(Sunday) -- Sundayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day), with other textpiece like ")" # together with &amp;set fullOutput to "next " &amp; myWeekDay &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine from Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser# eneric script that allows you to get the date information of a specific upcoming weekday# e.g., to get the date of next Monday# getDateOfNextWeekday(Monday)# Note that the scripts caculates the next upcoming weekday # If today is Monday, getDateOfNextWeekday(Monday) will return the date for Monday next week# If today is Monday, getDateOfNextWeekday(Tuesday) will return the date of tomorrowon getDateOfNextWeekday(nextWeekdayToFind)	set returnDate to current date	if returnDate's weekday is nextWeekdayToFind then return (current date) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDateend getDateOfNextWeekday#----------------------------------------</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>4255DDAA-41FD-4383-906B-4800E4A1ABAB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nxthu</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-21T09:16:55Z</date>
+			<key>label</key>
+			<string>date of next Thursday</string>
+			<key>modificationDate</key>
+			<date>2015-06-16T10:24:24Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g., set dateOfNextWeekday to getDateOfNextWeekWeekday(Monday) -- Mondayset dateOfNextWeekday to getDateOfNextWeekday(Thursday) -- Thursdayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day), with other textpiece like ")" # together with &amp;set fullOutput to "next " &amp; myWeekDay &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine from Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser# eneric script that allows you to get the date information of a specific upcoming weekday# e.g., to get the date of next Monday# getDateOfNextWeekday(Monday)# Note that the scripts caculates the next upcoming weekday # If today is Monday, getDateOfNextWeekday(Monday) will return the date for Monday next week# If today is Monday, getDateOfNextWeekday(Tuesday) will return the date of tomorrowon getDateOfNextWeekday(nextWeekdayToFind)	set returnDate to current date	if returnDate's weekday is nextWeekdayToFind then return (current date) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDateend getDateOfNextWeekday#----------------------------------------</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>B4D2A906-F13A-4545-9FBE-85981A19AE4B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nxtue</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-21T09:16:55Z</date>
+			<key>label</key>
+			<string>date of next Tueday</string>
+			<key>modificationDate</key>
+			<date>2015-07-13T21:00:18Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g., set dateOfNextWeekday to getDateOfNextWeekWeekday(Monday) -- Mondayset dateOfNextWeekday to getDateOfNextWeekday(Tuesday) -- Tuesdayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day), with other textpiece like ")" # together with &amp;set fullOutput to "next " &amp; myWeekDay &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine from Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser# eneric script that allows you to get the date information of a specific upcoming weekday# e.g., to get the date of next Monday# getDateOfNextWeekday(Monday)# Note that the scripts caculates the next upcoming weekday # If today is Monday, getDateOfNextWeekday(Monday) will return the date for Monday next week# If today is Monday, getDateOfNextWeekday(Tuesday) will return the date of tomorrowon getDateOfNextWeekday(nextWeekdayToFind)	set returnDate to current date	if returnDate's weekday is nextWeekdayToFind then return (current date) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDateend getDateOfNextWeekday#----------------------------------------</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>3778F06C-0F0A-46F9-8CC5-6B52FFFEAA7A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nxwed</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-21T09:16:55Z</date>
+			<key>label</key>
+			<string>date of next Wednesday</string>
+			<key>modificationDate</key>
+			<date>2015-06-16T10:24:10Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g., set dateOfNextWeekday to getDateOfNextWeekWeekday(Monday) -- Mondayset dateOfNextWeekday to getDateOfNextWeekday(Wednesday) -- Wednesdayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day), with other textpiece like ")" # together with &amp;set fullOutput to "next " &amp; myWeekDay &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine from Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser# eneric script that allows you to get the date information of a specific upcoming weekday# e.g., to get the date of next Monday# getDateOfNextWeekday(Monday)# Note that the scripts caculates the next upcoming weekday # If today is Monday, getDateOfNextWeekday(Monday) will return the date for Monday next week# If today is Monday, getDateOfNextWeekday(Tuesday) will return the date of tomorrowon getDateOfNextWeekday(nextWeekdayToFind)	set returnDate to current date	if returnDate's weekday is nextWeekdayToFind then return (current date) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDateend getDateOfNextWeekday#----------------------------------------</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>BD5668F0-2C8F-41C8-B361-3B911DBDDDC3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lmail</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-29T12:42:09Z</date>
+			<key>label</key>
+			<string>get unique email link</string>
+			<key>modificationDate</key>
+			<date>2015-09-03T22:02:28Z</date>
+			<key>plainText</key>
+			<string># Helmut Hauser	# http://www.worksmartandberemarkable.com	# 	# Jun 2015	#	# for Asian Efficiency	# http://www.asianefficiency.com/# You have to adapt this line to your mail account name
+# You can find it in your Mail preferences under accounts and there in "Description"
+set accountName to "Personal"
+
+tell application "Mail"	set _links to {}	set _msg to first message of mailbox "Sent" of account accountName	set _messageURL to "message://%3c" &amp; _msg's message id &amp; "%3e"	set end of _links to _messageURL		set AppleScript's text item delimiters to return	return (_links as string)end tell</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>EF344DA5-626C-4032-8C7B-67A215E56953</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lnvalt</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-27T10:16:07Z</date>
+			<key>label</key>
+			<string>get link to nvALT document</string>
+			<key>modificationDate</key>
+			<date>2015-07-26T06:31:49Z</date>
+			<key>plainText</key>
+			<string>on textexpander(abbreviation)	
+	# Helmut Hauser	# http://www.worksmartandberemarkable.com	# 	# Jun 2015	#	# for Asian Efficiency	# http://www.asianefficiency.com/		# Form to link to nvALT:	# nv://find/ideas%20for%papers	# spaces are converted to "%20"			#convert to URL scheme		#get title from the currently highlighted nvALT document	tell application "System Events"		tell process "nvALT"			tell window "nvALT"				set textVal to (value of (text field 1 of group 1 of toolbar 1))			end tell		end tell	end tell	set finalOutput to "nv://find/" &amp; replace_chars(textVal, " ", "%20")		set ouT to (finalOutput as text)	return (ouT)	end textexpander# subroutine taken from# http://www.macosxautomation.com/applescript/sbrt/sbrt-06.htmlon replace_chars(this_text, search_string, replacement_string)	set AppleScript's text item delimiters to the search_string	set the item_list to every text item of this_text	set AppleScript's text item delimiters to the replacement_string	set this_text to the item_list as string	set AppleScript's text item delimiters to ""	return this_textend replace_chars</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>491531B9-CE2B-442E-9BC5-F30F71545E3A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ltiny</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-01-20T11:02:49Z</date>
+			<key>label</key>
+			<string>get shortened URL link via tinyurl</string>
+			<key>modificationDate</key>
+			<date>2015-07-26T06:27:10Z</date>
+			<key>plainText</key>
+			<string># script that takes the URL of the currently active Safari window and returns # a shortened link created by the tinyurl service-- Helmut Hauser-- http://www.worksmartandberemarkable.com-- July 2, 2015-- ------------------------------------------ for Asian Efficieny-- http://www.asianefficiency.com/-- code adapted from -- https://gist.github.com/justin/332866tell application "Safari"	set ClipURL to URL of current tab of window 1end tellignoring case	set curlCMD to ¬		"curl --stderr /dev/null \"http://tinyurl.com/api-create.php?url=" &amp; ClipURL &amp; "\""		-- Run the script and get the result:	set tinyURL to (do shell script curlCMD)		return tinyURL	end ignoring</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>87E36173-8F62-421E-9ECB-FE62D6659C2D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lhtml</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-13T06:19:39Z</date>
+			<key>label</key>
+			<string>URL to HTML link</string>
+			<key>modificationDate</key>
+			<date>2015-07-26T06:40:09Z</date>
+			<key>plainText</key>
+			<string># Helmut Hauser# http://www.worksmartandberemarkable.com# # July 2015## for Asian Efficiency# http://www.asianefficiency.com/
+
+&lt;a href="%snippet:safurl%"&gt; %| &lt;/a&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>181C7928-50C6-4EC8-98CC-860932375061</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>llatex</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-13T06:19:39Z</date>
+			<key>label</key>
+			<string>URL to LaTeX link</string>
+			<key>modificationDate</key>
+			<date>2015-07-26T06:40:15Z</date>
+			<key>plainText</key>
+			<string># Helmut Hauser# http://www.worksmartandberemarkable.com# # July 2015## for Asian Efficiency# http://www.asianefficiency.com/
+
+\href{%snippet:safurl%}{ %| }</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>657792AF-5EA3-4FD6-85AA-1BFB8935FA3C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lmd</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-13T06:19:39Z</date>
+			<key>label</key>
+			<string>URL to Markdown link</string>
+			<key>modificationDate</key>
+			<date>2015-07-26T06:40:19Z</date>
+			<key>plainText</key>
+			<string># Helmut Hauser# http://www.worksmartandberemarkable.com# # July 2015## for Asian Efficiency# http://www.asianefficiency.com/
+
+[ %|  ](%snippet:safurl%)</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>00D159DF-D0E1-410C-8408-8F16B879E4EE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>chrtit</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-13T06:19:39Z</date>
+			<key>label</key>
+			<string>get title of Chrome browser</string>
+			<key>modificationDate</key>
+			<date>2015-07-26T06:19:58Z</date>
+			<key>plainText</key>
+			<string>#simple script that returns the title of the foremost window and tab of Google Chrome
+
+-- Helmut Hauser-- http://www.worksmartandberemarkable.com-- July 2, 2015-- ------------------------------------------ for Asian Efficieny-- http://www.asianefficiency.com/
+
+
+tell application "Google Chrome" to return title of active tab of front window</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>F5AFB08E-1991-4A1C-AB7E-92CE8AF470BD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>chrurl</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-13T06:19:39Z</date>
+			<key>label</key>
+			<string>get URL of Chrome browser</string>
+			<key>modificationDate</key>
+			<date>2015-07-26T06:20:06Z</date>
+			<key>plainText</key>
+			<string>#simple script that returns the URL of the foremost window and tab of Google Chrome
+
+-- Helmut Hauser-- http://www.worksmartandberemarkable.com-- July 2, 2015-- ------------------------------------------ for Asian Efficieny-- http://www.asianefficiency.com/
+
+
+tell application "Google Chrome" to return URL of active tab of front window</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>30138987-F38F-414E-A4D9-552E89CE67B2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>saftit</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-13T06:19:39Z</date>
+			<key>label</key>
+			<string>get title of Safari browser</string>
+			<key>modificationDate</key>
+			<date>2015-07-26T06:19:50Z</date>
+			<key>plainText</key>
+			<string>#simple script that returns the title of the foremost window and tab of Safari
+
+-- Helmut Hauser-- http://www.worksmartandberemarkable.com-- July 2, 2015-- ------------------------------------------ for Asian Efficieny-- http://www.asianefficiency.com/
+
+
+tell application "Safari" to return name of current tab of window 1</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>88DBBF79-6210-424F-B245-D8212B91A317</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>safurl</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-13T06:19:39Z</date>
+			<key>label</key>
+			<string>get URL of Safari browser</string>
+			<key>modificationDate</key>
+			<date>2015-07-26T06:20:25Z</date>
+			<key>plainText</key>
+			<string>#simple script that returns the URL of the foremost window and tab of Safari
+
+-- Helmut Hauser-- http://www.worksmartandberemarkable.com-- July 2, 2015-- ------------------------------------------ for Asian Efficieny-- http://www.asianefficiency.com/
+
+
+tell application "Safari" to return URL of current tab of window 1</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>EA249560-CB2D-4469-83A9-B757CD0FBD89</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>newtop</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-01-25T17:30:20Z</date>
+			<key>label</key>
+			<string>next week nicely formatted</string>
+			<key>modificationDate</key>
+			<date>2015-07-25T22:04:47Z</date>
+			<key>plainText</key>
+			<string># Helmut Hauser# http://www.worksmartandberemarkable.com# # 17. Jun 2015## for Asian Efficiency# http://www.asianefficiency.com/# Get date information from Monday to Sunday# If weekday is Monday or Tuesday still calculate the date range for the current week# otherwise take the upcoming weekglobal TodayDateset TodayDate to current date# to insure that on Tuesdays still provides the current week if TodayDate's weekday is Tuesday then	set TodayDate to TodayDate - daysend ifif TodayDate's weekday is Monday then	# caculate still the date range for the current week	set dayNextSunday to (day of getDateOfNextWeekday(Sunday))	set dayNextMonday to (day of TodayDate)	set monthNextSunday to (month of getDateOfNextWeekday(Sunday))	set monthNextMonday to (month of TodayDate)else	# caculate the date range for the upcoming week	set dayNextSunday to (day of getDateOfNextWeekWeekday(Sunday))	set dayNextMonday to (day of getDateOfNextWeekWeekday(Monday))	set monthNextSunday to (month of getDateOfNextWeekWeekday(Sunday))	set monthNextMonday to (month of getDateOfNextWeekWeekday(Monday))end if# ========================================# formatting the final output# ========================================set monthNextMonday to (text 1 thru 3 of (monthNextMonday as string))set monthNextSunday to (text 1 thru 3 of (monthNextSunday as string))set longLine to ("========================================" as string)set fullOutput to longLine &amp; return &amp; "    " &amp; dayNextMonday &amp; ". " &amp; monthNextMonday &amp; " - " &amp; dayNextSunday &amp; ". " &amp; monthNextSunday &amp; return &amp; longLine &amp; returnreturn fullOutput# Script from Doug Stephen (adapted by Helmut Hauser)# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# generic script that allows you to the date informmation of the # e.g., getting the date of next Monday# getDateOfNextWeekday(Monday)
+# Note if today is this weekday (e.g., Monday) it returns the date of the next week's Mondayon getDateOfNextWeekday(nextWeekdayToFind)	set returnDate to current date		if returnDate's weekday is nextWeekdayToFind then set returnDate to returnDate + days	--if returnDate's weekday is nextWeekdayToFind then set returnDate to returnDate + 7	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDateend getDateOfNextWeekday## ========================================on getDateOfNextWeekWeekday(nextWeekdayToFind)	#find next Sunday as a starting point to count (i.e., week starts with Monday)	set nextSundayDate to TodayDate		if nextSundayDate's weekday is Sunday then		nextSundayDate is ((TodayDate) + (7 * days))	else		repeat until nextSundayDate's weekday is Sunday			set nextSundayDate to nextSundayDate + days		end repeat	end if		# Using Sunday as starting point to find the date of the weekday	set returnDate to nextSundayDate	if returnDate's weekday is nextWeekdayToFind then return (nextSundayDate) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDate	end getDateOfNextWeekWeekday</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>5358B78C-C8C4-45C0-9825-45415D769971</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nwfri</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-16T10:10:05Z</date>
+			<key>label</key>
+			<string>date of Friday next week</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T19:38:27Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g, set dateOfNextWeekday to getDateOfNextWeekWeekday(Sunday) -- Sundayset dateOfNextWeekday to getDateOfNextWeekWeekday(Friday) -- Fridayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day, with other text pieces like ")" or "," # You will have to put an ampersand  "&amp;" in between# If you need to make a newline use the keyword "return" (without quotation mark)set fullOutput to "" &amp; myWeekDay &amp; " next week" &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine is based on script by Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser#----------------------------------------on getDateOfNextWeekWeekday(nextWeekdayToFind)		#find next Sunday as a starting point to count (i.e., week starts with Monday)	set nextSundayDate to current date		if nextSundayDate's weekday is Sunday then		nextSundayDate is ((current date) + (7 * days))	else		repeat until nextSundayDate's weekday is Sunday			set nextSundayDate to nextSundayDate + days		end repeat	end if		# Using Sunday as starting point to find the date of the weekday	set returnDate to nextSundayDate	if returnDate's weekday is nextWeekdayToFind then return (nextSundayDate) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDate	end getDateOfNextWeekWeekday</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>D85166B6-7CD5-4F8B-9BC2-C863DBFECD6C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nwmon</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-16T10:10:05Z</date>
+			<key>label</key>
+			<string>date of Monday next week</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T19:40:40Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g, set dateOfNextWeekday to getDateOfNextWeekWeekday(Sunday) -- Sundayset dateOfNextWeekday to getDateOfNextWeekWeekday(Monday) -- Mondayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day, with other text pieces like ")" or "," # You will have to put an ampersand  "&amp;" in between# If you need to make a newline use the keyword "return" (without quotation mark)set fullOutput to "" &amp; myWeekDay &amp; " next week" &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine is based on script by Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser#----------------------------------------on getDateOfNextWeekWeekday(nextWeekdayToFind)		#find next Sunday as a starting point to count (i.e., week starts with Monday)	set nextSundayDate to current date		if nextSundayDate's weekday is Sunday then		nextSundayDate is ((current date) + (7 * days))	else		repeat until nextSundayDate's weekday is Sunday			set nextSundayDate to nextSundayDate + days		end repeat	end if		# Using Sunday as starting point to find the date of the weekday	set returnDate to nextSundayDate	if returnDate's weekday is nextWeekdayToFind then return (nextSundayDate) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDate	end getDateOfNextWeekWeekday</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>B4EE08F1-EE9C-4592-A82E-1132E994ABBE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nwsat</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-16T10:10:05Z</date>
+			<key>label</key>
+			<string>date of Saturday next week</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T19:39:14Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g, set dateOfNextWeekday to getDateOfNextWeekWeekday(Sunday) -- Sundayset dateOfNextWeekday to getDateOfNextWeekWeekday(Saturday) -- Saturdayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day, with other text pieces like ")" or "," # You will have to put an ampersand  "&amp;" in between# If you need to make a newline use the keyword "return" (without quotation mark)set fullOutput to "" &amp; myWeekDay &amp; " next week" &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine is based on script by Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser#----------------------------------------on getDateOfNextWeekWeekday(nextWeekdayToFind)		#find next Sunday as a starting point to count (i.e., week starts with Monday)	set nextSundayDate to current date		if nextSundayDate's weekday is Sunday then		nextSundayDate is ((current date) + (7 * days))	else		repeat until nextSundayDate's weekday is Sunday			set nextSundayDate to nextSundayDate + days		end repeat	end if		# Using Sunday as starting point to find the date of the weekday	set returnDate to nextSundayDate	if returnDate's weekday is nextWeekdayToFind then return (nextSundayDate) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDate	end getDateOfNextWeekWeekday</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>73EB0959-B5E8-48E5-9CA6-149ADC494E64</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nwsun</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-16T10:10:05Z</date>
+			<key>label</key>
+			<string>date of Sunday next week</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T19:39:19Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g., set dateOfNextWeekday to getDateOfNextWeekWeekday(Monday) -- Mondayset dateOfNextWeekday to getDateOfNextWeekWeekday(Sunday) -- Sundayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day, with other text pieces like ")" or "," # You will have to put an ampersand  "&amp;" in between# If you need to make a newline use the keyword "return" (without quotation mark)set fullOutput to "" &amp; myWeekDay &amp; " next week" &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine is based on script by Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser#----------------------------------------on getDateOfNextWeekWeekday(nextWeekdayToFind)		#find next Sunday as a starting point to count (i.e., week starts with Monday)	set nextSundayDate to current date		if nextSundayDate's weekday is Sunday then		nextSundayDate is ((current date) + (7 * days))	else		repeat until nextSundayDate's weekday is Sunday			set nextSundayDate to nextSundayDate + days		end repeat	end if		# Using Sunday as starting point to find the date of the weekday	set returnDate to nextSundayDate	if returnDate's weekday is nextWeekdayToFind then return (nextSundayDate) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDate	end getDateOfNextWeekWeekday</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>8802BC71-2BFC-4A61-B4B4-A7B3407CB07D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nwthu</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-16T10:10:05Z</date>
+			<key>label</key>
+			<string>date of Thursday next week</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T19:39:27Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g, set dateOfNextWeekday to getDateOfNextWeekWeekday(Sunday) -- Sundayset dateOfNextWeekday to getDateOfNextWeekWeekday(Thursday) -- Thursdayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day, with other text pieces like ")" or "," # You will have to put an ampersand  "&amp;" in between# If you need to make a newline use the keyword "return" (without quotation mark)set fullOutput to "" &amp; myWeekDay &amp; " next week" &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine is based on script by Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser#----------------------------------------on getDateOfNextWeekWeekday(nextWeekdayToFind)		#find next Sunday as a starting point to count (i.e., week starts with Monday)	set nextSundayDate to current date		if nextSundayDate's weekday is Sunday then		nextSundayDate is ((current date) + (7 * days))	else		repeat until nextSundayDate's weekday is Sunday			set nextSundayDate to nextSundayDate + days		end repeat	end if		# Using Sunday as starting point to find the date of the weekday	set returnDate to nextSundayDate	if returnDate's weekday is nextWeekdayToFind then return (nextSundayDate) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDate	end getDateOfNextWeekWeekday</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>DEA609B5-0B61-454F-8596-0264CFC8AB89</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nwtue</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-16T10:10:05Z</date>
+			<key>label</key>
+			<string>date of Monday next week</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T19:39:33Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g., set dateOfNextWeekday to getDateOfNextWeekWeekday(Sunday) -- Sundayset dateOfNextWeekday to getDateOfNextWeekWeekday(Tuesday) -- Tuesdayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day, with other text pieces like ")" or "," # You will have to put an ampersand  "&amp;" in between# If you need to make a newline use the keyword "return" (without quotation mark)set fullOutput to "" &amp; myWeekDay &amp; " next week" &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine is based on script by Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser#----------------------------------------on getDateOfNextWeekWeekday(nextWeekdayToFind)		#find next Sunday as a starting point to count (i.e., week starts with Monday)	set nextSundayDate to current date		if nextSundayDate's weekday is Sunday then		nextSundayDate is ((current date) + (7 * days))	else		repeat until nextSundayDate's weekday is Sunday			set nextSundayDate to nextSundayDate + days		end repeat	end if		# Using Sunday as starting point to find the date of the weekday	set returnDate to nextSundayDate	if returnDate's weekday is nextWeekdayToFind then return (nextSundayDate) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDate	end getDateOfNextWeekWeekday</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>CE1B4648-B524-40CB-B166-5551C7F55208</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nwwed</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-16T10:10:05Z</date>
+			<key>label</key>
+			<string>date of Wednesday next week</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T19:39:37Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g., set dateOfNextWeekday to getDateOfNextWeekWeekday(Sunday) -- Sundayset dateOfNextWeekday to getDateOfNextWeekWeekday(Wednesday) -- Wednesdayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day, with other text pieces like ")" or "," # You will have to put an ampersand  "&amp;" in between# If you need to make a newline use the keyword "return" (without quotation mark)set fullOutput to "" &amp; myWeekDay &amp; " next week" &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine is based on script by Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser#----------------------------------------on getDateOfNextWeekWeekday(nextWeekdayToFind)		#find next Sunday as a starting point to count (i.e., week starts with Monday)	set nextSundayDate to current date		if nextSundayDate's weekday is Sunday then		nextSundayDate is ((current date) + (7 * days))	else		repeat until nextSundayDate's weekday is Sunday			set nextSundayDate to nextSundayDate + days		end repeat	end if		# Using Sunday as starting point to find the date of the weekday	set returnDate to nextSundayDate	if returnDate's weekday is nextWeekdayToFind then return (nextSundayDate) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDate	end getDateOfNextWeekWeekday</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>D34B38AF-2EAB-471E-B4E1-0E5A65F35B1F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nxfri</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-21T09:16:55Z</date>
+			<key>label</key>
+			<string>date of next Friday</string>
+			<key>modificationDate</key>
+			<date>2015-06-16T10:24:44Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g., set dateOfNextWeekday to getDateOfNextWeekWeekday(Monday) -- Mondayset dateOfNextWeekday to getDateOfNextWeekday(Friday) -- Fridayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day), with other textpiece like ")" # together with &amp;set fullOutput to "next " &amp; myWeekDay &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine from Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser# eneric script that allows you to get the date information of a specific upcoming weekday# e.g., to get the date of next Monday# getDateOfNextWeekday(Monday)# Note that the scripts caculates the next upcoming weekday # If today is Monday, getDateOfNextWeekday(Monday) will return the date for Monday next week# If today is Monday, getDateOfNextWeekday(Tuesday) will return the date of tomorrowon getDateOfNextWeekday(nextWeekdayToFind)	set returnDate to current date	if returnDate's weekday is nextWeekdayToFind then return (current date) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDateend getDateOfNextWeekday#----------------------------------------</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>0F0039CA-71C4-4A3A-A758-9B014176DC0E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nxmon</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-21T09:16:55Z</date>
+			<key>label</key>
+			<string>date of next Monday</string>
+			<key>modificationDate</key>
+			<date>2015-06-16T10:23:38Z</date>
+			<key>plainText</key>
+			<string># AppleScript for TextExpander# Helmut Hauser# May 21, 2015# http://www.worksmartandberemarkable.com## for Asian Efficiency# http://www.asianefficiency.com/# For different weekdays you simply have to change the this line# e.g., set dateOfNextWeekday to getDateOfNextWeekWeekday(Sunday) -- Sundayset dateOfNextWeekday to getDateOfNextWeekday(Monday) -- Mondayset myWeekDay to weekday of dateOfNextWeekdayset myMonth to month of dateOfNextWeekdayset myDay to day of dateOfNextWeekdayset myYear to year of dateOfNextWeekday# Here we put the final output together# if you want a different format, you will have to change this line# simply combine variables, like myMonth or my Day), with other textpiece like ")" # together with &amp;set fullOutput to "next " &amp; myWeekDay &amp; " (" &amp; myMonth &amp; " " &amp; myDay &amp; ", " &amp; myYear &amp; ")"return fullOutput# ----------------------------------------# subroutine from Doug Stephen# see http://canadian-fury.com/2012/08/31/performing-fixed-point-date-arithmetic-in-textexpander-using-applescript/# adapted by Helmut Hauser# eneric script that allows you to get the date information of a specific upcoming weekday# e.g., to get the date of next Monday# getDateOfNextWeekday(Monday)# Note that the scripts caculates the next upcoming weekday # If today is Monday, getDateOfNextWeekday(Monday) will return the date for Monday next week# If today is Monday, getDateOfNextWeekday(Tuesday) will return the date of tomorrowon getDateOfNextWeekday(nextWeekdayToFind)	set returnDate to current date	if returnDate's weekday is nextWeekdayToFind then return (current date) + (7 * days)	repeat until returnDate's weekday is nextWeekdayToFind		set returnDate to returnDate + days	end repeat		return returnDateend getDateOfNextWeekday#----------------------------------------</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>691EC544-6816-4427-A4AC-49DE15A99542</string>
+		</dict>
+	</array>
+</dict>
+</plist>

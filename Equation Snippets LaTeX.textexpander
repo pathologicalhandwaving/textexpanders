@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Equation Snippets LaTeX</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>\ssubn</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-12T19:10:06Z</date>
+			<key>label</key>
+			<string>S subscript n </string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:20:56Z</date>
+			<key>plainText</key>
+			<string>\begin{equation}
+	\mathrm{S}_n
+\end{equation}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3EEF3027-B6FF-482D-A6A6-BB5793C93312</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>\zofsn</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-12T19:10:42Z</date>
+			<key>label</key>
+			<string>Integers and S subscript n</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:24:43Z</date>
+			<key>plainText</key>
+			<string>\begin{equation}
+	\mathbb{Z}(\mathrm{S}_n)
+\end{equation}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8C3D0D95-6127-4F69-99BA-3F8F8AB49A35</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>summ</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:02:59Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs24 \cf0 \\sum_\{i= %|\}^\{n\}}</string>
+			</dict>
+			<key>label</key>
+			<string>Sum from i= to n</string>
+			<key>modificationDate</key>
+			<date>2016-01-25T01:14:08Z</date>
+			<key>plainText</key>
+			<string>\sum_{i= %|}^{n}</string>
+			<key>richText</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhBJOU0F0dHJpYnV0ZWRTdHJp
+			bmcAhIQITlNPYmplY3QAhZKEhIQITlNTdHJpbmcBlIQBKxBcc3Vt
+			X3tpPSAlfH1ee259hoQCaUkBEJKEhIQMTlNEaWN0aW9uYXJ5AJSE
+			AWkBkoSWlgZOU0ZvbnSGkoSEhAZOU0ZvbnQelJkchAVbMjhjXQYA
+			AAAUAAAA//5IAGUAbAB2AGUAdABpAGMAYQCEAWYMhAFjAJ0BnQCd
+			AIaGhg==
+			</data>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>669DEB30-BAB9-4B9C-B34C-A7F348A86B03</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lintlim</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:04:06Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\int\\limits_a^b}</string>
+			</dict>
+			<key>label</key>
+			<string>limit version of a^b</string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:23:30Z</date>
+			<key>plainText</key>
+			<string>\int\limits_a^b</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>ED54F82A-3020-4EE4-B314-B9CE9CEE366E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lsuma</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:04:41Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\sum_\{a\}}</string>
+			</dict>
+			<key>label</key>
+			<string>Sum from a</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:23:14Z</date>
+			<key>plainText</key>
+			<string>\sum_{a}</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>38D534F4-AA4E-4B9D-B246-3BD6B38F95EE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>liints</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:05:31Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\int\\limits_S}</string>
+			</dict>
+			<key>label</key>
+			<string>limit version of S</string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:23:18Z</date>
+			<key>plainText</key>
+			<string>\int\limits_S</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>3895FCB8-126B-4BED-AA12-6C33D67C6768</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lointab</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:06:04Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\oint_\{a\}^\{b\}}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-07-05T22:09:08Z</date>
+			<key>plainText</key>
+			<string>\oint_{a}^{b}</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>E7FC4FA8-9975-4894-AE3B-D569C7A85DA9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loints</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:06:36Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\oint_\{S\}}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-07-05T22:08:30Z</date>
+			<key>plainText</key>
+			<string>\oint_{S}</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>278DA55C-A903-4AE8-9609-256AA1B2ECD8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loint</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:07:13Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\oint}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-07-05T22:08:17Z</date>
+			<key>plainText</key>
+			<string>\oint</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>10E10180-01B3-4343-B73C-3C510D2712E1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lsum</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:07:37Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\sum}</string>
+			</dict>
+			<key>label</key>
+			<string>Sum</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:23:18Z</date>
+			<key>plainText</key>
+			<string>\sum</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>E3E36269-0FFA-4CF9-80D3-F1070E0CBFFA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lnorm</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:10:47Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\left\\| \\right\\|}</string>
+			</dict>
+			<key>label</key>
+			<string>norm brackets</string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:23:55Z</date>
+			<key>plainText</key>
+			<string>\left\| \right\|</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>CE44C7E5-90BC-4F2B-BBC3-83947C1CADA3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lgen</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:11:14Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\left\\langle\\right\\rangle}</string>
+			</dict>
+			<key>label</key>
+			<string>brackets for generators</string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:23:05Z</date>
+			<key>plainText</key>
+			<string>\left\langle\right\rangle</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>FD0EF17B-B35E-4A6F-80E2-8767E20D86D6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lciel</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:11:38Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\left\\lceil \\right\\rceil}</string>
+			</dict>
+			<key>label</key>
+			<string>Ceiling Function</string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:22:23Z</date>
+			<key>plainText</key>
+			<string>\left\lceil \right\rceil</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>57D9797B-67E8-476A-84FF-913BA1B272B9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lfloor</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:12:00Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\left\\lfloor \\right\\rfloor}</string>
+			</dict>
+			<key>label</key>
+			<string>Floor Function</string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:22:46Z</date>
+			<key>plainText</key>
+			<string>\left\lfloor \right\rfloor</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>E927732E-B580-41BF-9BA1-AE87B78C0031</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>llabs</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:12:33Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\left| \\right|}</string>
+			</dict>
+			<key>label</key>
+			<string>absolute value brackets</string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:23:39Z</date>
+			<key>plainText</key>
+			<string>\left| \right|</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>C7AA4CCE-F3CD-4F4A-9826-B35DB64C3A2F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lsqbr</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:13:05Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\left[ \\right]}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-07-05T22:13:05Z</date>
+			<key>plainText</key>
+			<string>\left[ \right]</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>7E000171-114B-452F-B1F9-BDA8C2B94C05</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lcurlb</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:13:28Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\left\\\{ \\right\\\}}</string>
+			</dict>
+			<key>label</key>
+			<string>Curvy parentheses</string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:22:39Z</date>
+			<key>plainText</key>
+			<string>\left\{ \right\}</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>43C61192-CF0B-4E21-BA7C-81937180BED4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lbr</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:13:56Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\left( \\right)}</string>
+			</dict>
+			<key>label</key>
+			<string>curved parentheses</string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:22:07Z</date>
+			<key>plainText</key>
+			<string>\left( \right)</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>812F51A9-9149-4EDD-B848-80D3582D82D8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lartb</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:15:02Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\sqrt[b]\{a\}}</string>
+			</dict>
+			<key>label</key>
+			<string>bth root of a</string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:21:45Z</date>
+			<key>plainText</key>
+			<string>\sqrt[b]{a}</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>E0F47079-34F7-4DB2-9D14-7D3181FFB20A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lsqrta</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:15:27Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \\sqrt\{a\}}</string>
+			</dict>
+			<key>label</key>
+			<string>square root a</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:23:27Z</date>
+			<key>plainText</key>
+			<string>\sqrt{a}</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>E69F230D-099D-4D0A-B9F0-2BB1FE4958B4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lfrac</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:15:56Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs24 \cf0 \\frac\{a\}\{b\}}</string>
+			</dict>
+			<key>label</key>
+			<string>Fraction a/b</string>
+			<key>modificationDate</key>
+			<date>2016-01-25T01:10:20Z</date>
+			<key>plainText</key>
+			<string>\frac{a}{b}</string>
+			<key>richText</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhBJOU0F0dHJpYnV0ZWRTdHJp
+			bmcAhIQITlNPYmplY3QAhZKEhIQITlNTdHJpbmcBlIQBKwtcZnJh
+			Y3thfXtifYaEAmlJAQuShISEDE5TRGljdGlvbmFyeQCUhAFpAZKE
+			lpYGTlNGb250hpKEhIQGTlNGb250HpSZHIQFWzI4Y10GAAAAFAAA
+			AP/+SABlAGwAdgBlAHQAaQBjAGEAhAFmDIQBYwCdAZ0AnQCGhoY=
+			</data>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>05342F75-DC85-490D-9E62-A21280F0A853</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ss</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:16:52Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs24 \cf0 _\{%|\}}</string>
+			</dict>
+			<key>label</key>
+			<string>subscript</string>
+			<key>modificationDate</key>
+			<date>2016-01-25T01:11:59Z</date>
+			<key>plainText</key>
+			<string>_{%|}</string>
+			<key>richText</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhBJOU0F0dHJpYnV0ZWRTdHJp
+			bmcAhIQITlNPYmplY3QAhZKEhIQITlNTdHJpbmcBlIQBKwVfeyV8
+			fYaEAmlJAQWShISEDE5TRGljdGlvbmFyeQCUhAFpAZKElpYGTlNG
+			b250hpKEhIQGTlNGb250HpSZHIQFWzI4Y10GAAAAFAAAAP/+SABl
+			AGwAdgBlAHQAaQBjAGEAhAFmDIQBYwCdAZ0AnQCGhoY=
+			</data>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>01D6633F-4760-460D-95FD-8DD598C69AB0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:17:16Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs24 \cf0 ^\{%|\}}</string>
+			</dict>
+			<key>label</key>
+			<string>power</string>
+			<key>modificationDate</key>
+			<date>2016-01-25T01:11:47Z</date>
+			<key>plainText</key>
+			<string>^{%|}</string>
+			<key>richText</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhBJOU0F0dHJpYnV0ZWRTdHJp
+			bmcAhIQITlNPYmplY3QAhZKEhIQITlNTdHJpbmcBlIQBKwVeeyV8
+			fYaEAmlJAQWShISEDE5TRGljdGlvbmFyeQCUhAFpApKElpYGTlNG
+			b250hpKEhIQGTlNGb250HpSZHIQFWzI4Y10GAAAAFAAAAP/+SABl
+			AGwAdgBlAHQAaQBjAGEAhAFmDIQBYwCdAZ0AnQCGkoSWlhBOU1Bh
+			cmFncmFwaFN0eWxlhpKEhIQQTlNQYXJhZ3JhcGhTdHlsZQCUhARD
+			Q0BTBACFAIaGhg==
+			</data>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>515413BD-1D94-4952-BCCE-7308A3116831</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lxaeb</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-05T22:17:53Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 .HelveticaNeueUI;}
+{\colortbl;}
+\f0\fs24 \cf0 \{x_\{a\}\}^b}</string>
+			</dict>
+			<key>label</key>
+			<string>Subscript to bth power</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:23:01Z</date>
+			<key>plainText</key>
+			<string>{x_{a}}^b</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>E55A60C3-D6B5-43AA-B3F1-B5437CBEA3B8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>\addfunctmap</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-12T18:41:08Z</date>
+			<key>label</key>
+			<string>additive function map</string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:17:23Z</date>
+			<key>plainText</key>
+			<string>\begin{equation}
+	\ f+g: x \mapsto f(x) + g(x)
+\end{equation}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B74550CE-CC44-43DC-AE29-D5BC6838F5BC</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>\amsbinom</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-11T11:15:56Z</date>
+			<key>label</key>
+			<string>amsmath binomial coefficient </string>
+			<key>modificationDate</key>
+			<date>2015-07-11T11:16:24Z</date>
+			<key>plainText</key>
+			<string>\frac{n!}{k!(n-k)!} = \binom{n}{k}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>24ECABB6-0522-4C1C-A09E-2083A0BDD864</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>\binom </string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-11T11:16:36Z</date>
+			<key>label</key>
+			<string>binomial coeffiecient without amsmath</string>
+			<key>modificationDate</key>
+			<date>2016-01-25T01:10:41Z</date>
+			<key>plainText</key>
+			<string>\frac{n!}{k!(n-k)!} = \binom{n}{k}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9CEAA0B8-01B4-43B0-9091-1AD153827A7A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-23T16:43:53Z</date>
+			<key>label</key>
+			<string>Annihilator of a Ring</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:23:57Z</date>
+			<key>plainText</key>
+			<string>{\mathrm {Ann}}_{R}(S)=\{r\in R\mid \forall s\in S,rs=0\}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4B31FA6F-C9BB-4598-9DF0-6793851AE35D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T15:21:56Z</date>
+			<key>label</key>
+			<string>Split-case Function</string>
+			<key>modificationDate</key>
+			<date>2015-08-02T15:22:12Z</date>
+			<key>plainText</key>
+			<string>f(x) =
+ \begin{cases}
+ \frac{a}{b} &amp; \frac{a}{b}\in\mathbb{Z} \\
+ \text{undefined} &amp; \text{otherwise}
+ \end{cases}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>59D4DF4E-0BA7-4486-887B-1C43004128AE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>\seq2</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-24T11:04:00Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-09-24T11:04:00Z</date>
+			<key>plainText</key>
+			<string>$$a_{i_1} &lt; a_{i_2} &lt; \ldots &lt; a_{i_n+1}$$</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>64B8755F-F2E4-4592-8DF8-AB0342660B56</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>eesum</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-21T01:05:37Z</date>
+			<key>label</key>
+			<string>the definition of e</string>
+			<key>modificationDate</key>
+			<date>2015-11-21T01:07:11Z</date>
+			<key>plainText</key>
+			<string>\[e = 1 + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \frac{1}{4!} + \ldots \]</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E12F5458-9A81-45E2-9CFF-0582111A365E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>eepow</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-21T01:07:18Z</date>
+			<key>label</key>
+			<string>power series of e^x</string>
+			<key>modificationDate</key>
+			<date>2015-11-21T01:08:46Z</date>
+			<key>plainText</key>
+			<string>\[e^{x} = 1 + x + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \frac{x^{4}}{4!} + \ldots \]</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B61F7CBD-F151-4DF1-B8B8-FD583F9495E9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ggser</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-21T01:09:04Z</date>
+			<key>label</key>
+			<string>geometric series</string>
+			<key>modificationDate</key>
+			<date>2015-11-21T01:11:43Z</date>
+			<key>plainText</key>
+			<string>\[(1-x)(1 + x + x^{2} + x^{3} + \ldots ) = 1 \]
+
+Which is equivalent to the geometric series:
+\[ \frac{1}{1-x} = 1 + x + x^{2} + x^{3} + x^{4} + \dots \]
+
+
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3F25E98E-1E80-4D54-8A69-A02BF5CAB461</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-21T01:11:57Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-11-21T01:11:57Z</date>
+			<key>plainText</key>
+			<string></string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B9F601A5-081E-439F-817B-2A77F038416C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pprb</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-11-22T04:37:58Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-11-22T04:37:58Z</date>
+			<key>plainText</key>
+			<string>$\mathcal{P}$</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CF8C2972-91BE-4392-916D-58E85C19F0E4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mbb</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-11T05:26:15Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-12-11T05:26:15Z</date>
+			<key>plainText</key>
+			<string>\mathbb{</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>217F0A60-73F4-4042-8DB9-F9F2E624B233</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ddf</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-11T05:30:02Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-12-11T05:30:02Z</date>
+			<key>plainText</key>
+			<string>\begin{defn}
+    %|
+\end{defn}
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B1263820-D965-4DE2-BFE3-9B1C0B3C9ED0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>seqq</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-11T05:37:38Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2016-01-25T01:13:34Z</date>
+			<key>plainText</key>
+			<string>$\{a_{1},a_{2},\ldots a_{n-1}, a_{n} \}$</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2A6E4550-C72C-401B-B720-7D2AF96E1FA6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>bii</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-23T02:38:54Z</date>
+			<key>label</key>
+			<string>binomial</string>
+			<key>modificationDate</key>
+			<date>2015-12-23T02:39:16Z</date>
+			<key>plainText</key>
+			<string>\binom{%|}{}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0402F0DA-116F-4333-99A8-E2CFD55895DB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>frr</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-12-23T02:40:41Z</date>
+			<key>label</key>
+			<string>fraction</string>
+			<key>modificationDate</key>
+			<date>2015-12-23T02:40:58Z</date>
+			<key>plainText</key>
+			<string>\frac{%|}{}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>98907024-E0F8-41A3-AB86-291AE123DA0A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mmm</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2016-01-15T00:31:55Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2016-01-25T01:12:25Z</date>
+			<key>plainText</key>
+			<string>$%clipboard$</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D47A1E67-A879-4DFF-96C0-C63370A8CBEF</string>
+		</dict>
+	</array>
+</dict>
+</plist>

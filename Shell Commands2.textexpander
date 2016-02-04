@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Shell Commands</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>shell:script:new</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-16T21:59:28Z</date>
+			<key>label</key>
+			<string>Create new shell script</string>
+			<key>modificationDate</key>
+			<date>2013-07-16T22:08:03Z</date>
+			<key>plainText</key>
+			<string>#!/bin/sh
+
+
+#######################################
+#
+#      Shell command parameters
+#
+#######################################
+
+#%filltext:name=Command Name% init
+#%filltext:name=Command Name% run
+#%filltext:name=Command Name% status
+
+
+
+#######################################
+#
+#      Shell command logic
+#
+#######################################
+
+# Check first parameter
+if [ $1 ]
+then
+    # do stuff
+    case "$1" in
+       init)
+    
+       ;;
+       status)
+    
+       ;;
+       run)
+    
+       ;;
+       *)
+          help
+       ;;
+    esac
+
+else
+    # show help
+    help
+fi
+
+
+
+
+#######################################
+#
+#      Shell command functions
+#
+#######################################
+
+function help () {
+    echo "%filltext:name=Command Name% - A simple script that does something useful, hopefully."
+    echo "
+    echo "    %filltext:name=Command Name% init                  - include in the project";
+    echo "    %filltext:name=Command Name% run                  - runs something";
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2ACCF644-6ECA-447E-A7C9-D053D426AA14</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ssh:key:deploy</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-07-15T21:50:37Z</date>
+			<key>label</key>
+			<string>SSH copy public key to remote server</string>
+			<key>modificationDate</key>
+			<date>2013-07-15T21:54:21Z</date>
+			<key>plainText</key>
+			<string>ssh-copy-id %fillpart:name=Specific public key:default=yes%-i ~/.ssh/id_rsa.pub%fillpartend% %filltext:name=Remote host%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A296F0F7-F237-4CA4-95F0-CB1A9FB29673</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>test:echo</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T07:00:52Z</date>
+			<key>label</key>
+			<string>Test echo</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T07:01:05Z</date>
+			<key>plainText</key>
+			<string>echo -e "An apple a day keeps away \a\t\tdoctor\n"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3AA11BBE-D183-4F16-BF42-E0B80EB75B4F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>watch:file</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T05:40:30Z</date>
+			<key>label</key>
+			<string>Watch a file change</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T05:40:30Z</date>
+			<key>plainText</key>
+			<string>tail -c %filltext:name=Number of lines:default=100:width=25% %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>61281987-8A6C-4ACE-A3F9-DD2678A1FBD4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>file:read</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T05:38:02Z</date>
+			<key>label</key>
+			<string>Read the first number of lines of a file</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T05:39:32Z</date>
+			<key>plainText</key>
+			<string>head -%filltext:name=Number of lines:default=10:width=25% %clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4CD37ACB-2DEF-4741-8375-EB80F7AF5AD7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>rsync:remote</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T04:55:41Z</date>
+			<key>label</key>
+			<string>rsync between remote and local</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T05:45:04Z</date>
+			<key>plainText</key>
+			<string>rsync -ahiz%fillpart:name=Verbose output:default=yes%v%fillpartend% %fillpart:name=Show progress:default=yes%--progress%fillpartend%%fillpart:name=Limit bandwidth%--bwlimit=10000%fillpartend%%filltext:name=username%@%filltext:name=Remote server%:%filltext:name=Copy from:width=35% %filltext:name=Copy to:width=35% %fillpart:name=Verbose output%-v%fillpartend%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A16F0EDE-83BE-462E-8555-F3EF9040ED75</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>rsync:local</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2013-06-23T04:49:58Z</date>
+			<key>label</key>
+			<string>rsync between two local paths</string>
+			<key>modificationDate</key>
+			<date>2013-06-23T05:42:45Z</date>
+			<key>plainText</key>
+			<string>rsync -avhi --progress %fillpart:name=Simulate run%--dry-run%fillpartend% %fillpart:name=Include pattern%--include '*.xyz'%fillpartend%%fillpart:name=Exclude pattern:default=yes%--exclude '*.xyz'%fillpartend% %filltext:name=Source path:width=35% %filltext:name=Destination path:width=35%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>903E6EFF-06D6-4F6E-B1E8-5C1545A1198B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>files:loop</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T17:03:59Z</date>
+			<key>label</key>
+			<string>Loop through files</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:37:48Z</date>
+			<key>plainText</key>
+			<string>for $file in $(cd a; find / -type -f); do diff a/$file b/$file &gt; $a/$file.diff; done</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>4F3134A3-8537-4039-8F55-3E90143802E2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>network:toggle</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T17:00:53Z</date>
+			<key>label</key>
+			<string>Toggle network interface connection</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:37:23Z</date>
+			<key>plainText</key>
+			<string>ifconfig en0 down
+ifconfig en0 up</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>743DDE89-CAF9-40F8-A8E8-A19CF65A0475</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ip:get</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T17:00:05Z</date>
+			<key>label</key>
+			<string>Get this machine's network IP address</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:37:16Z</date>
+			<key>plainText</key>
+			<string>ifconfig | grep inet</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>EB7EA9DF-AA84-452B-9D8D-B2AE902F3E61</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>network:list</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:59:27Z</date>
+			<key>label</key>
+			<string>Get IP addresses of devices on a network</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:37:09Z</date>
+			<key>plainText</key>
+			<string>ifconfig</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>F4EE3F69-7E38-40D4-BF31-F2E6193E5A5F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>uncompress</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:58:02Z</date>
+			<key>label</key>
+			<string>Uncompress file</string>
+			<key>modificationDate</key>
+			<date>2012-03-17T04:21:53Z</date>
+			<key>plainText</key>
+			<string>tar -xzvf %fill:file%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>414AC4AA-C2B9-4B82-BFF4-A40BA1B4E708</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>compress</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:55:59Z</date>
+			<key>label</key>
+			<string>Compress files</string>
+			<key>modificationDate</key>
+			<date>2012-03-17T04:25:09Z</date>
+			<key>plainText</key>
+			<string>tar -czf %fill:newfile%.tar.gz %fill:targetfiles%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2FD763B7-AA7F-4DDF-8319-035DD409B519</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ssh:host:revoke</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2012-01-02T16:54:44Z</date>
+			<key>label</key>
+			<string>SSH revoke key known host</string>
+			<key>modificationDate</key>
+			<date>2012-03-18T08:37:40Z</date>
+			<key>plainText</key>
+			<string>ssh-keygen -R %fill:hostname%</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>3A35514D-7F74-41AD-B45E-E5275228042B</string>
+		</dict>
+	</array>
+</dict>
+</plist>

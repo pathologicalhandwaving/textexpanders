@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Shell Commands</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runcat</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-02-04T20:00:50Z</date>
+			<key>label</key>
+			<string>Run Cat (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-07-25T20:43:56Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+cat %filltext:name=FilePath%</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CC589F83-0566-412E-B6DB-12C22A2F9B7D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runcbcat</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-02-04T20:00:50Z</date>
+			<key>label</key>
+			<string>Run Cat [Clipboard] (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-07-25T20:43:48Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+cat %clipboard</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>B8FB9F83-827B-4FCE-A40E-8ABBC8B7CEFA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runcblist</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-02-04T20:00:50Z</date>
+			<key>label</key>
+			<string>Run Listing [Clipboard] (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-07-25T20:43:35Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+ls -al %clipboard</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>571CCA99-EF12-4599-B5C7-44F30FC746B7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runcommand</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-02-04T20:00:50Z</date>
+			<key>label</key>
+			<string>Run Command (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-06-20T20:35:33Z</date>
+			<key>plainText</key>
+			<string>#!/bin/%fillpopup:name=Shell:default=bash:csh:ksh:tcsh:zsh%
+%filltext:name=Command%</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>D353DD48-244B-4F16-A4CF-7247BE98C9C0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runlist</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-02-04T20:00:50Z</date>
+			<key>label</key>
+			<string>Run Listing (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-07-25T20:43:42Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+ls -al %filltext:name=DirectoryPath%
+
+%filltop%</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>D9642CF5-5E6D-44E7-B0B4-519609D8445B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runping</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-02-04T20:00:50Z</date>
+			<key>label</key>
+			<string>Run Ping (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T20:15:20Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+PingAddress=%filltext:name=Address%
+NumberOfPings=%filltext:name=Count:default=5%
+ping -c $NumberOfPings PingAddress
+
+%filltop%</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>38847AC2-D316-4019-B18D-807BCD056C70</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runsysinfo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-02-04T20:00:50Z</date>
+			<key>label</key>
+			<string>Get System Information (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-06-20T20:34:44Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+
+#Software Version
+sw_vers
+
+#Software
+echo
+system_profiler SPSoftwareDataType
+
+#Hardware
+echo
+system_profiler SPHardwareDataType
+
+#Memory
+echo
+system_profiler SPMemoryDataType
+
+#Disk Utilisation
+echo
+df -h -l
+
+#Network
+echo
+system_profiler SPNetworkDataType
+
+#Displays
+echo
+system_profiler SPDisplaysDataType</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>B8346523-10F8-4039-8802-9D9A44BE262B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runtrace</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-02-04T20:00:50Z</date>
+			<key>label</key>
+			<string>Run TraceRoute (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T20:15:25Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+traceroute %filltext:name=Address%
+
+%filltop%</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>CC800D61-1441-4FAD-872E-E8F4C3C4239E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>bccc</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-11-22T23:56:39Z</date>
+			<key>label</key>
+			<string>Calculate (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T20:12:33Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+
+#Enter calculation
+tecalc=$(echo "%filltext:name=Calculation:width=50%" | bc -l)
+
+#Format for 12 characters &amp; decimals and remove spaces
+tecalc=$(printf %12.12f $tecalc  | tr -d ' ')
+
+#Remove trailing zeros after the decimal point
+tecalc=$(echo $tecalc | sed 's/\(\.[0-9]*[1-9]\)0*$/\1/;s/\.0*$//')
+
+#Output without a newline
+echo -n $tecalc
+
+%filltop%</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>0B573C9C-8B72-4922-9BF8-99D985E78B19</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runwhois</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-11-29T23:13:41Z</date>
+			<key>label</key>
+			<string>Run WhoIs (Manual Domain Entry) (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T20:15:38Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+
+#The hackertarget API is designed to be used in an ad-hoc fashion not for bulk queries and is limited to 50 (total) requests from a single IP Address per day.
+
+curl http://api.hackertarget.com/whois/?q=%filltext:name=Domain%
+
+%filltop%</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>84EA5352-F60A-4AE8-BF29-2EBB6235CE33</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runcbwhois</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2014-11-29T23:22:21Z</date>
+			<key>label</key>
+			<string>Run WhoIs (Domain on Clipboard) (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-06-20T20:36:58Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+
+#The hackertarget API is designed to be used in an ad-hoc fashion not for bulk queries and is limited to 50 (total) requests from a single IP Address per day.
+
+curl http://api.hackertarget.com/whois/?q=%clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>81D94188-4360-4998-A2F3-B401611C5337</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runipe</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-19T21:33:39Z</date>
+			<key>label</key>
+			<string>Run Get IP Address (Wired) (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-06-20T20:35:59Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+ipconfig getifaddr en0</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>03D2E268-F305-4066-9ACD-1A618664EF09</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runipw</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-19T21:33:39Z</date>
+			<key>label</key>
+			<string>Run Get IP Address (WiFi) (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-06-20T20:35:56Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+ipconfig getifaddr en1</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>5A43296D-DEFD-41DF-BCF9-E74743D03AF0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runipa</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-19T21:36:23Z</date>
+			<key>label</key>
+			<string>Run Get IP Address (All)</string>
+			<key>modificationDate</key>
+			<date>2015-06-19T21:40:37Z</date>
+			<key>plainText</key>
+			<string>Ethernet: %snippet:.runipe%
+External: %snippet:.runipx%
+WiFi: %snippet:.runipw%
+External: %snippet:.runipx%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>AFC540C4-F7A9-4B14-AAD9-4925A65B2A19</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.runipx</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-19T21:37:52Z</date>
+			<key>label</key>
+			<string>Run Get IP Address (External) (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-06-20T20:35:53Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+curl ipecho.net/plain; echo</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>BC56AA12-278E-4D4F-981F-14C64491D0F0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>.defineword</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-20T21:15:19Z</date>
+			<key>label</key>
+			<string>Lookup Definition of Word (BASH)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T20:14:05Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+
+curl dict://dict.org/d:%filltext:name=Lookup%:foldoc
+curl dict://dict.org/d:%filltext:name=Lookup%
+
+%filltop%</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>903132E1-0F5D-406D-81E0-21AC7EF45CBA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>calc+</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-11T15:13:08Z</date>
+			<key>label</key>
+			<string>Calculate Alternative (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T20:11:41Z</date>
+			<key>plainText</key>
+			<string>%filltop%
+%filltext:name=Calculation:width=60%;</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>B1AF75AF-F724-44EC-85F6-8F3325940D02</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$#!</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-12T16:37:48Z</date>
+			<key>label</key>
+			<string>Select SheBang/HashBang</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T16:44:18Z</date>
+			<key>plainText</key>
+			<string>%fillpopup:name=Select SheBang:default=#!/bin/bash:#!/usr/bin/env python:#!/usr/bin/env osascript:#!/bin/sh:#!/usr/bin/ruby:#!/usr/bin/env php%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D02C5D0D-9F72-4C9D-8C7D-E9BA54721F1C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>openF</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T02:10:18Z</date>
+			<key>label</key>
+			<string>open in finder</string>
+			<key>modificationDate</key>
+			<date>2015-09-06T02:10:42Z</date>
+			<key>plainText</key>
+			<string>open .</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>AFD6128C-672A-4597-A94F-CEA0056E178D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>commentAroundString</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-06T02:09:44Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-09-06T02:09:44Z</date>
+			<key>plainText</key>
+			<string>function box() { t="$1xxxx";c=${2:-%}; echo ${t//?/$c}; echo "$c $1 $c";echo ${t//?/$c}; }</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3B28D639-FFBF-4E2C-840C-D1B4C7E5EAD9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,eub</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-08-09T11:54:19Z</date>
+			<key>label</key>
+			<string>Expand URL (bit.ly)</string>
+			<key>modificationDate</key>
+			<date>2013-10-23T12:20:26Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby
+# Bit.ly shortener TextExpander Snippet by Brett Terpstra
+# Working as of June, 2012 but APIs are a'changin
+# Create snippets for username (shortcut: #btlyu) and API key (shortcut: #btlya)
+# Find your API key at http://bit.ly/a/your_api_key
+
+require 'open-uri'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+USER_NAME = '%snippet:#btlyu%' # Your login name
+API_KEY = '%snippet:#btlya%'
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+res = open("https://api-ssl.bit.ly/v3/expand?login=#{USER_NAME}&amp;apiKey=#{API_KEY}&amp;shortUrl=#{CGI.escape(url)}&amp;format=txt").read unless url.nil?
+
+begin
+  print res unless res.nil?
+rescue
+  exit
+end</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>20F141F4-F990-4010-9A37-D596A4F489C4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,curb</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-11-04T18:05:49Z</date>
+			<key>label</key>
+			<string>Shorten current Chrome tab</string>
+			<key>modificationDate</key>
+			<date>2013-10-23T12:19:39Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby
+# Bit.ly shortener TextExpander Snippet by Brett Terpstra
+# Working as of June, 2012 but APIs are a'changin
+# Create snippets for username (shortcut: #btlyu) and API key (shortcut: #btlya)
+# Find your API key at http://bit.ly/a/your_api_key
+
+require 'open-uri'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+def get_chrome_url
+  %x{osascript -e 'tell application "Google Chrome" to return URL of active tab of window 1'}.strip
+end
+
+USER_NAME = '%snippet:#btlyu%' # Your login name
+API_KEY = '%snippet:#btlya%'
+
+url = get_chrome_url
+
+res = open("https://api-ssl.bit.ly/v3/shorten?login=#{USER_NAME}&amp;apiKey=#{API_KEY}&amp;longUrl=#{CGI.escape(url)}&amp;format=txt").read unless url.nil?
+
+begin
+  print res.strip unless res.nil?
+rescue
+  exit
+end</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>B86C5F29-D2FF-4783-A42E-46D10CDB67C5</string>
+		</dict>
+	</array>
+</dict>
+</plist>

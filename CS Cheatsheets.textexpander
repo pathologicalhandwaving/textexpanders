@@ -1,0 +1,2520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>CS Cheatsheets</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>,cosx</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-25T16:40:43Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 Helvetica;}
+{\colortbl;}
+\f0\fs24 \cf0 # **Cheatsheet:**   OS X Terminal\
+\
+alias     Create an alias \uc0\u8226 \
+alloc     List used and free memory\
+apropos   Search the whatis database for strings\
+awk       Find and Replace text within file(s)\
+\
+## B\
+\
+basename  Convert a full pathname to just a filename\
+bash      Bourne-Again SHell\
+bg        Send to background \uc0\u8226 \
+bind      Display readline key and function bindings \uc0\u8226 \
+bless     Set volume bootability and startup disk options.\
+break     Exit from a For, While, Until or Select loop \
+builtin   Execute a shell builtin \uc0\u8226 \
+bzip2     Compress or decompress files\
+\
+## C\
+cal       Display a calendar\
+caller    Return the context of a subroutine call \uc0\u8226 \
+case      Conditionally perform a command \uc0\u8226 \
+cat       Concatenate and print (display) the content of files\
+cd        Change Directory \uc0\u8226 \
+chflags   Change a file or folder's flags\
+chgrp     Change group ownership\
+chmod     Change access permissions\
+chown     Change file owner and group\
+chroot    Run a command with a different root directory\
+cksum     Print CRC checksum and byte counts\
+clear     Clear terminal screen\
+cmp       Compare two files\
+comm      Compare two sorted files line by line\
+command   Run a command (not a function) \uc0\u8226 \
+complete  Edit a command completion [word/pattern/list] \uc0\u8226 \
+continue  Resume the next iteration of a loop \uc0\u8226 \
+cp        Copy one or more files to another location\
+cron      Daemon to execute scheduled commands\
+crontab   Schedule a command to run at a later date/time\
+curl      Transfer data  from or to a server\
+cut       Divide a file into several parts\
+\
+## D\
+\
+date      Display or change the date &amp; time\
+dc        Desk Calculator\
+dd        Data Dump - Convert and copy a file\
+declare   Declare variable &amp; set attributes \uc0\u8226 \
+defaults  Set preferences, show hidden files\
+df        Display free disk space\
+diff      Display the differences between two files\
+diff3     Show differences among three files\
+dig       DNS lookup\
+dirname   Convert a full pathname to just a path\
+dirs      Display list of remembered directories \uc0\u8226 \
+diskutil  Disk utilities - Format, Verify, Repair\
+disown    Unbind a job from the current login session \uc0\u8226 \
+ditto     Copy files and folders\
+  dot_clean Remove dot-underscore files\
+drutil    Interact with CD/DVD burners\
+dscacheutil  Query or flush the Directory Service/DNS cache\
+dseditgroup  Edit, create, manipulate, or delete groups\
+dsenableroot Enable root access\
+dsmemberutil View user and groups rights\
+dscl      Directory Service command line utility\
+du        Estimate file space usage\
+\
+## E\
+\
+echo      Display message on screen \uc0\u8226 \
+ed        A line-oriented text editor (edlin)\
+enable    Enable and disable builtin shell commands \uc0\u8226 \
+env       List or Set environment variables\
+eval      Evaluate several commands/arguments \uc0\u8226 \
+exec      Execute a command \uc0\u8226 \
+exit      Exit the shell \uc0\u8226 \
+expand    Convert tabs to spaces\
+expect    Programmed dialogue with interactive programs\
+            Also see AppleScript\
+export    Set an environment variable \uc0\u8226 \
+expr      Evaluate expressions\
+\
+## F\
+\
+false     Do nothing, unsuccessfully\
+fc        Fix command (history)\
+fdisk     Partition table manipulator for Darwin UFS/HFS/DOS\
+fg        Send job to foreground \uc0\u8226 \
+file      Determine file type\
+find      Search for files that meet a desired criteria\
+fmt       Reformat paragraph text\
+fold      Wrap text to fit a specified width\
+for       Loop command \uc0\u8226 \
+fsck      Filesystem consistency check and repair\
+fsaclctl  Filesystem enable/disable ACL support\
+fs_usage  Filesystem usage (process/pathname)\
+ftp       Internet file transfer program\
+\
+## G\
+\
+GetFileInfo Get attributes of HFS+ files\
+getopt    Parse positional parameters\
+getopts   Parse positional parameters \uc0\u8226 \
+goto      Jump to label and continue execution\
+grep      Search file(s) for lines that match a given pattern\
+groups    Print group names a user is in\
+gzip      Compress or decompress files\
+\
+## H\
+\
+halt      Stop and restart the operating system\
+hash      Refresh the cached/remembered location of commands \uc0\u8226 \
+head      Display the first lines of a file\
+hdiutil   Manipulate iso disk images\
+history   Command History \uc0\u8226 \
+hostname  Print or set system name\
+\
+## I\
+\
+iconv     Convert the character set of a file\
+id        Print user and group names/id's\
+if        Conditionally perform a command \uc0\u8226 \
+ifconfig  Configure network interface parameters\
+info      Help info\
+install   Copy files and set attributes\
+\
+## J\
+\
+jobs      List active jobs \uc0\u8226 \
+join      Join lines on a common field\
+\
+## K\
+\
+kextfind  List kernel extensions\
+kickstart Configure Apple Remote Desktop\
+kill      Stop a process from running\
+\
+## L\
+ \
+l         List files in long format (ls -l)\
+last      Indicate last logins of users and ttys\
+launchctl Load or unload daemons/agents\
+ll        List files in long format, showing invisible files (ls -la)\
+less      Display output one screen at a time\
+let       Evaluate expression \uc0\u8226 \
+lipo      Convert a universal binary\
+ln        Make links between files (hard links, symbolic links)\
+local     Set a local (function) variable \uc0\u8226 \
+locate    Find files\
+logname   Print current login name\
+login     log into the computer\
+logout    Exit a login shell (bye) \uc0\u8226 \
+lpr       Print files\
+lprm      Remove jobs from the print queue\
+lpstat    Printer status information\
+ls        List information about file(s)\
+lsregister Reset the Launch Services database\
+lsbom     List a bill of materials file\
+lsof      List open files\
+\
+## M\
+\
+man       Help manual\
+mdfind    Spotlight search\
+mdutil    Manage Spotlight metadata store\
+mkdir     Create new folder(s)\
+mkfifo    Make FIFOs (named pipes)\
+more      Display output one screen at a time\
+mount     Mount a file system\
+mv        Move or rename files or directories\
+\
+## M\
+\
+nano      Simple text editor\
+net       Manage network resources\
+netstat   Show network status\
+networksetup Network and System Preferences\
+nice      Set the priority of a command\
+nohup     Run a command immune to hangups\
+ntfs.util NTFS file system utility\
+\
+## O\
+\
+onintr    Control the action of a shell interrupt\
+open      Open a file/folder/URL/Application\
+opensnoop Snoop file opens as they occur\
+osacompile Compile Applescript\
+osascript Execute AppleScript\
+\
+## P\
+\
+passwd    Modify a user password\
+paste     Merge lines of files\
+pbcopy    Copy data to the clipboard\
+pbpaste   Paste data from the Clipboard\
+ping      Test a network connection\
+pkgutil   Query and manipulate installed packages\
+plutil    Property list utility\
+pmset     Power Management settings\
+popd      Restore the previous value of the current directory \uc0\u8226 \
+pr        Convert text files for printing\
+printenv  List environment variables\
+printf    Format and print data \uc0\u8226 \
+ps        Process status\
+pushd     Save and then change the current directory\
+pwd       Print Working Directory \uc0\u8226 \
+\
+## Q\
+\
+quota     Display disk usage and limits\
+\
+## R\
+\
+rcp       Copy files between machines\
+read      Read one line from standard input \uc0\u8226 \
+readonly  Mark a variable or function as read-only \uc0\u8226 \
+reboot    Stop and restart the system\
+return    Exit a function \uc0\u8226 \
+rev       Reverse lines of a file\
+rm        Remove files\
+rmdir     Remove folder(s)\
+rpm       Remote Package Manager\
+rsync     Remote file copy - Sync file tree (also RsyncX)\
+\
+## S\
+\
+say       Convert text to audible speech\
+screen    Multiplex terminal, run remote shells via ssh\
+screencapture Capture screen image to file or disk\
+sdiff     Merge two files interactively\
+security  Administer Keychains, keys, certificates and the Security framework\
+sed       Stream Editor\
+select    Generate a list of items \uc0\u8226 \
+set       Set a shell variable = value \uc0\u8226 \
+setfile   Set attributes of HFS+ files\
+shift     Shift positional parameters \uc0\u8226 \
+shopt     Set shell options \uc0\u8226 \
+shutdown  Shutdown or restart OS X\
+sips      Scriptable image processing system\
+sleep     Delay for a specified time\
+softwareupdate System software update tool\
+sort      Sort text files\
+source    Execute commands from a file \uc0\u8226 \
+split     Split a file into fixed-size pieces\
+stop      Stop a job or process\
+su        Substitute user identity\
+sudo      Execute a command as another user\
+sum       Print a checksum for a file\
+suspend   Suspend execution of this shell \uc0\u8226 \
+sw_vers   Print Mac OS X operating system version\
+system_profiler  Report system configuration\
+systemsetup Computer and display system settings\
+\
+## T\
+ \
+tail      Output the last part of files\
+tar       Tape ARchiver\
+tcpdump   Dump traffic on a network\
+tee       Redirect output to multiple files\
+test      Condition evaluation \uc0\u8226 \
+textutil  Manipulate text files in various formats (Doc,html,rtf)\
+time      Measure Program Resource Use\
+times     Print shell &amp; shell process times \uc0\u8226 \
+top       Display process information\
+touch     Change file timestamps\
+tr        Translate, squeeze, and/or delete characters\
+trap      Execute a command when the shell receives a signal \uc0\u8226 \
+traceroute Trace Route to Host\
+true      Do nothing, successfully\
+tty       Print filename of terminal on stdin\
+type      Describe a command \uc0\u8226 \
+\
+## U\
+\
+ufs.util  Mount/unmount UFS file system\
+ulimit    limit the use of system-wide resources \uc0\u8226 \
+umask     Users file creation mask\
+umount    Unmount a device\
+unalias   Remove an alias \uc0\u8226 \
+uname     Print system information\
+unexpand  Convert spaces to tabs\
+uniq      Uniquify files\
+units     Convert units from one scale to another\
+unset     Remove variable or function names \uc0\u8226 \
+until     Loop command \uc0\u8226 \
+uptime    Show how long system has been running\
+users     Print login names of users currently logged in\
+uuencode  Encode a binary file \
+uudecode  Decode a file created by uuencode\
+uuidgen   Generate a Unique ID (UUID/GUID)\
+uucp      Unix to Unix copy\
+\
+## V\
+\
+vi        Text Editor\
+\
+## W\
+\
+wait      Wait for a process to complete \uc0\u8226 \
+wc        Print byte, word, and line counts\
+whatis    Search the whatis database for complete words\
+where     Report all known instances of a command\
+which     Locate a program file in the user's path\
+while     Loop command \uc0\u8226 \
+who       Print all usernames currently logged on\
+whoami    Print the current user id and name (`id -un')\
+write     Send a message to another user\
+\
+## X\
+\
+xargs     Execute utility - passing arguments\
+\
+## Y\
+\
+yes       Print a string until interrupted\
+\
+}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-03-25T16:40:43Z</date>
+			<key>plainText</key>
+			<string># **Cheatsheet:**   OS X Terminal
+
+alias     Create an alias •
+alloc     List used and free memory
+apropos   Search the whatis database for strings
+awk       Find and Replace text within file(s)
+
+## B
+
+basename  Convert a full pathname to just a filename
+bash      Bourne-Again SHell
+bg        Send to background •
+bind      Display readline key and function bindings •
+bless     Set volume bootability and startup disk options.
+break     Exit from a For, While, Until or Select loop 
+builtin   Execute a shell builtin •
+bzip2     Compress or decompress files
+
+## C
+cal       Display a calendar
+caller    Return the context of a subroutine call •
+case      Conditionally perform a command •
+cat       Concatenate and print (display) the content of files
+cd        Change Directory •
+chflags   Change a file or folder's flags
+chgrp     Change group ownership
+chmod     Change access permissions
+chown     Change file owner and group
+chroot    Run a command with a different root directory
+cksum     Print CRC checksum and byte counts
+clear     Clear terminal screen
+cmp       Compare two files
+comm      Compare two sorted files line by line
+command   Run a command (not a function) •
+complete  Edit a command completion [word/pattern/list] •
+continue  Resume the next iteration of a loop •
+cp        Copy one or more files to another location
+cron      Daemon to execute scheduled commands
+crontab   Schedule a command to run at a later date/time
+curl      Transfer data  from or to a server
+cut       Divide a file into several parts
+
+## D
+
+date      Display or change the date &amp; time
+dc        Desk Calculator
+dd        Data Dump - Convert and copy a file
+declare   Declare variable &amp; set attributes •
+defaults  Set preferences, show hidden files
+df        Display free disk space
+diff      Display the differences between two files
+diff3     Show differences among three files
+dig       DNS lookup
+dirname   Convert a full pathname to just a path
+dirs      Display list of remembered directories •
+diskutil  Disk utilities - Format, Verify, Repair
+disown    Unbind a job from the current login session •
+ditto     Copy files and folders
+  dot_clean Remove dot-underscore files
+drutil    Interact with CD/DVD burners
+dscacheutil  Query or flush the Directory Service/DNS cache
+dseditgroup  Edit, create, manipulate, or delete groups
+dsenableroot Enable root access
+dsmemberutil View user and groups rights
+dscl      Directory Service command line utility
+du        Estimate file space usage
+
+## E
+
+echo      Display message on screen •
+ed        A line-oriented text editor (edlin)
+enable    Enable and disable builtin shell commands •
+env       List or Set environment variables
+eval      Evaluate several commands/arguments •
+exec      Execute a command •
+exit      Exit the shell •
+expand    Convert tabs to spaces
+expect    Programmed dialogue with interactive programs
+            Also see AppleScript
+export    Set an environment variable •
+expr      Evaluate expressions
+
+## F
+
+false     Do nothing, unsuccessfully
+fc        Fix command (history)
+fdisk     Partition table manipulator for Darwin UFS/HFS/DOS
+fg        Send job to foreground •
+file      Determine file type
+find      Search for files that meet a desired criteria
+fmt       Reformat paragraph text
+fold      Wrap text to fit a specified width
+for       Loop command •
+fsck      Filesystem consistency check and repair
+fsaclctl  Filesystem enable/disable ACL support
+fs_usage  Filesystem usage (process/pathname)
+ftp       Internet file transfer program
+
+## G
+
+GetFileInfo Get attributes of HFS+ files
+getopt    Parse positional parameters
+getopts   Parse positional parameters •
+goto      Jump to label and continue execution
+grep      Search file(s) for lines that match a given pattern
+groups    Print group names a user is in
+gzip      Compress or decompress files
+
+## H
+
+halt      Stop and restart the operating system
+hash      Refresh the cached/remembered location of commands •
+head      Display the first lines of a file
+hdiutil   Manipulate iso disk images
+history   Command History •
+hostname  Print or set system name
+
+## I
+
+iconv     Convert the character set of a file
+id        Print user and group names/id's
+if        Conditionally perform a command •
+ifconfig  Configure network interface parameters
+info      Help info
+install   Copy files and set attributes
+
+## J
+
+jobs      List active jobs •
+join      Join lines on a common field
+
+## K
+
+kextfind  List kernel extensions
+kickstart Configure Apple Remote Desktop
+kill      Stop a process from running
+
+## L
+ 
+l         List files in long format (ls -l)
+last      Indicate last logins of users and ttys
+launchctl Load or unload daemons/agents
+ll        List files in long format, showing invisible files (ls -la)
+less      Display output one screen at a time
+let       Evaluate expression •
+lipo      Convert a universal binary
+ln        Make links between files (hard links, symbolic links)
+local     Set a local (function) variable •
+locate    Find files
+logname   Print current login name
+login     log into the computer
+logout    Exit a login shell (bye) •
+lpr       Print files
+lprm      Remove jobs from the print queue
+lpstat    Printer status information
+ls        List information about file(s)
+lsregister Reset the Launch Services database
+lsbom     List a bill of materials file
+lsof      List open files
+
+## M
+
+man       Help manual
+mdfind    Spotlight search
+mdutil    Manage Spotlight metadata store
+mkdir     Create new folder(s)
+mkfifo    Make FIFOs (named pipes)
+more      Display output one screen at a time
+mount     Mount a file system
+mv        Move or rename files or directories
+
+## M
+
+nano      Simple text editor
+net       Manage network resources
+netstat   Show network status
+networksetup Network and System Preferences
+nice      Set the priority of a command
+nohup     Run a command immune to hangups
+ntfs.util NTFS file system utility
+
+## O
+
+onintr    Control the action of a shell interrupt
+open      Open a file/folder/URL/Application
+opensnoop Snoop file opens as they occur
+osacompile Compile Applescript
+osascript Execute AppleScript
+
+## P
+
+passwd    Modify a user password
+paste     Merge lines of files
+pbcopy    Copy data to the clipboard
+pbpaste   Paste data from the Clipboard
+ping      Test a network connection
+pkgutil   Query and manipulate installed packages
+plutil    Property list utility
+pmset     Power Management settings
+popd      Restore the previous value of the current directory •
+pr        Convert text files for printing
+printenv  List environment variables
+printf    Format and print data •
+ps        Process status
+pushd     Save and then change the current directory
+pwd       Print Working Directory •
+
+## Q
+
+quota     Display disk usage and limits
+
+## R
+
+rcp       Copy files between machines
+read      Read one line from standard input •
+readonly  Mark a variable or function as read-only •
+reboot    Stop and restart the system
+return    Exit a function •
+rev       Reverse lines of a file
+rm        Remove files
+rmdir     Remove folder(s)
+rpm       Remote Package Manager
+rsync     Remote file copy - Sync file tree (also RsyncX)
+
+## S
+
+say       Convert text to audible speech
+screen    Multiplex terminal, run remote shells via ssh
+screencapture Capture screen image to file or disk
+sdiff     Merge two files interactively
+security  Administer Keychains, keys, certificates and the Security framework
+sed       Stream Editor
+select    Generate a list of items •
+set       Set a shell variable = value •
+setfile   Set attributes of HFS+ files
+shift     Shift positional parameters •
+shopt     Set shell options •
+shutdown  Shutdown or restart OS X
+sips      Scriptable image processing system
+sleep     Delay for a specified time
+softwareupdate System software update tool
+sort      Sort text files
+source    Execute commands from a file •
+split     Split a file into fixed-size pieces
+stop      Stop a job or process
+su        Substitute user identity
+sudo      Execute a command as another user
+sum       Print a checksum for a file
+suspend   Suspend execution of this shell •
+sw_vers   Print Mac OS X operating system version
+system_profiler  Report system configuration
+systemsetup Computer and display system settings
+
+## T
+ 
+tail      Output the last part of files
+tar       Tape ARchiver
+tcpdump   Dump traffic on a network
+tee       Redirect output to multiple files
+test      Condition evaluation •
+textutil  Manipulate text files in various formats (Doc,html,rtf)
+time      Measure Program Resource Use
+times     Print shell &amp; shell process times •
+top       Display process information
+touch     Change file timestamps
+tr        Translate, squeeze, and/or delete characters
+trap      Execute a command when the shell receives a signal •
+traceroute Trace Route to Host
+true      Do nothing, successfully
+tty       Print filename of terminal on stdin
+type      Describe a command •
+
+## U
+
+ufs.util  Mount/unmount UFS file system
+ulimit    limit the use of system-wide resources •
+umask     Users file creation mask
+umount    Unmount a device
+unalias   Remove an alias •
+uname     Print system information
+unexpand  Convert spaces to tabs
+uniq      Uniquify files
+units     Convert units from one scale to another
+unset     Remove variable or function names •
+until     Loop command •
+uptime    Show how long system has been running
+users     Print login names of users currently logged in
+uuencode  Encode a binary file 
+uudecode  Decode a file created by uuencode
+uuidgen   Generate a Unique ID (UUID/GUID)
+uucp      Unix to Unix copy
+
+## V
+
+vi        Text Editor
+
+## W
+
+wait      Wait for a process to complete •
+wc        Print byte, word, and line counts
+whatis    Search the whatis database for complete words
+where     Report all known instances of a command
+which     Locate a program file in the user's path
+while     Loop command •
+who       Print all usernames currently logged on
+whoami    Print the current user id and name (`id -un')
+write     Send a message to another user
+
+## X
+
+xargs     Execute utility - passing arguments
+
+## Y
+
+yes       Print a string until interrupted
+
+</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>78C363E2-6943-4FE8-AA3B-1E0E330ABB99</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,clinux</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-25T16:43:59Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 Helvetica;}
+{\colortbl;}
+\f0\fs24 \cf0 # **Cheatsheet:**   Linux Shell\
+\
+\
+###Common Linux Shell Commands\
+\
+\
+ls : list files/directories in a directory, comparable to dir in windows/dos.\
+ls -al : shows all files (including ones that start with a period), directories, and details attributes for each file. \
+\
+cd : change directory \uc0\u183 \uc0\u183  cd /usr/local/apache : go to /usr/local/apache/ directory \
+cd ~ : go to your home directory \
+cd - : go to the last directory you were in\
+cd .. : go up a directory cat : print file contents to the screen \
+\
+cat filename.txt : cat the contents of filename.txt to your screen \
+\
+chmod: changes file access permissions\
+The set of 3 go in this order from left to right:\
+USER - GROUP - EVERONE\
+\
+0 = --- No permission\
+1 = --X Execute only\
+2 = -W- Write only\
+3 = -WX Write and execute\
+4 = R-- Read only\
+5 = R-X Read and execute\
+6 = RW- Read and write\
+7 = RWX Read, write and execute\
+\
+Usage: \
+chmod numberpermissions filename\
+\
+chmod 000 : No one can access \
+chmod 644: Usually for HTML pages\
+chmod 755: Usually for CGI scripts\
+\
+\
+chown: changes file ownership permissions\
+The set of 2 go in this order from left to right:\
+USER - GROUP\
+\
+chown root myfile.txt : Changes the owner of the file to root\
+chown root.root myfile.txt : Changes the owner and group of the file to root\
+\
+\
+tail : like cat, but only reads the end of the file\
+tail /var/log/messages : see the last 20 (by default) lines of /var/log/messages \
+tail -f /var/log/messages : watch the file continuously, while it's being updated \
+tail -200 /var/log/messages : print the last 200 lines of the file to the screen\
+\
+more : like cat, but opens the file one screen at a time rather than all at once \
+more /etc/userdomains : browse through the userdomains file. hit Space to go to the next page, q to quit \
+\
+pico : friendly, easy to use file editor \
+pico /home/burst/public_html/index.html : edit the index page for the user's website. \
+\
+\
+### File Editing with VI commands\
+\
+\
+vi : another editor, tons of features, harder to use at first than pico \
+vi /home/burst/public_html/index.html : edit the index page for the user's website. \
+Whie in the vi program you can use the following useful commands, you will need to hit SHIFT + : to go into command mode\
+\
+:q! : This force quits the file without saving and exits vi\
+:w : This writes the file to disk, saves it\
+:wq : This saves the file to disk and exists vi\
+:LINENUMBER : EG :25 : Takes you to line 25 within the file\
+:$ : Takes you to the last line of the file\
+:0 : Takes you to the first line of the file\
+\
+grep : looks for patterns in files \
+grep root /etc/passwd : shows all matches of root in /etc/passwd\
+grep -v root /etc/passwd : shows all lines that do not match root \
+\
+ln : create's "links" between files and directories\
+ln -s /usr/local/apache/conf/httpd.conf /etc/httpd.conf : Now you can edit /etc/httpd.conf rather than the original. changes will affect the orginal, however you can delete the link and it will not delete the original. \
+\
+last : shows who logged in and when\
+last -20 : shows only the last 20 logins \
+last -20 -a : shows last 20 logins, with the hostname in the last field \
+\
+w : shows who is currently logged in and where they are logged in from.\
+who : This also shows who is on the server in an shell.\
+\
+netstat : shows all current network connections.\
+netstat -an : shows all connections to the server, the source and destination ips and ports.\
+netstat -rn : shows routing table for all ips bound to the server.\
+\
+top : shows live system processes in a nice table, memory information, uptime and other useful info. This is excellent for managing your system processes, resources and ensure everything is working fine and your server isn't bogged down.\
+top then type Shift + M to sort by memory usage or Shift + P to sort by CPU usage\
+\
+ps: ps is short for process status, which is similar to the top command. It's used to show currently running processes and their PID.\
+A process ID is a unique number that identifies a process, with that you can kill or terminate a running program on your server (see kill command).\
+ps U username : shows processes for a certain user\
+ps aux : shows all system processes\
+ps aux --forest : shows all system processes like the above but organizes in a hierarchy that's very useful!\
+\
+touch : create an empty file \
+touch /home/burst/public_html/404.html : create an empty file called 404.html in the directory /home/burst/public_html/ \
+\
+file : attempts to guess what type of file a file is by looking at it's content. \
+file * : prints out a list of all files/directories in a directory \
+\
+du : shows disk usage. \
+du -sh : shows a summary, in human-readble form, of total disk space used in the current directory, including subdirectories.\
+du -sh * : same thing, but for each file and directory. helpful when finding large files taking up space. \
+\
+wc : word count\
+wc -l filename.txt : tells how many lines are in filename.txt \
+\
+cp : copy a file \
+cp filename filename.backup : copies filename to filename.backup\
+cp -a /home/burst/new_design/* /home/burst/public_html/ : copies all files, retaining permissions form one directory to another. \
+cp -av * ../newdir : Copies all files and directories recurrsively in the current directory INTO newdir\
+\
+mv : Move a file command\
+mv oldfilename newfilename : Move a file or directory from oldfilename to newfilename\
+\
+rm : delete a file\
+rm filename.txt : deletes filename.txt, will more than likely ask if you really want to delete it\
+rm -f filename.txt : deletes filename.txt, will not ask for confirmation before deleting.\
+rm -rf tmp/ : recursively deletes the directory tmp, and all files in it, including subdirectories. BE VERY CAREFULL WITH THIS COMMAND!!! \
+\
+TAR: Creating and Extracting .tar.gz and .tar files\
+tar -zxvf file.tar.gz : Extracts the file\
+tar -xvf file.tar : Extracts the file\
+tar -cf archive.tar contents/ : Takes everything from contents/ and puts it into archive.tar\
+gzip -d filename.gz : Decompress the file, extract it\
+\
+ZIP Files: Extracting .zip files shell command\
+unzip file.zip\
+\
+\
+### Firewall - iptables commands\
+\
+\
+iptables -I INPUT -s IPADDRESSHERE -j DROP : This command stops any connections from the IP address\
+iptables -L : List all rules in iptables\
+iptables -F : Flushes all iptables rules (clears the firewall)\
+iptables --save : Saves the currenty ruleset in memory to disk\
+service iptables restart : Restarts iptables \
+\
+### Apache Shell Commands\
+\
+\
+httpd -v : Outputs the build date and version of the Apache server. \
+httpd -l : Lists compiled in Apache modules\
+httpd status : Only works if mod_status is enabled and shows a page of active connections \
+service httpd restart : Restarted Apache web server\
+\
+### MySQL Shell Commands\
+\
+mysqladmin processlist : Shows active mysql connections and queries\
+mysqladmin drop databasenamehere : Drops/deletes the selected database\
+mysqladmin create databasenamehere : Creates a mysql database\
+\
+#### Restore MySQL Database Shell Command\
+\
+mysql -u username -p password databasename &lt; databasefile.sql : Restores a MySQL database from databasefile.sql \
+\
+#### Backup MySQL Database Shell Command\
+\
+mysqldump -u username -p password databasename &gt; databasefile.sql : Backup MySQL database to databasefile.sql\
+\
+kill: terminate a system process\
+kill -9 PID EG: kill -9 431\
+kill PID EG: kill 10550\
+Use top or ps ux to get system PIDs (Process IDs) \
+\
+EG:\
+PID\	TTY\	TIME\	COMMAND\
+10550\	pts/3\	0:01\	/bin/csh\
+10574\	pts/4\	0:02\	/bin/csh\
+10590\	pts/4\	0:09\	APP\
+Each line represents one process, with a process being loosely defined as a running instance of a program. The column headed PID (process ID) shows the assigned process numbers of the processes. The heading COMMAND shows the location of the executed process. \
+\
+### Putting commands together\
+\
+Often you will find you need to use different commands on the same line. Here are some examples. Note that the | character is called a pipe, it takes date from one program and pipes it to another.\
+&gt; means create a new file, overwriting any content already there. \
+&gt;&gt; means tp append data to a file, creating a newone if it doesn not already exist. \
+&lt; send input from a file back into a command. \
+\
+grep User /usr/local/apache/conf/httpd.conf |more \
+This will dump all lines that match User from the httpd.conf, then print the results to your screen one page at a time. \
+\
+last -a &gt; /root/lastlogins.tmp \
+This will print all the current login history to a file called lastlogins.tmp in /root/ \
+\
+tail -10000 /var/log/exim_mainlog |grep domain.com |more\
+This will grab the last 10,000 lines from /var/log/exim_mainlog, find all occurances of domain.com (the period represents 'anything', \
+-- comment it out with a so it will be interpretted literally), then send it to your screen page by page. \
+\
+netstat -an |grep :80 |wc -l\
+Show how many active connections there are to apache (httpd runs on port 80) \
+\
+mysqladmin processlist |wc -l\
+Show how many current open connections there are to mysql}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-03-25T16:43:59Z</date>
+			<key>plainText</key>
+			<string># **Cheatsheet:**   Linux Shell
+
+
+###Common Linux Shell Commands
+
+
+ls : list files/directories in a directory, comparable to dir in windows/dos.
+ls -al : shows all files (including ones that start with a period), directories, and details attributes for each file. 
+
+cd : change directory ·· cd /usr/local/apache : go to /usr/local/apache/ directory 
+cd ~ : go to your home directory 
+cd - : go to the last directory you were in
+cd .. : go up a directory cat : print file contents to the screen 
+
+cat filename.txt : cat the contents of filename.txt to your screen 
+
+chmod: changes file access permissions
+The set of 3 go in this order from left to right:
+USER - GROUP - EVERONE
+
+0 = --- No permission
+1 = --X Execute only
+2 = -W- Write only
+3 = -WX Write and execute
+4 = R-- Read only
+5 = R-X Read and execute
+6 = RW- Read and write
+7 = RWX Read, write and execute
+
+Usage: 
+chmod numberpermissions filename
+
+chmod 000 : No one can access 
+chmod 644: Usually for HTML pages
+chmod 755: Usually for CGI scripts
+
+
+chown: changes file ownership permissions
+The set of 2 go in this order from left to right:
+USER - GROUP
+
+chown root myfile.txt : Changes the owner of the file to root
+chown root.root myfile.txt : Changes the owner and group of the file to root
+
+
+tail : like cat, but only reads the end of the file
+tail /var/log/messages : see the last 20 (by default) lines of /var/log/messages 
+tail -f /var/log/messages : watch the file continuously, while it's being updated 
+tail -200 /var/log/messages : print the last 200 lines of the file to the screen
+
+more : like cat, but opens the file one screen at a time rather than all at once 
+more /etc/userdomains : browse through the userdomains file. hit Space to go to the next page, q to quit 
+
+pico : friendly, easy to use file editor 
+pico /home/burst/public_html/index.html : edit the index page for the user's website. 
+
+
+### File Editing with VI commands
+
+
+vi : another editor, tons of features, harder to use at first than pico 
+vi /home/burst/public_html/index.html : edit the index page for the user's website. 
+Whie in the vi program you can use the following useful commands, you will need to hit SHIFT + : to go into command mode
+
+:q! : This force quits the file without saving and exits vi
+:w : This writes the file to disk, saves it
+:wq : This saves the file to disk and exists vi
+:LINENUMBER : EG :25 : Takes you to line 25 within the file
+:$ : Takes you to the last line of the file
+:0 : Takes you to the first line of the file
+
+grep : looks for patterns in files 
+grep root /etc/passwd : shows all matches of root in /etc/passwd
+grep -v root /etc/passwd : shows all lines that do not match root 
+
+ln : create's "links" between files and directories
+ln -s /usr/local/apache/conf/httpd.conf /etc/httpd.conf : Now you can edit /etc/httpd.conf rather than the original. changes will affect the orginal, however you can delete the link and it will not delete the original. 
+
+last : shows who logged in and when
+last -20 : shows only the last 20 logins 
+last -20 -a : shows last 20 logins, with the hostname in the last field 
+
+w : shows who is currently logged in and where they are logged in from.
+who : This also shows who is on the server in an shell.
+
+netstat : shows all current network connections.
+netstat -an : shows all connections to the server, the source and destination ips and ports.
+netstat -rn : shows routing table for all ips bound to the server.
+
+top : shows live system processes in a nice table, memory information, uptime and other useful info. This is excellent for managing your system processes, resources and ensure everything is working fine and your server isn't bogged down.
+top then type Shift + M to sort by memory usage or Shift + P to sort by CPU usage
+
+ps: ps is short for process status, which is similar to the top command. It's used to show currently running processes and their PID.
+A process ID is a unique number that identifies a process, with that you can kill or terminate a running program on your server (see kill command).
+ps U username : shows processes for a certain user
+ps aux : shows all system processes
+ps aux --forest : shows all system processes like the above but organizes in a hierarchy that's very useful!
+
+touch : create an empty file 
+touch /home/burst/public_html/404.html : create an empty file called 404.html in the directory /home/burst/public_html/ 
+
+file : attempts to guess what type of file a file is by looking at it's content. 
+file * : prints out a list of all files/directories in a directory 
+
+du : shows disk usage. 
+du -sh : shows a summary, in human-readble form, of total disk space used in the current directory, including subdirectories.
+du -sh * : same thing, but for each file and directory. helpful when finding large files taking up space. 
+
+wc : word count
+wc -l filename.txt : tells how many lines are in filename.txt 
+
+cp : copy a file 
+cp filename filename.backup : copies filename to filename.backup
+cp -a /home/burst/new_design/* /home/burst/public_html/ : copies all files, retaining permissions form one directory to another. 
+cp -av * ../newdir : Copies all files and directories recurrsively in the current directory INTO newdir
+
+mv : Move a file command
+mv oldfilename newfilename : Move a file or directory from oldfilename to newfilename
+
+rm : delete a file
+rm filename.txt : deletes filename.txt, will more than likely ask if you really want to delete it
+rm -f filename.txt : deletes filename.txt, will not ask for confirmation before deleting.
+rm -rf tmp/ : recursively deletes the directory tmp, and all files in it, including subdirectories. BE VERY CAREFULL WITH THIS COMMAND!!! 
+
+TAR: Creating and Extracting .tar.gz and .tar files
+tar -zxvf file.tar.gz : Extracts the file
+tar -xvf file.tar : Extracts the file
+tar -cf archive.tar contents/ : Takes everything from contents/ and puts it into archive.tar
+gzip -d filename.gz : Decompress the file, extract it
+
+ZIP Files: Extracting .zip files shell command
+unzip file.zip
+
+
+### Firewall - iptables commands
+
+
+iptables -I INPUT -s IPADDRESSHERE -j DROP : This command stops any connections from the IP address
+iptables -L : List all rules in iptables
+iptables -F : Flushes all iptables rules (clears the firewall)
+iptables --save : Saves the currenty ruleset in memory to disk
+service iptables restart : Restarts iptables 
+
+### Apache Shell Commands
+
+
+httpd -v : Outputs the build date and version of the Apache server. 
+httpd -l : Lists compiled in Apache modules
+httpd status : Only works if mod_status is enabled and shows a page of active connections 
+service httpd restart : Restarted Apache web server
+
+### MySQL Shell Commands
+
+mysqladmin processlist : Shows active mysql connections and queries
+mysqladmin drop databasenamehere : Drops/deletes the selected database
+mysqladmin create databasenamehere : Creates a mysql database
+
+#### Restore MySQL Database Shell Command
+
+mysql -u username -p password databasename &lt; databasefile.sql : Restores a MySQL database from databasefile.sql 
+
+#### Backup MySQL Database Shell Command
+
+mysqldump -u username -p password databasename &gt; databasefile.sql : Backup MySQL database to databasefile.sql
+
+kill: terminate a system process
+kill -9 PID EG: kill -9 431
+kill PID EG: kill 10550
+Use top or ps ux to get system PIDs (Process IDs) 
+
+EG:
+PIDTTYTIMECOMMAND
+10550pts/30:01/bin/csh
+10574pts/40:02/bin/csh
+10590pts/40:09APP
+Each line represents one process, with a process being loosely defined as a running instance of a program. The column headed PID (process ID) shows the assigned process numbers of the processes. The heading COMMAND shows the location of the executed process. 
+
+### Putting commands together
+
+Often you will find you need to use different commands on the same line. Here are some examples. Note that the | character is called a pipe, it takes date from one program and pipes it to another.
+&gt; means create a new file, overwriting any content already there. 
+&gt;&gt; means tp append data to a file, creating a newone if it doesn not already exist. 
+&lt; send input from a file back into a command. 
+
+grep User /usr/local/apache/conf/httpd.conf |more 
+This will dump all lines that match User from the httpd.conf, then print the results to your screen one page at a time. 
+
+last -a &gt; /root/lastlogins.tmp 
+This will print all the current login history to a file called lastlogins.tmp in /root/ 
+
+tail -10000 /var/log/exim_mainlog |grep domain.com |more
+This will grab the last 10,000 lines from /var/log/exim_mainlog, find all occurances of domain.com (the period represents 'anything', 
+-- comment it out with a so it will be interpretted literally), then send it to your screen page by page. 
+
+netstat -an |grep :80 |wc -l
+Show how many active connections there are to apache (httpd runs on port 80) 
+
+mysqladmin processlist |wc -l
+Show how many current open connections there are to mysql</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>9BE2F0A3-3045-4FCB-9EB0-4C26FD4D66C4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,chtml</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-25T16:50:25Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 Helvetica;\f1\fnil\fcharset0 HiraKakuProN-W3;}
+{\colortbl;}
+\f0\fs24 \cf0 # Cheatsheet: HTML\
+\
+\
+\
+## The HTML tag\
+\
+\
+Although not currently required by all clients, the &lt;html&gt; tag signals the point where text should start being interpreted as HTML code. It's probably a good idea to include it in all your documents now, so you don't have to go back to your files and add it later.\
+The &lt;html&gt; tag is usually placed on the first line of your document. At the end of your document you should close with the &lt;/html&gt; tag.\
+\
+\
+### The head tag \
+\
+\
+Just like the header of a memo, the head of an HTML document contains special information, like its title. The head of a document is demarcated by &lt;head&gt; and &lt;/head&gt; respectively.\
+For the purposes of this class, only the title tag, below, should be included in the document head. A typical head section might look like\
+\
+&lt;html&gt;\
+&lt;head&gt;\
+&lt;title&gt;My First HTML Document&lt;/title&gt;\
+&lt;/head&gt;\
+\
+### Titles\
+\
+\
+A title tag allows you to specify a Document Title in your browser window. When people make hotlists, this title is what they see in their list after they add your document. The format is:\
+\
+&lt;title&gt;My First HTML Document&lt;/title&gt;\
+Remember, the title usually doesn't appear in the document itself, but in a title box or bar at the top of the window.\
+\
+\
+### The body tag\
+\
+\
+Like you might expect, the body tags &lt;body&gt; and &lt;/body&gt; define the beginning and end of the bulk of your document. All your text, images, and links will be in the body of the document.\
+The body should start after the head. A typical page might begin like\
+\
+&lt;html&gt;\
+&lt;head&gt;\
+&lt;title&gt;My First HTML Document&lt;/title&gt;\
+&lt;/head&gt;\
+&lt;body&gt;\
+\
+\
+### Headers\
+\
+\
+There are up to six levels of headers that can be used in your document, h1 through h6. Header 1 is the largest header and they get progressively smaller through header 6. Below are each of the six headers and how they usually appear in relation to one another.\
+\
+&lt;h1&gt;This is a header 1 tag&lt;/h1&gt;\
+This is a header 1 tag\
+\
+&lt;h2&gt;This is a header 2 tag&lt;/h2&gt;\
+This is a header 2 tag\
+\
+&lt;h3&gt;This is a header 3 tag&lt;/h3&gt;\
+This is a header 3 tag\
+\
+&lt;h4&gt;This is a header 4 tag&lt;/h4&gt;\
+This is a header 4 tag\
+\
+&lt;h5&gt;This is a header 5 tag&lt;/h5&gt;\
+This is a header 5 tag\
+\
+&lt;h6&gt;This is a header 6 tag&lt;/h6&gt;\
+\
+#### This is a header 6 tag\
+\
+Headers, as you notice, not only vary in size, they are also bold and have a blank line inserted before and after them. It's important to use headers only for headings, not just to make text bold (we cover the bold tag later).\
+\
+\
+## Paragraphs\
+\
+\
+In HTML, a paragraph tag &lt;p&gt; should be put at the end of every paragraph of "normal" text (normal being defined as not already having a tag associated with it).\
+\
+&lt;p&gt; causes a line break and adds a trailing blank line\
+\
+&lt;br&gt; causes a line break with no trailing blank line\
+\
+As a convenience to yourself and others who might have to edit your HTML documents, it's a very good idea to put two or three blank lines between paragraphs to facilitate editing.\
+\
+\
+## Reformatted text\
+\
+\
+The preformatted text tag allows you to include text in your document that normally remains in a fixed-width font and retains the spaces, lines, and tabs of your source document. In other words, it leaves your text as it appears initially or just as you typed it in. Most clients collapse multiple spaces into one space, even tabs are collapsed to one space. The only way to circumvent this is to use the preformatted tag. Visually, preformatted text looks like a courier font.\
+\
+&lt;pre&gt;this is \
+\
+               an example \
+               of a    preformatted \
+        text tag&lt;/pre&gt;\
+And this is how it displays:\
+this is \
+\
+               an example \
+               of a    preformatted \
+        text tag        \
+\
+### Boldface and Italics\
+\
+\
+You can add emphasis to text by using the boldface and italic tags or the emphasis and strong tags.\
+There is an underline tag as well, but most people don't use it since text that is linked is often underlined. The potential for confusion and the archaic nature of underlining in general make it a poor marker for emphasis.\
+\
+When using these tags, you usually cannot (and probably should not) have text that is both boldface and italics; the last tag encountered is usually the tag that is displayed. For example, if you had a boldface tag followed immediately by an italic tag, the tagged word would appear in italics.\
+\
+## Physical tags\
+\
+\
+This is a &lt;b&gt;boldface&lt;/b&gt; tag.\
+This is how boldfacing appears.\
+\
+This is an &lt;i&gt;italic&lt;/i&gt; tag.\
+This is how italics appear.\
+\
+## Logical tags\
+\
+\
+This is a &lt;strong&gt;strongly emphasized&lt;/strong&gt; tag.\
+This is a strongly emphasized tag.\
+\
+This is an &lt;em&gt;emphasized&lt;/em&gt; tag.\
+This is an emphasized tag.\
+\
+There is a subtle distinction between the above "physical" tags which merely change the displayed font, and "logical" styles which are used (or eventually will be) to make types of emphasis client specific (for instance, using the &lt;em&gt; tag would make text red). While either style is fine, be aware that differences in these two kinds of tags may be more apparent with advances in HTML.\
+\
+\
+##Lists\
+\
+\
+There is an easy way in HTML to have numbered, unnumbered, and definition lists. In addition, you can nest lists within lists.\
+When using lists, you have no control over the amount of space between the bullet or list number, HTML automatically does this for you. Neither (as yet) do you have control over what type of bullet will be used as each browser is different.\
+\
+### Unnumbered lists\
+\
+Unnumbered lists are started with the &lt;ul&gt; tag, followed by the actual list items, which are marked with the &lt;li&gt; tag. The list is ended with the ending tag &lt;/ul&gt;.\
+For example, here is an unnumbered list with three items:\
+\
+&lt;ul&gt;\
+&lt;li&gt; list item 1\
+&lt;li&gt; list item 2\
+&lt;li&gt; list item 3\
+&lt;/ul&gt;\
+Here is how that list would display:\
+\
+\	\uc0\u8226 \	list item 1\
+\	\uc0\u8226 \	list item 2\
+\	\uc0\u8226 \	list item 3\
+\
+\
+### Numbered lists\
+\
+Here is the same list using a numbered list format:\
+\
+&lt;ol&gt;\
+&lt;li&gt; list item 1\
+&lt;li&gt; list item 2\
+&lt;li&gt; list item 3\
+&lt;/ol&gt;\
+Here is how that list would display:\
+\
+\	1.\	list item 1\
+\	2.\	list item 2\
+\	3.\	list item 3\
+Definition lists\
+\
+Definition lists allow you to indent without necessarily having to use bullets.\
+\
+&lt;dl&gt;\
+&lt;dt&gt; This is a term\
+&lt;dd&gt; This is a definition\
+&lt;dd&gt; And yet another definition\
+&lt;dt&gt; Another term\
+&lt;dd&gt; Another definition\
+&lt;/dl&gt;\
+And here is how this would be displayed\
+\
+This is a term\
+This is a definition.\
+And yet another definition.\
+Another term\
+Another definition\
+Nested lists\
+\
+Finally, here is a nested list within an unnumbered list (we could just have easily had a nested list within a numbered list).\
+\
+&lt;ul&gt;\
+&lt;li&gt; list item 1\
+ &lt;ul&gt;\
+ &lt;li&gt; nested item 1\
+ &lt;li&gt; nested item 2\
+ &lt;/ul&gt;\
+&lt;li&gt; list item 2\
+ &lt;ul&gt;\
+ &lt;li&gt; nested item 1\
+ &lt;li&gt; nested item 2\
+ &lt;/ul&gt;\
+&lt;li&gt; list item 3\
+ &lt;ul&gt;\
+ &lt;li&gt; nested item 1\
+ &lt;li&gt; nested item 2\
+ &lt;/ul&gt;\
+&lt;/ul&gt;\
+Here is how that list would display:\
+\
+\	\uc0\u8226 \	list item 1\
+\	\f1 \uc0\u9702 \f0 \	nested item 1\
+\	\f1 \uc0\u9702 \f0 \	nested item 2\
+\	\uc0\u8226 \	list item 2\
+\	\f1 \uc0\u9702 \f0 \	nested item 1\
+\	\f1 \uc0\u9702 \f0 \	nested item 2\
+\	\uc0\u8226 \	list item 3\
+\	\f1 \uc0\u9702 \f0 \	nested item 1\
+\	\f1 \uc0\u9702 \f0 \	nested item 2\
+\
+\
+## Blockquote\
+\
+\
+The blockquote tag indents the text (both on the left and right) inside the tags. The blockquote tag looks like this:\
+\
+&lt;blockquote&gt;...&lt;/blockquote&gt;\
+and displays like this:\
+\
+Blockquoted text is often used for indenting big blocks of text such as quotations. The text will be indented until the ending tag is encountered. Again, note that the text here is indented on both the left and the right margins.\
+\
+\
+## Center\
+\
+\
+You can center text, images, and headings with the center tag:\
+\
+&lt;center&gt;This is a centered sentence&lt;/center&gt;}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-03-25T16:52:24Z</date>
+			<key>plainText</key>
+			<string># Cheatsheet: HTML
+
+
+
+## The HTML tag
+
+
+Although not currently required by all clients, the &lt;html&gt; tag signals the point where text should start being interpreted as HTML code. It's probably a good idea to include it in all your documents now, so you don't have to go back to your files and add it later.
+The &lt;html&gt; tag is usually placed on the first line of your document. At the end of your document you should close with the &lt;/html&gt; tag.
+
+
+### The head tag 
+
+
+Just like the header of a memo, the head of an HTML document contains special information, like its title. The head of a document is demarcated by &lt;head&gt; and &lt;/head&gt; respectively.
+For the purposes of this class, only the title tag, below, should be included in the document head. A typical head section might look like
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My First HTML Document&lt;/title&gt;
+&lt;/head&gt;
+
+### Titles
+
+
+A title tag allows you to specify a Document Title in your browser window. When people make hotlists, this title is what they see in their list after they add your document. The format is:
+
+&lt;title&gt;My First HTML Document&lt;/title&gt;
+Remember, the title usually doesn't appear in the document itself, but in a title box or bar at the top of the window.
+
+
+### The body tag
+
+
+Like you might expect, the body tags &lt;body&gt; and &lt;/body&gt; define the beginning and end of the bulk of your document. All your text, images, and links will be in the body of the document.
+The body should start after the head. A typical page might begin like
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My First HTML Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+
+### Headers
+
+
+There are up to six levels of headers that can be used in your document, h1 through h6. Header 1 is the largest header and they get progressively smaller through header 6. Below are each of the six headers and how they usually appear in relation to one another.
+
+&lt;h1&gt;This is a header 1 tag&lt;/h1&gt;
+This is a header 1 tag
+
+&lt;h2&gt;This is a header 2 tag&lt;/h2&gt;
+This is a header 2 tag
+
+&lt;h3&gt;This is a header 3 tag&lt;/h3&gt;
+This is a header 3 tag
+
+&lt;h4&gt;This is a header 4 tag&lt;/h4&gt;
+This is a header 4 tag
+
+&lt;h5&gt;This is a header 5 tag&lt;/h5&gt;
+This is a header 5 tag
+
+&lt;h6&gt;This is a header 6 tag&lt;/h6&gt;
+
+#### This is a header 6 tag
+
+Headers, as you notice, not only vary in size, they are also bold and have a blank line inserted before and after them. It's important to use headers only for headings, not just to make text bold (we cover the bold tag later).
+
+
+## Paragraphs
+
+
+In HTML, a paragraph tag &lt;p&gt; should be put at the end of every paragraph of "normal" text (normal being defined as not already having a tag associated with it).
+
+&lt;p&gt; causes a line break and adds a trailing blank line
+
+&lt;br&gt; causes a line break with no trailing blank line
+
+As a convenience to yourself and others who might have to edit your HTML documents, it's a very good idea to put two or three blank lines between paragraphs to facilitate editing.
+
+
+## Reformatted text
+
+
+The preformatted text tag allows you to include text in your document that normally remains in a fixed-width font and retains the spaces, lines, and tabs of your source document. In other words, it leaves your text as it appears initially or just as you typed it in. Most clients collapse multiple spaces into one space, even tabs are collapsed to one space. The only way to circumvent this is to use the preformatted tag. Visually, preformatted text looks like a courier font.
+
+&lt;pre&gt;this is 
+
+               an example 
+               of a    preformatted 
+        text tag&lt;/pre&gt;
+And this is how it displays:
+this is 
+
+               an example 
+               of a    preformatted 
+        text tag        
+
+### Boldface and Italics
+
+
+You can add emphasis to text by using the boldface and italic tags or the emphasis and strong tags.
+There is an underline tag as well, but most people don't use it since text that is linked is often underlined. The potential for confusion and the archaic nature of underlining in general make it a poor marker for emphasis.
+
+When using these tags, you usually cannot (and probably should not) have text that is both boldface and italics; the last tag encountered is usually the tag that is displayed. For example, if you had a boldface tag followed immediately by an italic tag, the tagged word would appear in italics.
+
+## Physical tags
+
+
+This is a &lt;b&gt;boldface&lt;/b&gt; tag.
+This is how boldfacing appears.
+
+This is an &lt;i&gt;italic&lt;/i&gt; tag.
+This is how italics appear.
+
+## Logical tags
+
+
+This is a &lt;strong&gt;strongly emphasized&lt;/strong&gt; tag.
+This is a strongly emphasized tag.
+
+This is an &lt;em&gt;emphasized&lt;/em&gt; tag.
+This is an emphasized tag.
+
+There is a subtle distinction between the above "physical" tags which merely change the displayed font, and "logical" styles which are used (or eventually will be) to make types of emphasis client specific (for instance, using the &lt;em&gt; tag would make text red). While either style is fine, be aware that differences in these two kinds of tags may be more apparent with advances in HTML.
+
+
+##Lists
+
+
+There is an easy way in HTML to have numbered, unnumbered, and definition lists. In addition, you can nest lists within lists.
+When using lists, you have no control over the amount of space between the bullet or list number, HTML automatically does this for you. Neither (as yet) do you have control over what type of bullet will be used as each browser is different.
+
+### Unnumbered lists
+
+Unnumbered lists are started with the &lt;ul&gt; tag, followed by the actual list items, which are marked with the &lt;li&gt; tag. The list is ended with the ending tag &lt;/ul&gt;.
+For example, here is an unnumbered list with three items:
+
+&lt;ul&gt;
+&lt;li&gt; list item 1
+&lt;li&gt; list item 2
+&lt;li&gt; list item 3
+&lt;/ul&gt;
+Here is how that list would display:
+
+•list item 1
+•list item 2
+•list item 3
+
+
+### Numbered lists
+
+Here is the same list using a numbered list format:
+
+&lt;ol&gt;
+&lt;li&gt; list item 1
+&lt;li&gt; list item 2
+&lt;li&gt; list item 3
+&lt;/ol&gt;
+Here is how that list would display:
+
+1.list item 1
+2.list item 2
+3.list item 3
+Definition lists
+
+Definition lists allow you to indent without necessarily having to use bullets.
+
+&lt;dl&gt;
+&lt;dt&gt; This is a term
+&lt;dd&gt; This is a definition
+&lt;dd&gt; And yet another definition
+&lt;dt&gt; Another term
+&lt;dd&gt; Another definition
+&lt;/dl&gt;
+And here is how this would be displayed
+
+This is a term
+This is a definition.
+And yet another definition.
+Another term
+Another definition
+Nested lists
+
+Finally, here is a nested list within an unnumbered list (we could just have easily had a nested list within a numbered list).
+
+&lt;ul&gt;
+&lt;li&gt; list item 1
+ &lt;ul&gt;
+ &lt;li&gt; nested item 1
+ &lt;li&gt; nested item 2
+ &lt;/ul&gt;
+&lt;li&gt; list item 2
+ &lt;ul&gt;
+ &lt;li&gt; nested item 1
+ &lt;li&gt; nested item 2
+ &lt;/ul&gt;
+&lt;li&gt; list item 3
+ &lt;ul&gt;
+ &lt;li&gt; nested item 1
+ &lt;li&gt; nested item 2
+ &lt;/ul&gt;
+&lt;/ul&gt;
+Here is how that list would display:
+
+•list item 1
+◦nested item 1
+◦nested item 2
+•list item 2
+◦nested item 1
+◦nested item 2
+•list item 3
+◦nested item 1
+◦nested item 2
+
+
+## Blockquote
+
+
+The blockquote tag indents the text (both on the left and right) inside the tags. The blockquote tag looks like this:
+
+&lt;blockquote&gt;...&lt;/blockquote&gt;
+and displays like this:
+
+Blockquoted text is often used for indenting big blocks of text such as quotations. The text will be indented until the ending tag is encountered. Again, note that the text here is indented on both the left and the right margins.
+
+
+## Center
+
+
+You can center text, images, and headings with the center tag:
+
+&lt;center&gt;This is a centered sentence&lt;/center&gt;</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>DC6D6AAD-AE55-4BD8-8B64-B46A47EE30A8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,cpy</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-25T16:55:26Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 Helvetica;}
+{\colortbl;}
+\f0\fs24 \cf0 # **Cheatsheet:**   Python\
+\
+\
+\
+## Python Intro:\
+\
+Python is a general-purpose, high-level programming language whose design philosophy emphasizes code readability. Python claims to combine "remarkable power with very clear syntax", and its standard library is large and comprehensive.\
+\
+\
+### Common Commands\
+\
+-d   Turn on parser  debugging  output  (for  wizards  only,\
+          depending on compilation options).\
+\
+ -i   When a script is passed as first  argument  or  the  -c\
+          option  is used, enter interactive mode after executing\
+          the script or  the  command.   It  does  not  read  the\
+          $PYTHONSTARTUP  file.   This  can  be useful to inspect\
+          global variables or a stack trace when a script  raises\
+          an exception.\
+\
+ -s   Suppress auto-printing of expressions in interactive mode.\
+\
+-u   Force stdout and stderr to be totally unbuffered.\
+\
+ -v   Print a message each  time  a  module  is  initialized,\
+       showing  the  place  (filename or built-in module) from\
+          which it is loaded.\
+\
+-c command\
+          Specify the command  to  execute  (see  next  section).\
+          This  terminates the option list (following options are\
+          passed as arguments to the command).\
+\
+-  anything afterward is passed as options to python script or\
+        command, not interpreted as an option to interpreter itself.\
+\
+     script is the name of a python file to execute\
+\
+     args are passed to script or command (in "sys.argv")\
+\
+### Equality &amp; Inequality Operations\
+\
+\
+&lt;\	strictly less than\	\
+&lt;=\	less than or equal\	\
+&gt;\	strictly greater than\	\
+&gt;=\	greater than or equal\	\
+==\	equal\	\
+!=\	not equal  ( "&lt;&gt;" is also allowed)\
+is\	object identity\	(are _objects_ identical, not values)\
+is not\	negated object identity\
+\
+\
+### Operators on all sequence types (lists, tuples, strings)\
+\
+\
+len(s)\	\	length of s\	\
+min(s)\	\	smallest item of s\	\
+max(s)\	\	largest item of s\	\
+x in s\	\	1 if an item of s is equal to x, else 0\
+x not in s\	0 if an item of s is equal to x, else 1\
+s + t\	\	the concatenation of s and t\	\
+s * n, n * s\	n copies of s concatenated\	\
+s[i]\	\	i'th item of s, origin 0\
+s[i:j]\	\	slice of s from i to j\	\
+\
+slice from index i up to but not including index j\
+\	i defaults to 0, j to len(s)\
+negative goes from right-end of sequence\
+\
+\
+### Operators on mutable sequences (lists)\
+\
+s[i] = x\	item i of s is replaced by x\	\
+s[i:j] = t\	slice of s from i to j is replaced by t\	\
+del s[i:j]\	delete slice (same as s[i:j] = [])\
+s.append(x)     add x to end of s\
+s.count(x)\	return number of i's for which s[i] == x\
+s.index(x)\	return smallest i such that s[i] == x1)\
+s.insert(i, x) \	item i becomes x, old item i is now at i+1, etc.\
+s.remove(x) \	same as del s[s.index(x)]\	\
+s.reverse() \	reverses the items of s (in place)\
+s.sort()\	sorts the list (in place)\
+\	\	\	Optional parameter: function of two arguments \
+\	\	\	returning -1, 0 or 1 depending on whether arg1 \
+\	\	\	is &gt;, ==, &lt; arg2.\
+\
+\
+\
+}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-03-25T16:55:47Z</date>
+			<key>plainText</key>
+			<string># **Cheatsheet:**   Python
+
+
+
+## Python Intro:
+
+Python is a general-purpose, high-level programming language whose design philosophy emphasizes code readability. Python claims to combine "remarkable power with very clear syntax", and its standard library is large and comprehensive.
+
+
+### Common Commands
+
+-d   Turn on parser  debugging  output  (for  wizards  only,
+          depending on compilation options).
+
+ -i   When a script is passed as first  argument  or  the  -c
+          option  is used, enter interactive mode after executing
+          the script or  the  command.   It  does  not  read  the
+          $PYTHONSTARTUP  file.   This  can  be useful to inspect
+          global variables or a stack trace when a script  raises
+          an exception.
+
+ -s   Suppress auto-printing of expressions in interactive mode.
+
+-u   Force stdout and stderr to be totally unbuffered.
+
+ -v   Print a message each  time  a  module  is  initialized,
+       showing  the  place  (filename or built-in module) from
+          which it is loaded.
+
+-c command
+          Specify the command  to  execute  (see  next  section).
+          This  terminates the option list (following options are
+          passed as arguments to the command).
+
+-  anything afterward is passed as options to python script or
+        command, not interpreted as an option to interpreter itself.
+
+     script is the name of a python file to execute
+
+     args are passed to script or command (in "sys.argv")
+
+### Equality &amp; Inequality Operations
+
+
+&lt;strictly less than
+&lt;=less than or equal
+&gt;strictly greater than
+&gt;=greater than or equal
+==equal
+!=not equal  ( "&lt;&gt;" is also allowed)
+isobject identity(are _objects_ identical, not values)
+is notnegated object identity
+
+
+### Operators on all sequence types (lists, tuples, strings)
+
+
+len(s)length of s
+min(s)smallest item of s
+max(s)largest item of s
+x in s1 if an item of s is equal to x, else 0
+x not in s0 if an item of s is equal to x, else 1
+s + tthe concatenation of s and t
+s * n, n * sn copies of s concatenated
+s[i]i'th item of s, origin 0
+s[i:j]slice of s from i to j
+
+slice from index i up to but not including index j
+i defaults to 0, j to len(s)
+negative goes from right-end of sequence
+
+
+### Operators on mutable sequences (lists)
+
+s[i] = xitem i of s is replaced by x
+s[i:j] = tslice of s from i to j is replaced by t
+del s[i:j]delete slice (same as s[i:j] = [])
+s.append(x)     add x to end of s
+s.count(x)return number of i's for which s[i] == x
+s.index(x)return smallest i such that s[i] == x1)
+s.insert(i, x) item i becomes x, old item i is now at i+1, etc.
+s.remove(x) same as del s[s.index(x)]
+s.reverse() reverses the items of s (in place)
+s.sort()sorts the list (in place)
+Optional parameter: function of two arguments 
+returning -1, 0 or 1 depending on whether arg1 
+is &gt;, ==, &lt; arg2.
+
+
+
+</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>3A7C5D29-1637-4E4E-B52A-5E52E43BAD3D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,cphp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-25T16:57:50Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 Helvetica;}
+{\colortbl;}
+\f0\fs24 \cf0 # Cheatsheet: PHP\
+\
+\
+\
+## PHP Intro.\
+\
+\
+PHP is a general-purpose server-side scripting language originally designed for Web development to produce dynamic Web pages. It is one of the first developed server-side scripting languages to be embedded into an HTML source document, rather than calling an external file to process data. Ultimately, the code is interpreted by a Web server with a PHP processor module which generates the resulting Web page. It also has evolved to include a command-line interface capability and can be used in standalone graphical applications.\
+\
+*** \
+\
+## Function Syntax\
+\
+function will be executed by a call to the function.\
+\
+### Syntax\
+\
+\
+function functionName()\
+\{\
+code to be executed;\
+\}\
+\
+### PHP function guidelines:\
+\
+\
+Give the function a name that reflects what the function does\
+The function name can start with a letter or underscore (not a number)\
+\
+***\
+\
+\
+#### Example\
+\
+\
+A simple function that writes my name when it is called:\
+&lt;html&gt;\
+&lt;body&gt;\
+\
+&lt;?php\
+function writeName()\
+\{\
+echo "kmdev";\
+\}\
+\
+echo "My name is ";\
+writeName();\
+?&gt;\
+\
+&lt;/body&gt;\
+&lt;/html&gt;\
+Output:\
+My name is kmdev\
+\
+## Adding Parameters\
+\
+\
+&lt;html&gt;\
+&lt;body&gt;\
+\
+&lt;?php\
+function writeName($fname)\
+\{\
+echo $fname . " Refsnes.&lt;br /&gt;";\
+\}\
+\
+echo "My name is ";\
+writeName("Kmdev");\
+echo "My sister's name is ";\
+writeName("Kmdev2");\
+echo "My brother's name is ";\
+writeName("Kmdev3");\
+?&gt;\
+\
+&lt;/body&gt;\
+&lt;/html&gt;\
+Output:\
+My name Kmdev.\
+My sister's name is Kmdev2.\
+My brother's name is Kmdev3.\
+\
+\
+## Return Values \
+\
+\
+To let a function return a value, use the return statement.\
+Example\
+&lt;html&gt;\
+&lt;body&gt;\
+\
+&lt;?php\
+function add($x,$y)\
+\{\
+$total=$x+$y;\
+return $total;\
+\}\
+\
+echo "1 + 16 = " . add(1,16);\
+?&gt;\
+\
+&lt;/body&gt;\
+&lt;/html&gt;\
+Output:\
+1 + 16 = 17\
+\
+\
+\
+\
+\
+}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-03-25T16:58:11Z</date>
+			<key>plainText</key>
+			<string># Cheatsheet: PHP
+
+
+
+## PHP Intro.
+
+
+PHP is a general-purpose server-side scripting language originally designed for Web development to produce dynamic Web pages. It is one of the first developed server-side scripting languages to be embedded into an HTML source document, rather than calling an external file to process data. Ultimately, the code is interpreted by a Web server with a PHP processor module which generates the resulting Web page. It also has evolved to include a command-line interface capability and can be used in standalone graphical applications.
+
+*** 
+
+## Function Syntax
+
+function will be executed by a call to the function.
+
+### Syntax
+
+
+function functionName()
+{
+code to be executed;
+}
+
+### PHP function guidelines:
+
+
+Give the function a name that reflects what the function does
+The function name can start with a letter or underscore (not a number)
+
+***
+
+
+#### Example
+
+
+A simple function that writes my name when it is called:
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;?php
+function writeName()
+{
+echo "kmdev";
+}
+
+echo "My name is ";
+writeName();
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+Output:
+My name is kmdev
+
+## Adding Parameters
+
+
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;?php
+function writeName($fname)
+{
+echo $fname . " Refsnes.&lt;br /&gt;";
+}
+
+echo "My name is ";
+writeName("Kmdev");
+echo "My sister's name is ";
+writeName("Kmdev2");
+echo "My brother's name is ";
+writeName("Kmdev3");
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+Output:
+My name Kmdev.
+My sister's name is Kmdev2.
+My brother's name is Kmdev3.
+
+
+## Return Values 
+
+
+To let a function return a value, use the return statement.
+Example
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;?php
+function add($x,$y)
+{
+$total=$x+$y;
+return $total;
+}
+
+echo "1 + 16 = " . add(1,16);
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+Output:
+1 + 16 = 17
+
+
+
+
+
+</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>FE7318C6-8BC3-47EA-9EC5-DD7C7AC72DCB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,cftp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-25T17:01:40Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 Helvetica;}
+{\colortbl;}
+\f0\fs24 \cf0 # **Cheatsheet:**   FTP\
+\
+\
+### to request help or information about the FTP commands\
+?\
+\
+ascii\
+### to set the mode of file transfer to ASCII \
+(this is the default and transmits seven bits per character)\
+\
+binary\
+to set the mode of file transfer to binary \
+\
+(the binary mode transmits all eight bits per byte and thus provides less chance of a transmission error and must be used to transmit files other than ASCII files)\
+\
+bye\
+to exit the FTP environment (same as quit)\
+\
+cd\
+to change directory on the remote machine\
+\
+close\
+to terminate a connection with another computer\
+ \
+close brubeck\
+closes the current FTP connection with brubeck, \
+  but still leaves you within the FTP environment.\
+\
+delete\
+to delete (remove) a file in the current remote directory (same as rm in UNIX)\
+\
+get\
+to copy one file from the remote machine to the local machine\
+ \
+get ABC DEF\
+copies file ABC in the current remote directory to (or on top of) a file named DEF in your current local directory.\
+ \
+get ABC\
+copies file ABC in the current remote directory to (or on top of) a file with the same name, ABC, in your current local directory.\
+\
+help\
+to request a list of all available FTP commands\
+\
+lcd\
+to change directory on your local machine (same as UNIX cd)\
+\
+ls\
+to list the names of the files in the current remote directory\
+\
+mkdir\
+to make a new directory within the current remote directory\
+\
+mget\
+to copy multiple files from the remote machine to the local machine; \
+\
+  you are prompted for a y/n answer before transferring each file\
+ \
+mget *\
+copies all the files in the current remote directory to your current local directory, using the same filenames. Notice the use of the wild card character, *.\
+\
+mput\
+to copy multiple files from the local machine to the remote machine; \
+  you are prompted for a y/n answer before transferring each file\
+\
+open\
+to open a connection with another computer\
+ \
+open brubeck\
+opens a new FTP connection with brubeck; \
+  you must enter a username and password for a brubeck account \
+      (unless it is to be an anonymous connection).\
+\
+put\
+to copy one file from the local machine to the remote machine\
+\
+pwd\
+to find out the pathname of the current directory on the remote machine\
+\
+quit\
+to exit the FTP environment (same as bye)\
+\
+rmdir\
+to to remove (delete) a directory in the current remote directory\
+}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-03-25T17:01:40Z</date>
+			<key>plainText</key>
+			<string># **Cheatsheet:**   FTP
+
+
+### to request help or information about the FTP commands
+?
+
+ascii
+### to set the mode of file transfer to ASCII 
+(this is the default and transmits seven bits per character)
+
+binary
+to set the mode of file transfer to binary 
+
+(the binary mode transmits all eight bits per byte and thus provides less chance of a transmission error and must be used to transmit files other than ASCII files)
+
+bye
+to exit the FTP environment (same as quit)
+
+cd
+to change directory on the remote machine
+
+close
+to terminate a connection with another computer
+ 
+close brubeck
+closes the current FTP connection with brubeck, 
+  but still leaves you within the FTP environment.
+
+delete
+to delete (remove) a file in the current remote directory (same as rm in UNIX)
+
+get
+to copy one file from the remote machine to the local machine
+ 
+get ABC DEF
+copies file ABC in the current remote directory to (or on top of) a file named DEF in your current local directory.
+ 
+get ABC
+copies file ABC in the current remote directory to (or on top of) a file with the same name, ABC, in your current local directory.
+
+help
+to request a list of all available FTP commands
+
+lcd
+to change directory on your local machine (same as UNIX cd)
+
+ls
+to list the names of the files in the current remote directory
+
+mkdir
+to make a new directory within the current remote directory
+
+mget
+to copy multiple files from the remote machine to the local machine; 
+
+  you are prompted for a y/n answer before transferring each file
+ 
+mget *
+copies all the files in the current remote directory to your current local directory, using the same filenames. Notice the use of the wild card character, *.
+
+mput
+to copy multiple files from the local machine to the remote machine; 
+  you are prompted for a y/n answer before transferring each file
+
+open
+to open a connection with another computer
+ 
+open brubeck
+opens a new FTP connection with brubeck; 
+  you must enter a username and password for a brubeck account 
+      (unless it is to be an anonymous connection).
+
+put
+to copy one file from the local machine to the remote machine
+
+pwd
+to find out the pathname of the current directory on the remote machine
+
+quit
+to exit the FTP environment (same as bye)
+
+rmdir
+to to remove (delete) a directory in the current remote directory
+</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>533E435D-B67E-45E9-85C1-3F545FBE92CD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,cruby</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-25T17:02:41Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 Helvetica;}
+{\colortbl;}
+\f0\fs24 \cf0 # **Cheatsheet:**   Ruby\
+\
+\
+ruby - The interpreter itself. Run Ruby scripts or statements.\
+\
+gem - Ruby Package Manager. Great for automatically downloading or updating small Ruby modules like XML libraries, web servers, or even whole Ruby programs.\
+\
+irb - Interactive Ruby Prompt. This is an entire Ruby shell that will let you execute any Ruby code you want. You can load libraries, test code directly, anything you can do with Ruby you can do in this shell. Believe me, there is quite a lot that you can do with it to improve your Ruby development workflow.\
+\
+ri - Quick shell access to Ruby documentation. You can find the RDoc information on nearly any Ruby Class or method. The same kind of documentation that you would find on the online ruby-docs.\
+\
+erb - Evaluates embedded Ruby in Ruby Templated documents. Embedded Ruby is just like embedding php into a document, and this is an interpreter for that kind of document. This is really more for the rails crowd. An alternative would be haml.\
+\
+rdoc - Generate the standard Ruby documentation for one of your Ruby classes. Its like Javadocs. It parses the Ruby source files and generates the standard documentation from special comments.\
+}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-03-25T17:02:41Z</date>
+			<key>plainText</key>
+			<string># **Cheatsheet:**   Ruby
+
+
+ruby - The interpreter itself. Run Ruby scripts or statements.
+
+gem - Ruby Package Manager. Great for automatically downloading or updating small Ruby modules like XML libraries, web servers, or even whole Ruby programs.
+
+irb - Interactive Ruby Prompt. This is an entire Ruby shell that will let you execute any Ruby code you want. You can load libraries, test code directly, anything you can do with Ruby you can do in this shell. Believe me, there is quite a lot that you can do with it to improve your Ruby development workflow.
+
+ri - Quick shell access to Ruby documentation. You can find the RDoc information on nearly any Ruby Class or method. The same kind of documentation that you would find on the online ruby-docs.
+
+erb - Evaluates embedded Ruby in Ruby Templated documents. Embedded Ruby is just like embedding php into a document, and this is an interpreter for that kind of document. This is really more for the rails crowd. An alternative would be haml.
+
+rdoc - Generate the standard Ruby documentation for one of your Ruby classes. Its like Javadocs. It parses the Ruby source files and generates the standard documentation from special comments.
+</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>DD6C166A-4D71-47A9-AE05-357BF031B8F7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,msploit</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-25T17:04:02Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 Helvetica;}
+{\colortbl;}
+\f0\fs24 \cf0 # **Cheatsheet:**  Metasploit\
+\
+\
+\
+show exploits Show all exploits of the Metasploit Framework\
+show payloads\
+Show all payloads\
+show auxiliary\
+Show all auxiliary modules of the Metasploit Framework\
+search name\
+Search for exploits or modules\
+info\
+Load information about a specific exploit or module\
+use name\
+Load an exploit or module\
+LHOST\
+Your local IP address if you are on the same network with the target or  the public IP address when you are not\
+RHOST\
+The IP address of the target\
+set function\
+Set a specific value (for example RHOST or LHOST)\
+setg function\
+Set a specific value globally (for example RHOST or LHOST)\
+show options\
+Shows the options that are available for module or exploit\
+show targets\
+shows which platforms can be attacked by the exploit\
+set target num\
+specify a target index if you know the OS and the service pack\
+set payload payload\
+Specify the payload that it will be used\
+show advanced\
+Show advanced options\
+set autorunscript migrate -f\
+Automatically migrate a separate process upon exploit completion\
+check\
+Determine if the target is vulnerable to an attack\
+exploit\
+Execute the module or exploit and attack the target\
+exploit -j\
+Run the exploit under the context of the job\
+exploit -z\
+Do not interact with the session after successful exploitation\
+exploit -e encoder\
+specify the payload encoder to use (example:exploit -e shikata_ga_nai)\
+exploit -h\
+Display help for the exploit command\
+sessions -i\
+List available sessions\
+sessions -i -v\
+List all available sessions and show verbose fields,such as which vulnerability was used when exploiting the system\
+sessions -s script\
+Run a specific Meterpreter script on all Meterpreter live sessions\
+sessions -K\
+Kill all live sessions\
+sessions -c cmd\
+Execute a command on all live Meterpreter sessions\
+sessions -u sessionID\
+Upgrade a normal Win32 shell to a Meterpreter console\
+db_create name\
+Create a database to use with database-driven attacks (example:db_create autopwn)\
+db_connect name\
+Create and connect to a database for driven attacks (example:db_connect autopwn)\
+db_nmap\
+Use nmap and place results in database\
+db_autopwn -h\
+Display help for using db_autopwn\
+db_autopwn -p -r -e\
+Run db_autopwn against all ports found,use a reverse shell and exploit all systems\
+db_destroy\
+Delete the current database\
+db_destroy user:password@host:port/database\
+Delete database using advanced options\
+}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-03-25T17:04:24Z</date>
+			<key>plainText</key>
+			<string># **Cheatsheet:**  Metasploit
+
+
+
+show exploits Show all exploits of the Metasploit Framework
+show payloads
+Show all payloads
+show auxiliary
+Show all auxiliary modules of the Metasploit Framework
+search name
+Search for exploits or modules
+info
+Load information about a specific exploit or module
+use name
+Load an exploit or module
+LHOST
+Your local IP address if you are on the same network with the target or  the public IP address when you are not
+RHOST
+The IP address of the target
+set function
+Set a specific value (for example RHOST or LHOST)
+setg function
+Set a specific value globally (for example RHOST or LHOST)
+show options
+Shows the options that are available for module or exploit
+show targets
+shows which platforms can be attacked by the exploit
+set target num
+specify a target index if you know the OS and the service pack
+set payload payload
+Specify the payload that it will be used
+show advanced
+Show advanced options
+set autorunscript migrate -f
+Automatically migrate a separate process upon exploit completion
+check
+Determine if the target is vulnerable to an attack
+exploit
+Execute the module or exploit and attack the target
+exploit -j
+Run the exploit under the context of the job
+exploit -z
+Do not interact with the session after successful exploitation
+exploit -e encoder
+specify the payload encoder to use (example:exploit -e shikata_ga_nai)
+exploit -h
+Display help for the exploit command
+sessions -i
+List available sessions
+sessions -i -v
+List all available sessions and show verbose fields,such as which vulnerability was used when exploiting the system
+sessions -s script
+Run a specific Meterpreter script on all Meterpreter live sessions
+sessions -K
+Kill all live sessions
+sessions -c cmd
+Execute a command on all live Meterpreter sessions
+sessions -u sessionID
+Upgrade a normal Win32 shell to a Meterpreter console
+db_create name
+Create a database to use with database-driven attacks (example:db_create autopwn)
+db_connect name
+Create and connect to a database for driven attacks (example:db_connect autopwn)
+db_nmap
+Use nmap and place results in database
+db_autopwn -h
+Display help for using db_autopwn
+db_autopwn -p -r -e
+Run db_autopwn against all ports found,use a reverse shell and exploit all systems
+db_destroy
+Delete the current database
+db_destroy user:password@host:port/database
+Delete database using advanced options
+</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>3593656F-D92A-419D-9280-13DA25832E44</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,cetter</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-25T17:04:41Z</date>
+			<key>extraInfo</key>
+			<dict>
+				<key>RTF</key>
+				<string>{\rtf1\ansi
+{\fonttbl\f0\fnil\fcharset0 Helvetica;}
+{\colortbl;}
+\f0\fs24 \cf0 # **Cheatsheet:**   Ettercap\
+\
+\
+\
+Ettercap Explanined:\
+\
+Ettercap is a free and open source network security tool for man-in-the-middle attacks on LAN. It can be used for computer network protocol analysis and security auditing. It runs on various Unix-like operating systems including Linux, Mac OS X, BSD and Solaris, and on Microsoft Windows. It is capable of intercepting traffic on a network segment, capturing passwords, and conducting active eavesdropping against a number of common protocols. It is ranked number 11 in the Top 100 Network Security Tools list released by insecure.org in 2006.\
+\
+Characters injection in an established connection: You can inject character to server (emulating commands) or to client (emulating replies) maintaining the connection alive!\
+SSH1 support: you can sniff User and Pass, and even the data of an SSH1 connection.\
+HTTPS support: you can sniff http SSL secured data... and even if the connection is made through a PROXY\
+Remote traffic through GRE tunnel: you can sniff remote traffic through a GRE tunnel from a remote Cisco router and make mitm attack on it\
+PPTP broker: you can perform man in the middle attack against PPTP tunnels\
+Password collector for: TELNET, FTP, POP, RLOGIN, SSH1, ICQ, SMB, MySQL, HTTP, NNTP, X11, NAPSTER, IRC, RIP, BGP, SOCKS 5, IMAP 4, VNC, LDAP, NFS, SNMP, HALF LIFE, QUAKE 3, MSN, YMSG.\
+Packet filtering/dropping: You can set up a filter that search for a particular string (even hex) in the TCP or UDP payload and replace it with yours or drop the entire packet.\
+OS fingerprint: you can fingerprint the OS of the victim host and even its network adapter\
+Kill a connection: from the connections list you can kill all the connections you want\
+Passive scanning of the LAN: you can retrieve info about: hosts in the LAN, open ports, services version, type of the host (gateway, router or simple host) and estimated distance in hop.\
+Check for other poisoners: EtterCap has the ability to actively or passively find other poisoners on the LAN.}</string>
+			</dict>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-03-25T17:04:58Z</date>
+			<key>plainText</key>
+			<string># **Cheatsheet:**   Ettercap
+
+
+
+Ettercap Explanined:
+
+Ettercap is a free and open source network security tool for man-in-the-middle attacks on LAN. It can be used for computer network protocol analysis and security auditing. It runs on various Unix-like operating systems including Linux, Mac OS X, BSD and Solaris, and on Microsoft Windows. It is capable of intercepting traffic on a network segment, capturing passwords, and conducting active eavesdropping against a number of common protocols. It is ranked number 11 in the Top 100 Network Security Tools list released by insecure.org in 2006.
+
+Characters injection in an established connection: You can inject character to server (emulating commands) or to client (emulating replies) maintaining the connection alive!
+SSH1 support: you can sniff User and Pass, and even the data of an SSH1 connection.
+HTTPS support: you can sniff http SSL secured data... and even if the connection is made through a PROXY
+Remote traffic through GRE tunnel: you can sniff remote traffic through a GRE tunnel from a remote Cisco router and make mitm attack on it
+PPTP broker: you can perform man in the middle attack against PPTP tunnels
+Password collector for: TELNET, FTP, POP, RLOGIN, SSH1, ICQ, SMB, MySQL, HTTP, NNTP, X11, NAPSTER, IRC, RIP, BGP, SOCKS 5, IMAP 4, VNC, LDAP, NFS, SNMP, HALF LIFE, QUAKE 3, MSN, YMSG.
+Packet filtering/dropping: You can set up a filter that search for a particular string (even hex) in the TCP or UDP payload and replace it with yours or drop the entire packet.
+OS fingerprint: you can fingerprint the OS of the victim host and even its network adapter
+Kill a connection: from the connections list you can kill all the connections you want
+Passive scanning of the LAN: you can retrieve info about: hosts in the LAN, open ports, services version, type of the host (gateway, router or simple host) and estimated distance in hop.
+Check for other poisoners: EtterCap has the ability to actively or passively find other poisoners on the LAN.</string>
+			<key>snippetType</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>AD87F3D2-89F8-4F7D-988E-865632A1173F</string>
+		</dict>
+	</array>
+</dict>
+</plist>

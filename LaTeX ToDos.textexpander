@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>LaTeX ToDos</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>\tdd</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-10T09:57:21Z</date>
+			<key>label</key>
+			<string>Call todo package</string>
+			<key>modificationDate</key>
+			<date>2015-09-10T10:04:13Z</date>
+			<key>plainText</key>
+			<string>% Call to todo package
+\usepackage{todo}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A637D6A9-4B1B-4A24-B06E-33CA72B084C8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>2do</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-10T10:04:18Z</date>
+			<key>label</key>
+			<string>insert to do</string>
+			<key>modificationDate</key>
+			<date>2015-11-03T15:02:00Z</date>
+			<key>plainText</key>
+			<string>\todo{%|}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>C119DE8F-003F-4B70-BF03-BF5AF0A70116</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>2fx</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-10T10:04:50Z</date>
+			<key>label</key>
+			<string>A think to fi</string>
+			<key>modificationDate</key>
+			<date>2015-09-10T10:35:42Z</date>
+			<key>plainText</key>
+			<string>\todo[%|]{Fix: }</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>00BDA765-EAEA-4EF3-BBCF-634AC4D7A887</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>c2dosh</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-10T10:06:06Z</date>
+			<key>label</key>
+			<string>shhh mode</string>
+			<key>modificationDate</key>
+			<date>2015-09-10T10:06:56Z</date>
+			<key>plainText</key>
+			<string>% Call to todo package in silent mode
+\usepackage[nothing]{todo}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0DF60113-DD77-4A5A-B1E1-CC80AE063124</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>2Do</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-10T10:07:14Z</date>
+			<key>label</key>
+			<string>to do with text included</string>
+			<key>modificationDate</key>
+			<date>2015-09-10T10:07:55Z</date>
+			<key>plainText</key>
+			<string>\Todo</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BD7A3389-A197-4A52-89DA-27239FD0670A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>do2do</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-10T10:08:04Z</date>
+			<key>label</key>
+			<string>finished todo</string>
+			<key>modificationDate</key>
+			<date>2015-09-10T10:08:42Z</date>
+			<key>plainText</key>
+			<string>\done \todo</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4141B22A-7A7F-4C9A-B568-D0B745F73979</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>tdo2do</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-10T10:08:47Z</date>
+			<key>label</key>
+			<string>complete w text</string>
+			<key>modificationDate</key>
+			<date>2015-09-10T10:09:27Z</date>
+			<key>plainText</key>
+			<string>\done[%|] \todo</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1ADC1AFF-FE6E-46D3-B83E-2166848700A1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>chdo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-10T10:09:41Z</date>
+			<key>label</key>
+			<string>checked done</string>
+			<key>modificationDate</key>
+			<date>2015-09-10T10:10:14Z</date>
+			<key>plainText</key>
+			<string>\done\todo{Fix}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>649A229E-695E-43B8-83BA-DF3739528A13</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>2dos</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-09-10T10:10:29Z</date>
+			<key>label</key>
+			<string>get list of todos</string>
+			<key>modificationDate</key>
+			<date>2015-09-10T10:10:46Z</date>
+			<key>plainText</key>
+			<string>\todos</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B38715B9-D37C-44CB-9DC9-8DFE69EF9486</string>
+		</dict>
+	</array>
+</dict>
+</plist>

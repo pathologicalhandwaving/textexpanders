@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>2</integer>
+		<key>groupName</key>
+		<string>CSS</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,scroll</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-01-14T15:21:11Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-01-14T15:21:11Z</date>
+			<key>plainText</key>
+			<string>  ::-webkit-scrollbar {
+      width: 8px;
+  }
+  
+  ::-webkit-scrollbar:horizontal {
+      display: none;
+  }
+          
+  ::-webkit-scrollbar-track {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-width: 21px 0;
+      margin-left: -50px;
+  }
+
+  ::-webkit-scrollbar-track:disabled {
+      display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      border-width: 19px 0;
+      min-height: 40px;
+      opacity: 0.6;
+      background:#666;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+  }
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>95415E58-4A81-4BAC-A96B-30285562C67A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>!imp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-03-04T01:25:46Z</date>
+			<key>label</key>
+			<string>!important</string>
+			<key>modificationDate</key>
+			<date>2011-03-04T01:26:08Z</date>
+			<key>plainText</key>
+			<string>!important</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>09F2EADD-0FBB-4A65-9C91-BD710944BAE7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,shadow</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-08-25T06:19:38Z</date>
+			<key>label</key>
+			<string>CSS Box Shadow</string>
+			<key>modificationDate</key>
+			<date>2011-03-20T16:51:35Z</date>
+			<key>plainText</key>
+			<string>-webkit-box-shadow: %fill:x%px %fill:y%px %fill:blur%px %fill:color% %fill:inset%;
+-moz-box-shadow: %fill:x%px %fill:y%px %fill:blur%px %fill:color% %fill:inset%;
+box-shadow: %fill:x%px %fill:y%px %fill:blur%px %fill:color% %fill:inset%;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>50ABF2F4-8D8D-455E-8BFF-9F57FCF74242</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,csstrans</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-07-17T15:14:48Z</date>
+			<key>label</key>
+			<string>CSS Transition</string>
+			<key>modificationDate</key>
+			<date>2010-10-13T15:07:22Z</date>
+			<key>plainText</key>
+			<string>-webkit-transition:%fill:type% %fill:seconds%s ease-in-out;
+-moz-transition:%fill:type% %fill:seconds%s ease-in-out;
+-o-transition:%fill:type% %fill:seconds%s ease-in-out;
+transition:%fill:type% %fill:seconds%s ease-in-out;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1627305E-E1D1-4D0A-84F6-65344491A398</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,nth</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-07-17T15:17:25Z</date>
+			<key>label</key>
+			<string>nth-of-type</string>
+			<key>modificationDate</key>
+			<date>2010-10-13T15:07:15Z</date>
+			<key>plainText</key>
+			<string>nth-of-type(%|)</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9AB10DB0-4158-4EFC-BB43-09A2EEBE5B59</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,rgba</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-03-20T16:51:50Z</date>
+			<key>label</key>
+			<string>RGBA</string>
+			<key>modificationDate</key>
+			<date>2011-03-20T16:53:03Z</date>
+			<key>plainText</key>
+			<string>rgba(%fill:r%, %fill:g%, %fill:b%, %fill:float%)</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2B32BEC2-63DE-4075-8317-EA098ABACE5A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,roundbl</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-03-13T14:14:03Z</date>
+			<key>label</key>
+			<string>Round bottom left</string>
+			<key>modificationDate</key>
+			<date>2010-10-13T15:08:06Z</date>
+			<key>plainText</key>
+			<string>-moz-border-radius-bottomleft:%fill:Amount%px;
+-webkit-border-bottom-left-radius:%fill:Amount%px;
+border-radius-bottomleft: %fill:Amount%px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0568A8FF-0ACD-444A-9989-E6F111E2EF12</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,roundbr</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-03-13T14:14:19Z</date>
+			<key>label</key>
+			<string>Round bottom right</string>
+			<key>modificationDate</key>
+			<date>2010-10-13T15:08:02Z</date>
+			<key>plainText</key>
+			<string>-moz-border-radius-bottomright:%fill:Amount%px;
+-webkit-border-bottom-right-radius:%fill:Amount%px;
+border-radius-bottomright: %fill:Amount%px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8E3FC61D-699C-49E6-8BF2-1B448C2759DE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,roundtl</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-03-13T14:14:51Z</date>
+			<key>label</key>
+			<string>Round top left</string>
+			<key>modificationDate</key>
+			<date>2010-10-13T15:07:58Z</date>
+			<key>plainText</key>
+			<string>-moz-border-radius-topleft:%fill:Amount%px;
+-webkit-border-top-left-radius:%fill:Amount%px;
+border-radius-topleft: %fill:Amount%px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3F3EE18C-1596-411F-9046-F7F0DB88B2C8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,roundtr</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-03-13T14:15:13Z</date>
+			<key>label</key>
+			<string>Round top right</string>
+			<key>modificationDate</key>
+			<date>2010-10-13T15:07:52Z</date>
+			<key>plainText</key>
+			<string>-moz-border-radius-topright:%fill:Amount%px;
+-webkit-border-top-right-radius:%fill:Amount%px;
+border-radius-topright: %fill:Amount%px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>67F2F437-EEDF-4059-8909-65DFE556B66D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,roundall</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-03-13T14:14:32Z</date>
+			<key>label</key>
+			<string>Rounded Corners</string>
+			<key>modificationDate</key>
+			<date>2010-10-13T15:08:10Z</date>
+			<key>plainText</key>
+			<string>-moz-border-radius: %fill:Amount%px;
+-webkit-border-radius: %fill:Amount%px;
+border-radius: %fill:Amount%px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>81A09561-29DF-4004-BC07-4FADA47D38CF</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;a</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:11:23Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:12:59Z</date>
+			<key>plainText</key>
+			<string>a:link {
+color: %|;
+}
+
+a:visited {
+color: ;
+}
+
+a:hover {
+color: ;
+}
+
+a:active {
+color: ;
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1ABCE3F8-B339-415C-96EE-7F924FA92B57</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;bbottom</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:01:22Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:01:33Z</date>
+			<key>plainText</key>
+			<string>border-bottom: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>85E40010-2807-4276-9472-5870CE37DCB7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;bcolor</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:58:36Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:58:54Z</date>
+			<key>plainText</key>
+			<string>border-color: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>EAF069AB-FB50-4685-B194-2A83C270779E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;bgcolor</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:03:07Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:03:23Z</date>
+			<key>plainText</key>
+			<string>background-color: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6C256C84-BF9B-41D3-B8D1-07A52E2C7CA1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;bgimage</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:03:30Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:03:48Z</date>
+			<key>plainText</key>
+			<string>background-image: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>100B4D9D-86B8-4D04-BD99-E5A761F97204</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;bgrepeat</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:03:52Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:04:04Z</date>
+			<key>plainText</key>
+			<string>background-repeat: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6110586C-797F-4304-8C89-0C84A6C24611</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;bleft</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:01:36Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:01:54Z</date>
+			<key>plainText</key>
+			<string>border-left: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D87D80E0-0981-4F13-BBBF-BFF897CD3057</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;body</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:06:51Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:07:02Z</date>
+			<key>plainText</key>
+			<string>body {
+%|
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>DFFA9C36-5FB1-47B2-85B9-995C485BE2F2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;bold</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:34:27Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:48:07Z</date>
+			<key>plainText</key>
+			<string>font-weight: bold;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>209512AC-1664-47C2-8E8C-BDCA136949AD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;border</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:02:02Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:02:15Z</date>
+			<key>plainText</key>
+			<string>border: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>7C719291-BCF9-4648-950F-C43FD0595085</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;bright</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:01:07Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:01:19Z</date>
+			<key>plainText</key>
+			<string>border-right: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3F707A69-E50F-4286-9C72-BF368A92F145</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;bstyle</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:58:59Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:59:15Z</date>
+			<key>plainText</key>
+			<string>border-style: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F9E846D2-1EE2-41B6-9B5A-E141082F0C48</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;btop</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:59:21Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:01:03Z</date>
+			<key>plainText</key>
+			<string>border-top: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6733CC1A-3E81-4A4E-BC4C-518C333C12AF</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;color</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:31:41Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:48:03Z</date>
+			<key>plainText</key>
+			<string>color: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0607CB5C-C57F-441D-9FA7-46F6E048C451</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;comment</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2009-09-21T16:24:57Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2009-09-21T16:25:14Z</date>
+			<key>plainText</key>
+			<string>/*%|*/</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>DC2CD312-B3F1-4252-B2CF-06303B80516C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;em</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:10:32Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:10:47Z</date>
+			<key>plainText</key>
+			<string>em {
+%|
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0EF8BCBF-21C1-4D08-A3B6-BA71777B71C0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;ffamily</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:50:39Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:51:09Z</date>
+			<key>plainText</key>
+			<string>font-family: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F7D47FDC-AD7A-47FC-A01F-239924016990</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;fs10</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T23:21:28Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T23:22:30Z</date>
+			<key>plainText</key>
+			<string>font-size: 10px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>04DF1258-D337-41C0-8141-4041711DA6E5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;fs12</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T23:22:38Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T23:22:47Z</date>
+			<key>plainText</key>
+			<string>font-size: 12px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A387992F-516F-47AB-8220-E6C577709F42</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;fs14</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T23:22:52Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T23:23:03Z</date>
+			<key>plainText</key>
+			<string>font-size: 14px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E431001D-E503-4B94-9AAD-29BEC736BF19</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;fs18</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T23:23:10Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T23:23:22Z</date>
+			<key>plainText</key>
+			<string>font-size: 18px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>90FB9AC5-1AF9-48BF-A470-2BE9DCE7FAA8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;fs24</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T23:23:07Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T23:23:50Z</date>
+			<key>plainText</key>
+			<string>font-size: 24px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A6906AC6-46EF-48A5-845F-C9D7FD1F2DDE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;fs36</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T23:23:52Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T23:24:04Z</date>
+			<key>plainText</key>
+			<string>font-size: 36px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>7E4FC4F8-AB07-49DD-A6CC-A2E37D14CC59</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;fsize</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:32:19Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:52:18Z</date>
+			<key>plainText</key>
+			<string>font-size: %|px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>12137CEB-F9E3-4E33-A311-5064209B5CF5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;fweight</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:51:37Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:51:37Z</date>
+			<key>plainText</key>
+			<string>font-weight: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6CE4C9F2-687F-43A9-961C-6581E8ED5047</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;h1</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:29:09Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:48:00Z</date>
+			<key>plainText</key>
+			<string>h1 {
+%|
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>02428691-8F18-4046-B5D5-45A3CB879B2B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;h2</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:30:33Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:47:46Z</date>
+			<key>plainText</key>
+			<string>h2 {
+%|
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>983342A3-7831-4352-84EA-021C67AAD83D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;h3</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:05:46Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:05:46Z</date>
+			<key>plainText</key>
+			<string>h3 {
+%|
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9A385325-D121-4CD1-838B-C9A3CEA0AAF8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;h4</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:06:05Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:06:17Z</date>
+			<key>plainText</key>
+			<string>h4 {
+%|
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>132FD606-DA66-48CB-95FE-0251F5FC657F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;h5</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:06:21Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:06:30Z</date>
+			<key>plainText</key>
+			<string>h5 {
+%|
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>EFD945AF-4581-42A9-9ECE-91D23834E921</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;h6</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:06:34Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:06:43Z</date>
+			<key>plainText</key>
+			<string>h6 {
+%|
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CACE13AD-12FB-4315-992C-8E38E9E7F99F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;italic</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:45:53Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:47:41Z</date>
+			<key>plainText</key>
+			<string>font-style: italic;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3A858D49-C030-4F7F-888D-18CFB9C3420F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;lh12</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T23:24:27Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T23:24:38Z</date>
+			<key>plainText</key>
+			<string>line-height: 12px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>12CA69C3-E40A-4431-899D-B3EE84DD74E6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;lh16</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T23:24:43Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T23:25:02Z</date>
+			<key>plainText</key>
+			<string>line-height: 16px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>453FD88F-C8DF-4E10-B687-628FF077139E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;lh20</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T23:25:11Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T23:26:16Z</date>
+			<key>plainText</key>
+			<string>line-height: 20px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BD70881B-8B90-42A5-AE77-D042B1A63339</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;lh24</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T23:26:21Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T23:26:41Z</date>
+			<key>plainText</key>
+			<string>line-height: 24px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CA50AB3A-4AB8-4044-8211-A7E2A9261F57</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;lheight</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:43:37Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:47:33Z</date>
+			<key>plainText</key>
+			<string>line-height: %|px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>572BB27B-9ED1-4731-9DFF-DCEAB2585B1D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;li</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:08:07Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:08:16Z</date>
+			<key>plainText</key>
+			<string>li {
+%|
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>7B689155-9DEC-441C-8383-601E88E4A6AD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;lspacing</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:57:15Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:57:31Z</date>
+			<key>plainText</key>
+			<string>letter-spacing: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E2EC4ECF-7A53-4F24-8677-A2B3E4053C7C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;margin</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:48:22Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:48:32Z</date>
+			<key>plainText</key>
+			<string>margin: %|px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F09CDF7F-DE88-4655-967E-3AC43CAD5398</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;mbottom</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:49:56Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:47:27Z</date>
+			<key>plainText</key>
+			<string>margin-bottom: %|px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CCF8EE6F-CB0D-4299-99C2-CE5D9AF4AABD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;mleft</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:50:13Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:47:22Z</date>
+			<key>plainText</key>
+			<string>margin-left: %|px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>25086713-961F-422E-9305-188F1037A2BC</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;mright</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:49:41Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:47:18Z</date>
+			<key>plainText</key>
+			<string>margin-right: %|px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>84BC0F56-E004-4C25-A36B-FC84485C0108</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;mtop</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:48:19Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:47:13Z</date>
+			<key>plainText</key>
+			<string>margin-top: %|px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3567D39E-868C-4B9A-BD6C-32B816C0584A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;padding</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:52:30Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T19:53:06Z</date>
+			<key>plainText</key>
+			<string>padding: %|px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9271EC15-AFE6-4EC7-8F58-C8CFCCCE4980</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;para</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:07:06Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:07:20Z</date>
+			<key>plainText</key>
+			<string>p {
+%|
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A8EDCFF2-E204-46B0-BE1B-13955C94E8BA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;pbottom</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:51:55Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T19:53:19Z</date>
+			<key>plainText</key>
+			<string>padding-bottom: %|px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8D423152-3814-42F9-8A4E-595ACFF40E3D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;pleft</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:52:11Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T19:53:14Z</date>
+			<key>plainText</key>
+			<string>padding-left: %|px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9A9A746D-B205-4CD4-97C2-CBC2D23487C2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;pright</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:51:30Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T19:53:25Z</date>
+			<key>plainText</key>
+			<string>padding-right: %|px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>50BCF5BA-07FC-49D5-AEB4-178268AF546E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;ptop</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:51:10Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:47:51Z</date>
+			<key>plainText</key>
+			<string>padding-top: %|px;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0235B63F-5C65-43A5-8637-F02B8B525D41</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;sans</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:33:24Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T19:53:37Z</date>
+			<key>plainText</key>
+			<string>font-family: Verdana, Arial, sans-serif;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>9C310351-903C-41A1-A3DC-CCE29D27103A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;serif</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T19:36:29Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T19:53:33Z</date>
+			<key>plainText</key>
+			<string>font-family: Times, Times New Roman, Georgia, serif;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>64B6BC60-3BA7-4746-901C-F2D831694DEC</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;strong</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:11:05Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:11:17Z</date>
+			<key>plainText</key>
+			<string>strong {
+%|
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>5863843C-1E88-40F9-8188-B07F0886B9CA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;talign</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:55:20Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:55:54Z</date>
+			<key>plainText</key>
+			<string>text-align: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>800542D7-007B-431F-BDE0-03E471587C49</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;tdecoration</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:53:20Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:54:38Z</date>
+			<key>plainText</key>
+			<string>text-decoration: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4D601E9D-BB26-4D06-B60C-DD66B2EAABA1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;tindent</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:56:06Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:56:39Z</date>
+			<key>plainText</key>
+			<string>text-indent: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>77B0B156-FC82-43E6-B586-BB899D8D394E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;ttransform</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:54:45Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:55:07Z</date>
+			<key>plainText</key>
+			<string>text-transform: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D1937CFD-1B4F-442C-ACA1-5085C5CBDDB9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;ul</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T22:07:52Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T22:08:05Z</date>
+			<key>plainText</key>
+			<string>ul {
+%|
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8098E365-EFFC-4B38-9F12-6FB332661F36</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;valign</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:57:46Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:58:12Z</date>
+			<key>plainText</key>
+			<string>vertical-align: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>085EC276-3C4C-4B46-A47E-05C97AA6DB58</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;wspacing</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2008-05-13T21:56:44Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2008-05-13T21:57:09Z</date>
+			<key>plainText</key>
+			<string>word-spacing: %|;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1D7DA6E1-2222-4FA6-9307-4B0AC576E285</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>MD Templates</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>mkChS</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-24T20:58:28Z</date>
+			<key>label</key>
+			<string>Cheat (Reference) Sheet Template</string>
+			<key>modificationDate</key>
+			<date>2015-07-08T08:40:25Z</date>
+			<key>plainText</key>
+			<string># **Cheatsheet:**   
+
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>63AB88F0-4933-4060-8E0E-71403BA8AF17</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mkHwk</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-03-25T16:35:44Z</date>
+			<key>label</key>
+			<string>Homework List Template</string>
+			<key>modificationDate</key>
+			<date>2015-07-08T08:40:44Z</date>
+			<key>plainText</key>
+			<string># **Homework:**   </string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>7C26A8CE-D20C-43E8-9964-1C80774A8E5D</string>
+		</dict>
+	</array>
+</dict>
+</plist>

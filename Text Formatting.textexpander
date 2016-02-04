@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Text Formatting</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>..cbul</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Underline with - [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T22:17:11Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_underline%
+
+Underline('-');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>00F2E281-3CC4-40E0-B847-112BAD8D3B7F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>..cbup</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Convert Case to Upper [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T22:16:05Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.toUpperCase( );
+
+</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>25AF113A-9618-4F09-A0EA-60D7BE9C0108</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbtitle</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Convert Case to Title/Proper [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:31:05Z</date>
+			<key>plainText</key>
+			<string>String.prototype.toProperCase = function( ) {
+    return this.replace(/([^\W_]+[^\s-]*) */g, function(strInput){return strInput.charAt(0).toUpperCase( ) + strInput.substr(1).toLowerCase( );});
+};
+
+TextExpander.pasteboardText.toProperCase( );</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>B06FC7AF-6466-4468-B7BD-3F3E545AA2E3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbsent</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T09:17:51Z</date>
+			<key>label</key>
+			<string>Convert Case to Sentence [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:32:50Z</date>
+			<key>plainText</key>
+			<string>String.prototype.toProperCase = function( ) {
+    return this.replace(/((?:\S[^\.\?\!]*)[\.\?\!]*)/g, function(strInput){return strInput.charAt(0).toUpperCase( ) + strInput.substr(1).toLowerCase( );});
+};
+
+TextExpander.pasteboardText.toProperCase( );</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>3DB90BF7-8A94-4EA4-B2D8-D75B6E9CCEC5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbsortalpha</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T09:39:51Z</date>
+			<key>label</key>
+			<string>Sort Lines Alphabetically [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:27:21Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.split("\n").sort( ).join("\n");</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>04CC4A49-1D95-437F-B1C7-8EC700769C95</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbsortrevalpha</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T09:39:51Z</date>
+			<key>label</key>
+			<string>Sort Lines Reverse Alphabetically [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:27:35Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.split("\n").sort( ).reverse( ).join("\n");</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>4B6E0449-75B9-4742-A2F9-631BB6E8EFA7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>..cblow</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Convert Case to Lower [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T22:15:35Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.toLowerCase( );</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>2B868A43-8B02-43CC-947D-303F1E40A003</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbul*</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Underline with * [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:28:40Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_underline%
+
+Underline('*');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>687240C0-417F-4233-AAF6-1F6281D50AAC</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbul~</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Underline with ~ [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:28:04Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_underline%
+
+Underline('~');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>3E137F07-5263-4861-AECB-39D4C5DA2184</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbul=</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Underline with = [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:28:13Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_underline%
+
+Underline('=');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>DA165767-DD44-4AED-847B-1BE93B887578</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbulx</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Underline - User Specified [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:29:25Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_underline%
+
+Underline('%filltext:name=Underline Character:default=:width=1%');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>DA19978D-EAE4-4339-B463-8F400601F64D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbul#</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Underline with # [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:28:32Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_underline%
+
+Underline('#');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>63ED5062-2174-446C-BBA7-BA756F5565D3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbul+</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Underline with + [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:28:21Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_underline%
+
+Underline('+');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>A5FD799A-3983-408A-9F76-8A7A05555830</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbul.</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Underline with . [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:28:48Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_underline%
+
+Underline('.');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>E3BA867B-CB42-4F83-A88B-75C266D1EFD9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbul_</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Underline with _ [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:29:04Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_underline%
+
+Underline('_');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>5E8B70D5-B4B9-41A4-A651-286BA636F5AE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbtab4</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T19:15:34Z</date>
+			<key>label</key>
+			<string>Substitute Tab to 4 Spaces [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:35:00Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.replace(/\t/g, '    ');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>7B703811-F854-4331-84B8-726D6A061117</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbtab2</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T19:15:34Z</date>
+			<key>label</key>
+			<string>Substitute Tab to 2 Spaces [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:37:18Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.replace(/\t/g, '  ');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>06FF0EA5-F2BE-4473-8DDB-F844EEF30AEA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbtab3</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T19:15:34Z</date>
+			<key>label</key>
+			<string>Substitute Tab to 3 Spaces [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:35:08Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.replace(/\t/g, '   ');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>8E04EBCF-692C-4EB4-A208-CF91184AC9CB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cb4tab</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T19:15:34Z</date>
+			<key>label</key>
+			<string>Substitute 4 Spaces to Tab [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:38:08Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.replace(/    /g, '\t');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>BB6BB38B-4C01-40E1-86E5-78E4E18A8085</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbsssent</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T19:15:34Z</date>
+			<key>label</key>
+			<string>Single Space Sentences [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:38:36Z</date>
+			<key>plainText</key>
+			<string>var strOutput = TextExpander.pasteboardText;
+strOutput  = strOutput.replace(/\.  /g, '. ');
+strOutput  = strOutput.replace(/\!  /g, '! ');
+strOutput  = strOutput.replace(/\?  /g, '? ');
+strOutput;</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>2F8C1B95-95FB-4EAB-BE46-1314AE2C3070</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cb3tab</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T19:15:34Z</date>
+			<key>label</key>
+			<string>Substitute 3 Spaces to Tab [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:38:17Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.replace(/   /g, '\t');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>0062F66B-ACFC-4321-A197-D1660EDCCA26</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>..fndrepl</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T19:15:34Z</date>
+			<key>label</key>
+			<string>Substitute Text [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T22:11:16Z</date>
+			<key>plainText</key>
+			<string>%filltop%
+var strFind = '%filltext:name=FindText:width=20%';
+var strReplace = '%filltext:name=ReplaceText:width=20%';
+var objRegEx = new RegExp(strFind, 'g');
+TextExpander.pasteboardText.replace(objRegEx, strReplace);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>666ECBED-FF00-4BC2-B5FB-DA0A95ED7879</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cb2tab</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T19:15:34Z</date>
+			<key>label</key>
+			<string>Substitute 2 Spaces to Tab [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:34:42Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.replace(/  /g, '\t');</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>5C6C45F6-BADF-4ECC-A5B9-4A3051D56995</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbdssent</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T19:15:34Z</date>
+			<key>label</key>
+			<string>Double Space Sentences [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:39:06Z</date>
+			<key>plainText</key>
+			<string>var strOutput = TextExpander.pasteboardText;
+//First replace all double spaces to single so we don't end up with triples
+strOutput  = strOutput.replace(/\.  /g, '. ');
+strOutput  = strOutput.replace(/\!  /g, '! ');
+strOutput  = strOutput.replace(/\?  /g, '? ');
+//Now replace all single spaces to doubles
+strOutput  = strOutput.replace(/\. /g, '.  ');
+strOutput  = strOutput.replace(/\! /g, '!  ');
+strOutput  = strOutput.replace(/\? /g, '?  ');
+strOutput;</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>949E95E9-F07E-403E-83EA-80B58C02D2DF</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbmdul</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T20:32:39Z</date>
+			<key>label</key>
+			<string>Markdown Bulleted List [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:39:52Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.replace(/(^.*)/gm, "\* $1");</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>3CEEE28C-4BAA-4948-982C-EBCAF487BB6C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbmdol</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T20:32:39Z</date>
+			<key>label</key>
+			<string>Markdown Number List [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:39:41Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.replace(/(^.*)/gm, "1\. $1");</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>6EF3BF49-4DBF-4BE5-A902-607CD0B5BA46</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cb2ssent</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T19:15:34Z</date>
+			<key>label</key>
+			<string>Double Space Sentences [Clipboard] (JS) {Alternate}</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:39:15Z</date>
+			<key>plainText</key>
+			<string>%snippet:$cbdssent%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0F2F900F-5DF5-4B8D-95E3-CB42E89397CA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cb1ssent</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T19:15:34Z</date>
+			<key>label</key>
+			<string>Single Space Sentences [Clipboard] (JS) {Alternate}</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:39:27Z</date>
+			<key>plainText</key>
+			<string>%snippet:$cbsssent%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>64B1C4D6-AA6E-4E0F-992E-1D2531567788</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lib_ta_underline</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-06-20T19:12:08Z</date>
+			<key>label</key>
+			<string>* Library - Underline (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T17:23:31Z</date>
+			<key>plainText</key>
+			<string>//This snippet is called by other snippets and should not be used on its own.
+function Underline(p_strUnderlineWith)
+{
+    //Start with the clipboard
+    var strOutput = TextExpander.pasteboardText;
+
+    //Get the length of the clipboard content
+    var intClipboardLength = strOutput.length;
+
+    //Add a new line
+    strOutput += "\n";
+
+    //Now add an underline
+    for (intCounter = 0; intCounter &lt; intClipboardLength; intCounter++) { 
+        strOutput += p_strUnderlineWith;
+    }
+
+    //Output the string we've built
+    return strOutput;
+}</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>352741B1-02FE-4D75-93F9-82F75CAFC1DA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>..cbtitle</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-30T08:55:13Z</date>
+			<key>label</key>
+			<string>Convert Case to Title/Proper [Clipboard] (JS) {Alternate}</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T22:14:40Z</date>
+			<key>plainText</key>
+			<string>%snippet:$cbtitle%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>5465B9E0-E94C-446D-A772-2F63C80ACA10</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lib_ta_trimandpad</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-12T14:45:53Z</date>
+			<key>label</key>
+			<string>* Library - String Padding</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T16:22:18Z</date>
+			<key>plainText</key>
+			<string>function PadLeft(p_strInput,p_strPadChar, p_intLen)
+{
+	return PadString(p_strPadChar, p_intLen, p_strInput.length) + p_strInput;
+}
+
+function PadRight(p_strInput, p_strPadChar, p_intLen)
+{
+	return p_strInput + PadString(p_strPadChar, p_intLen, p_strInput.length);
+}
+
+function PadString(p_strPadChar, p_intLen, p_strLength)
+{
+	/* Calculate the length of the prefix string*/
+	var intPadLength = p_intLen - p_strLength;
+
+	/* Generate the padding string based on array element joins then slice to actual size in case more than one character pad string*/
+	var strPad = new Array(intPadLength + 1).join(p_strPadChar).slice(0, intPadLength);
+
+	/* Return the padding string */
+	return strPad
+}
+
+function PadCentre(p_strInput, p_strPadChar, p_intLen)
+{
+	return (PadString(p_strPadChar, Math.floor((p_intLen - p_strInput.length) / 2), 0) + p_strInput + PadString(p_strPadChar, Math.floor((p_intLen - p_strInput.length) / 2) + 1, 0)).slice(0, p_intLen);
+}
+</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>E2137A0F-B178-4D28-BD0F-D5552E2CAF2D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbpadc</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-12T14:48:50Z</date>
+			<key>label</key>
+			<string>Pad Centre [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T16:26:44Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_trimandpad%
+
+%filltop%
+
+PadCentre('%clipboard', '%filltext:name=Pad With%', %filltext:name=Extend to how many characters?:default=80%);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>E1FFFEAE-AD20-495F-9969-6E715F12CC92</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$padc</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-12T14:48:50Z</date>
+			<key>label</key>
+			<string>Pad Centre [Fill In] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T16:31:11Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_trimandpad%
+
+%filltop%
+
+PadCentre('%filltext:name=Base text%', '%filltext:name=Pad With%', %filltext:name=Extend to how many characters?:default=80%);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>5CB9F755-373F-4920-92F9-5CEA5811059E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbpadl</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-12T14:48:50Z</date>
+			<key>label</key>
+			<string>Pad Left [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T16:25:52Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_trimandpad%
+
+%filltop%
+
+PadLeft('%clipboard', '%filltext:name=Pad With%', %filltext:name=Extend to how many characters?:default=80%);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>EFBE89ED-4096-4126-832B-380FFFBE72F9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$padl</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-12T14:48:50Z</date>
+			<key>label</key>
+			<string>Pad Left [Fill In] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T16:30:42Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_trimandpad%
+
+%filltop%
+
+PadLeft('%filltext:name=Base text%', '%filltext:name=Pad With%', %filltext:name=Extend to how many characters?:default=80%);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>2DB368C0-EF69-417E-84C1-F6ED80F882A6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbpadr</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-12T14:48:50Z</date>
+			<key>label</key>
+			<string>Pad Right [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T16:26:09Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_trimandpad%
+
+%filltop%
+
+PadRight('%clipboard', '%filltext:name=Pad With%', %filltext:name=Extend to how many characters?:default=80%);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>80FC86DE-8A25-49FD-9BB5-A436F08DBA70</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$padr</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-12T14:48:50Z</date>
+			<key>label</key>
+			<string>Pad Right [Fill In] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T16:30:58Z</date>
+			<key>plainText</key>
+			<string>%snippet:lib_ta_trimandpad%
+
+%filltop%
+
+PadRight('%filltext:name=Base text%', '%filltext:name=Pad With%', %filltext:name=Extend to how many characters?:default=80%);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>C098C13E-E963-4E06-B46F-1BF9997992FA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>FromASCII</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T21:33:57Z</date>
+			<key>label</key>
+			<string>Convert: ASCII to Character [Fill In] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T20:08:49Z</date>
+			<key>plainText</key>
+			<string>%filltop%
+String.fromCharCode(%filltext:name=Character:width=15%);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>0E138F8D-CB6A-4298-B891-76D40621C587</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ToASCII</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T21:33:57Z</date>
+			<key>label</key>
+			<string>Convert: Character to ASCII [Fill In] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-12T20:08:55Z</date>
+			<key>plainText</key>
+			<string>%filltop%
+'%filltext:name=Character:width=10%'.charCodeAt(0)</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>7A0FD681-3446-4C2A-A145-B3F149889A83</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>..cbpt</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-15T21:10:16Z</date>
+			<key>label</key>
+			<string>Convert to Plain Text [Clipboard]</string>
+			<key>modificationDate</key>
+			<date>2015-11-25T22:13:25Z</date>
+			<key>plainText</key>
+			<string>%clipboard</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4C9B3E6D-9CAE-43F2-83BF-83EBCA188D63</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbwrapc</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-19T22:07:14Z</date>
+			<key>label</key>
+			<string>Wrap Text Every N Characters [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-19T22:23:42Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.replace(/(.{%filltext:name=Number of characters to wrap at:default=80%})/g, "$1\n")
+
+%filltop%</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>0C4A5E92-0BE8-4D5F-81CF-B16EA38D8B88</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>$cbwrapw</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-07-19T22:07:14Z</date>
+			<key>label</key>
+			<string>Wrap Text Every N Characters by Word [Clipboard] (JS)</string>
+			<key>modificationDate</key>
+			<date>2015-07-19T22:28:24Z</date>
+			<key>plainText</key>
+			<string>//Derived from answer on http://stackoverflow.com/questions/11675397/javascript-only-wordwrap-function-on-whitespace
+
+TextExpander.pasteboardText.replace(/(\S(.{0,%filltext:name=Number of characters to wrap text after:default=80%}\S)?)\s+/g, '$1\n');
+
+%filltop%
+
+</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>C2563ABC-AA90-4485-9245-60012869DD07</string>
+		</dict>
+	</array>
+</dict>
+</plist>

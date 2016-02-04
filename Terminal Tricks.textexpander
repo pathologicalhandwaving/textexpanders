@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Terminal Tricks</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-09T07:35:00Z</date>
+			<key>label</key>
+			<string>Renaming/moving files</string>
+			<key>modificationDate</key>
+			<date>2015-08-09T07:36:27Z</date>
+			<key>plainText</key>
+			<string>Renaming/moving files with suffixes quickly:
+cp /home/foo/realllylongname.cpp{,-old}
+This expands to:
+cp /home/foo/realllylongname.cpp /home/foo/realllylongname.cpp-old</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BC830FA1-FE29-4C1D-87C9-F7B7FA713BF6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-09T07:36:52Z</date>
+			<key>label</key>
+			<string>Repeats your last command</string>
+			<key>modificationDate</key>
+			<date>2015-08-09T07:37:09Z</date>
+			<key>plainText</key>
+			<string>!!
+Repeats your last command. Most useful in the form:
+sudo !!</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D6908B4A-D648-406D-9AF6-C0EC883B7E67</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-09T07:38:17Z</date>
+			<key>label</key>
+			<string>list only subdirectories</string>
+			<key>modificationDate</key>
+			<date>2015-08-09T07:38:32Z</date>
+			<key>plainText</key>
+			<string>list only subdirectories in the current one ?
+ls -d */</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1529B669-DF56-4F08-AF08-804712D2B3C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-09T07:38:51Z</date>
+			<key>label</key>
+			<string>Inserts the last arguments from your last bash command</string>
+			<key>modificationDate</key>
+			<date>2015-08-09T07:39:04Z</date>
+			<key>plainText</key>
+			<string>Inserts the last arguments from your last bash command. It comes in handy more than you think.
+cp file /to/some/long/path</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>46310C3C-06B3-4ACE-A653-6723BCDA6608</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>webshare</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-09T07:40:48Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-09T07:40:48Z</date>
+			<key>plainText</key>
+			<string>One that I love (but I cheat a bit since I use the fact that Python is installed on most Unix system now) :
+alias webshare='python -m SimpleHTTPServer'</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>47261A27-0466-4126-B79C-AE144E504E50</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>watch command in conjunction with another command to look for changes</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-09T07:41:15Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-09T07:41:15Z</date>
+			<key>plainText</key>
+			<string>You can use the watch command in conjunction with another command to look for changes. An example of this was when I was testing my router, and I wanted to get up-to-date numbers on stuff like signal-to-noise ratio, etc.
+watch --interval=10 lynx -dump http://dslrouter/stats.html</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D4D39673-3FE3-4F78-8733-93826052DC9A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>copies to the Mac system clipboard</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-09T07:42:12Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-09T07:42:12Z</date>
+			<key>plainText</key>
+			<string>pbcopy
+This copies to the Mac system clipboard. You can pipe commands to it...try:
+pwd | pbcopy</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B12C6EE2-095D-4C5F-81F2-957BA264EA5F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>Duplicate file finder</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-09T07:43:08Z</date>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-09T07:43:08Z</date>
+			<key>plainText</key>
+			<string>Duplicate file finder
+This will run checksums recursively from the current directory, and give back the filenames of all identical checksum results:
+find ./ -type f -print0 | xargs -0 -n1 md5sum | sort -k 1,32 | uniq -w 32 -d --all-repeated=separate | sed -e 's/^[0-9a-f]*\ *//;'</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>6C550491-EDFF-4E68-92DB-06D0EB0B0843</string>
+		</dict>
+	</array>
+</dict>
+</plist>
